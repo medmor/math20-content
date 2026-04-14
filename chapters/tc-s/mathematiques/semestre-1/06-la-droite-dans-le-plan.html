@@ -1,0 +1,102 @@
+<!-- La droite dans le plan -->
+<h1>La droite dans le plan</h1>
+
+<h2>1. Équation cartésienne d'une droite</h2>
+
+<h3>Définition</h3>
+<p>Une droite $(d)$ dans le plan peut être représentée par une <strong>équation cartésienne</strong> de la forme :</p>
+<p>$$ax + by + c = 0$$</p>
+<p>où $(a, b) \neq (0, 0)$.</p>
+
+<h3>Interprétation géométrique</h3>
+<ul>
+<li>Le vecteur $\vec{n} = (a, b)$ est un <strong>vecteur normal</strong> à la droite</li>
+<li>Le vecteur $\vec{u} = (-b, a)$ est un <strong>vecteur directeur</strong> de la droite</li>
+</ul>
+
+<h2>2. Formes particulières d'équations</h2>
+
+<h3>Équation réduite</h3>
+<p>Si $b \neq 0$, l'équation peut s'écrire sous forme réduite :</p>
+<p>$$y = mx + p$$</p>
+<ul>
+<li>$m$ est le <strong>coefficient directeur</strong> (pente)</li>
+<li>$p$ est l'<strong>ordonnée à l'origine</strong></li>
+</ul>
+
+<h3>Droite parallèle à l'axe des ordonnées</h3>
+<p>Si $b = 0$, l'équation devient $x = k$ (droite verticale).</p>
+
+<h3>Droite passant par l'origine</h3>
+<p>Si $c = 0$, la droite passe par l'origine : $ax + by = 0$ ou $y = mx$.</p>
+
+<h2>3. Détermination d'une droite</h2>
+
+<h3>Par un point et un vecteur directeur</h3>
+<p>La droite passant par $A(x_0, y_0)$ et de vecteur directeur $\vec{u}(a, b)$ a pour équation :</p>
+<p>$$b(x - x_0) - a(y - y_0) = 0$$</p>
+
+<h3>Par un point et un vecteur normal</h3>
+<p>La droite passant par $A(x_0, y_0)$ et de vecteur normal $\vec{n}(a, b)$ a pour équation :</p>
+<p>$$a(x - x_0) + b(y - y_0) = 0$$</p>
+
+<h3>Par deux points</h3>
+<p>La droite passant par $A(x_A, y_A)$ et $B(x_B, y_B)$ avec $x_A \neq x_B$ :</p>
+<p>$$\frac{y - y_A}{y_B - y_A} = \frac{x - x_A}{x_B - x_A}$$</p>
+<p>ou sous forme cartésienne : $(y_B - y_A)(x - x_A) - (x_B - x_A)(y - y_A) = 0$</p>
+
+<h2>4. Positions relatives de deux droites</h2>
+
+<h3>Droites parallèles</h3>
+<p>Deux droites d'équations $a_1x + b_1y + c_1 = 0$ et $a_2x + b_2y + c_2 = 0$ sont <strong>parallèles</strong> si et seulement si :</p>
+<p>$$\frac{a_1}{a_2} = \frac{b_1}{b_2} \quad \text{(si les dénominateurs sont non nuls)}$$</p>
+<p>ou de manière équivalente : $a_1b_2 - a_2b_1 = 0$</p>
+
+<h3>Droites confondues</h3>
+<p>Deux droites sont <strong>confondues</strong> si et seulement si :</p>
+<p>$$\frac{a_1}{a_2} = \frac{b_1}{b_2} = \frac{c_1}{c_2}$$</p>
+
+<h3>Droites sécantes</h3>
+<p>Deux droites sont <strong>sécantes</strong> si $a_1b_2 - a_2b_1 \neq 0$.</p>
+<p>Le point d'intersection se trouve en résolvant le système :</p>
+<p>$$\begin{cases} a_1x + b_1y + c_1 = 0 \\ a_2x + b_2y + c_2 = 0 \end{cases}$$</p>
+
+<h3>Droites perpendiculaires</h3>
+<p>Deux droites sont <strong>perpendiculaires</strong> si et seulement si :</p>
+<p>$$a_1a_2 + b_1b_2 = 0$$</p>
+
+<h2>5. Distance d'un point à une droite</h2>
+
+<h3>Formule</h3>
+<p>La distance du point $M(x_M, y_M)$ à la droite $(d)$ d'équation $ax + by + c = 0$ est :</p>
+<p>$$d(M, (d)) = \frac{|ax_M + by_M + c|}{\sqrt{a^2 + b^2}}$$</p>
+
+<h2>6. Équation normale</h2>
+
+<h3>Définition</h3>
+<p>Une équation est dite <strong>normale</strong> si $a^2 + b^2 = 1$.</p>
+<p>Toute équation cartésienne peut être mise sous forme normale en divisant par $\sqrt{a^2 + b^2}$.</p>
+
+<h2>Exercices</h2>
+
+<h3>Exercice 1</h3>
+<p>Déterminer l'équation de la droite passant par $A(1, 2)$ et de vecteur directeur $\vec{u}(2, -3)$.</p>
+
+<h3>Exercice 2</h3>
+<p>Déterminer l'équation de la droite passant par $A(2, 1)$ et de vecteur normal $\vec{n}(3, 4)$.</p>
+
+<h3>Exercice 3</h3>
+<p>Déterminer l'équation de la droite passant par les points $A(1, 3)$ et $B(4, 7)$.</p>
+
+<h3>Exercice 4</h3>
+<p>Étudier les positions relatives des droites :</p>
+<ul>
+<li>$(d_1) : 2x + 3y - 1 = 0$</li>
+<li>$(d_2) : 4x + 6y + 5 = 0$</li>
+</ul>
+
+<h3>Exercice 5</h3>
+<p>Calculer la distance du point $M(2, -1)$ à la droite $(d) : 3x - 4y + 5 = 0$.</p>
+
+<h3>Exercice 6</h3>
+<p>Déterminer l'équation de la droite perpendiculaire à $(d) : 2x - y + 3 = 0$ passant par $A(1, 2)$.</p>

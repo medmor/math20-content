@@ -1,0 +1,196 @@
+<!-- Notions de logique -->
+<h1>Notions de logique</h1>
+
+<h2>I. Définitions</h2>
+
+<h3>1-1. Proposition</h3>
+<p>Une <strong>proposition</strong> est un énoncé mathématique qui peut être soit vrai (V), soit faux (F), mais jamais les deux à la fois.</p>
+
+<p><strong>Exemples :</strong></p>
+<ul>
+<li>« 2 + 2 = 4 » est une proposition vraie.</li>
+<li>« Paris est la capitale de l'Allemagne » est une proposition fausse.</li>
+<li>« x > 5 » n'est pas une proposition (car sa valeur de vérité dépend de x).</li>
+</ul>
+
+<h3>1-2. Fonction propositionnelle</h3>
+<p>Une <strong>fonction propositionnelle</strong> (ou prédicat) est un énoncé contenant une ou plusieurs variables, qui devient une proposition lorsque les variables sont fixées.</p>
+
+<p><strong>Exemple :</strong> « x > 5 » est une fonction propositionnelle. Si x = 7, elle devient la proposition vraie « 7 > 5 ». Si x = 3, elle devient la proposition fausse « 3 > 5 ».</p>
+
+<h3>1-3. Quantificateurs</h3>
+
+<p><strong>Quantificateur universel (∀)</strong> : ∀x ∈ E, P(x) signifie « pour tout élément x de l'ensemble E, la propriété P(x) est vraie ».</p>
+
+<p><strong>Quantificateur existentiel (∃)</strong> : ∃x ∈ E, P(x) signifie « il existe au moins un élément x dans E tel que P(x) est vraie ».</p>
+
+<p><strong>Exemples :</strong></p>
+<ul>
+<li>∀x ∈ ℝ, x² ≥ 0 — vraie.</li>
+<li>∃x ∈ ℝ, x² = 2 — vraie (car √2 ∈ ℝ).</li>
+<li>∃x ∈ ℝ, x² = −1 — fausse (dans ℝ).</li>
+</ul>
+
+<p><strong>Négation des quantificateurs :</strong></p>
+<ul>
+<li>¬(∀x ∈ E, P(x)) ≡ ∃x ∈ E, ¬P(x)</li>
+<li>¬(∃x ∈ E, P(x)) ≡ ∀x ∈ E, ¬P(x)</li>
+</ul>
+
+<p><strong>Exemple :</strong> La négation de « Tous les élèves ont réussi » est « Il existe au moins un élève qui n'a pas réussi ».</p>
+
+<h2>II. Opérations sur les propositions</h2>
+
+<h3>2-1. La négation d'une proposition</h3>
+<p>La <strong>négation</strong> d'une proposition P, notée ¬P (lire « non P »), est vraie lorsque P est fausse, et fausse lorsque P est vraie.</p>
+
+<table border="1" cellpadding="5" cellspacing="0">
+<tr><th>P</th><th>¬P</th></tr>
+<tr><td>V</td><td>F</td></tr>
+<tr><td>F</td><td>V</td></tr>
+</table>
+
+<h3>2-2. La conjonction et la disjonction de deux propositions</h3>
+
+<p><strong>Conjonction (∧)</strong> : P ∧ Q (lire « P et Q ») est vraie si et seulement si P et Q sont toutes deux vraies.</p>
+
+<p><strong>Disjonction (∨)</strong> : P ∨ Q (lire « P ou Q ») est vraie si au moins l'une des deux propositions est vraie.</p>
+
+<table border="1" cellpadding="5" cellspacing="0">
+<tr><th>P</th><th>Q</th><th>P ∧ Q</th><th>P ∨ Q</th></tr>
+<tr><td>V</td><td>V</td><td>V</td><td>V</td></tr>
+<tr><td>V</td><td>F</td><td>F</td><td>V</td></tr>
+<tr><td>F</td><td>V</td><td>F</td><td>V</td></tr>
+<tr><td>F</td><td>F</td><td>F</td><td>F</td></tr>
+</table>
+
+<h3>2-3. L'implication de deux propositions</h3>
+<p>L'<strong>implication</strong> P ⇒ Q (lire « P implique Q » ou « si P alors Q ») est fausse uniquement lorsque P est vraie et Q est fausse.</p>
+
+<table border="1" cellpadding="5" cellspacing="0">
+<tr><th>P</th><th>Q</th><th>P ⇒ Q</th></tr>
+<tr><td>V</td><td>V</td><td>V</td></tr>
+<tr><td>V</td><td>F</td><td>F</td></tr>
+<tr><td>F</td><td>V</td><td>V</td></tr>
+<tr><td>F</td><td>F</td><td>V</td></tr>
+</table>
+
+<p>On dit que P est une <strong>condition suffisante</strong> pour Q, et que Q est une <strong>condition nécessaire</strong> pour P.</p>
+
+<p><strong>Remarque :</strong> L'implication P ⇒ Q ne suppose aucune relation causale entre P et Q. Elle exprime simplement que si P est vraie, alors Q doit aussi l'être.</p>
+
+<p><strong>La contraposée</strong> de P ⇒ Q est ¬Q ⇒ ¬P. Elle est logiquement équivalente à l'implication :</p>
+<p>P ⇒ Q ≡ ¬Q ⇒ ¬P</p>
+
+<p><strong>La réciproque</strong> de P ⇒ Q est Q ⇒ P. Elle n'a pas nécessairement la même valeur de vérité que l'implication.</p>
+
+<p><strong>Exemple :</strong> Soit P : « x > 3 » et Q : « x > 0 ». Alors P ⇒ Q est vraie, mais Q ⇒ P est fausse (contre-exemple : x = 1).</p>
+
+<h3>2-4. L'équivalence de deux propositions</h3>
+<p>L'<strong>équivalence</strong> P ⇔ Q (lire « P si et seulement si Q ») est vraie lorsque P et Q ont la même valeur de vérité.</p>
+
+<p>P ⇔ Q est vraie lorsque (P ⇒ Q) et (Q ⇒ P) sont toutes deux vraies.</p>
+
+<table border="1" cellpadding="5" cellspacing="0">
+<tr><th>P</th><th>Q</th><th>P ⇔ Q</th></tr>
+<tr><td>V</td><td>V</td><td>V</td></tr>
+<tr><td>V</td><td>F</td><td>F</td></tr>
+<tr><td>F</td><td>V</td><td>F</td></tr>
+<tr><td>F</td><td>F</td><td>V</td></tr>
+</table>
+
+<h3>2-5. Les lois logiques</h3>
+
+<p><strong>Lois de De Morgan :</strong></p>
+<ul>
+<li>¬(P ∧ Q) ≡ ¬P ∨ ¬Q</li>
+<li>¬(P ∨ Q) ≡ ¬P ∧ ¬Q</li>
+</ul>
+
+<p><strong>Autres lois :</strong></p>
+<ul>
+<li>¬(¬P) ≡ P (double négation)</li>
+<li>P ⇒ Q ≡ ¬P ∨ Q</li>
+<li>P ⇔ Q ≡ (P ⇒ Q) ∧ (Q ⇒ P)</li>
+</ul>
+
+<h2>III. Types de raisonnements</h2>
+
+<h3>3-1. Raisonnement par contre-exemple</h3>
+<p>Pour montrer qu'une proposition universelle « ∀x ∈ E, P(x) » est fausse, il suffit de trouver un élément de E pour lequel P(x) est fausse. Cet élément est appelé <strong>contre-exemple</strong>.</p>
+
+<p><strong>Exemple :</strong> La proposition « ∀x ∈ ℝ, x² > 0 » est fausse car x = 0 est un contre-exemple (0² = 0 et non > 0).</p>
+
+<h3>3-2. Raisonnement par des équivalences successives</h3>
+<p>Pour démontrer une équivalence P ⇔ Q, on peut enchaîner des équivalences logiques depuis P jusqu'à Q.</p>
+
+<p><strong>Exemple :</strong> Montrer que pour tout x ∈ ℝ : x² = 4 ⇔ x = 2 ou x = −2.</p>
+<p>x² = 4 ⇔ x² − 4 = 0 ⇔ (x − 2)(x + 2) = 0 ⇔ x = 2 ou x = −2</p>
+
+<h3>3-3. Raisonnement déductif</h3>
+<p>On suppose que l'hypothèse P est vraie, et on démontre que la conclusion Q en découle. Cela prouve que P ⇒ Q.</p>
+
+<p><strong>Exemple :</strong> Démontrer que si n est pair, alors n² est pair.</p>
+<p><em>Démonstration :</em> Supposons n pair. Alors il existe k ∈ ℤ tel que n = 2k. Donc n² = (2k)² = 4k² = 2(2k²). Comme 2k² ∈ ℤ, n² est pair. □</p>
+
+<h3>3-4. Raisonnement par la contraposée</h3>
+<p>Pour démontrer P ⇒ Q, on démontre sa contraposée ¬Q ⇒ ¬P, qui lui est logiquement équivalente.</p>
+
+<p><strong>Exemple :</strong> Démontrer que si n² est impair, alors n est impair.</p>
+<p><em>Démonstration :</em> On montre la contraposée : si n est pair, alors n² est pair (déjà démontré ci-dessus). Donc si n² est impair, n ne peut pas être pair, donc n est impair. □</p>
+
+<h3>3-5. Raisonnement par la disjonction des cas</h3>
+<p>Pour démontrer une propriété P, on considère tous les cas possibles et on montre que dans chaque cas, P est vraie.</p>
+
+<p><strong>Exemple :</strong> Montrer que ∀n ∈ ℤ, n² ≥ 0.</p>
+<p><em>Démonstration :</em> Soit n ∈ ℤ. Deux cas :</p>
+<ul>
+<li>Si n ≥ 0, alors n² ≥ 0.</li>
+<li>Si n < 0, alors −n > 0, donc n² = (−n)² > 0 ≥ 0.</li>
+</ul>
+<p>Dans tous les cas, n² ≥ 0. □</p>
+
+<h3>3-6. Raisonnement par l'absurde</h3>
+<p>Pour démontrer qu'une proposition P est vraie, on suppose que ¬P est vraie et on montre que cela conduit à une <strong>contradiction</strong>. Donc P doit être vraie.</p>
+
+<p><strong>Exemple :</strong> Démontrer que √2 est irrationnel.</p>
+<p><em>Démonstration :</em> Supposons par l'absurde que √2 est rationnel. Alors il existe p, q ∈ ℤ avec q ≠ 0 et p/q irréductible tel que √2 = p/q.</p>
+<p>En élevant au carré : 2 = p²/q², donc p² = 2q². Ainsi p² est pair, donc p est pair (car le carré d'un impair est impair). Soit p = 2k.</p>
+<p>Alors (2k)² = 2q², donc 4k² = 2q², donc q² = 2k². Ainsi q² est pair, donc q est pair.</p>
+<p>Contradiction : p et q sont tous deux pairs, donc p/q n'est pas irréductible. Donc √2 est irrationnel. □</p>
+
+<h3>3-7. Raisonnement par la récurrence</h3>
+<p>Soit P(n) une propriété définie pour tout entier naturel n ≥ n₀. Pour démontrer que P(n) est vraie pour tout n ≥ n₀, on procède en deux étapes :</p>
+<ol>
+<li><strong>Initialisation</strong> : Vérifier que P(n₀) est vraie.</li>
+<li><strong>Hérédité</strong> : Supposer que P(k) est vraie pour un certain k ≥ n₀ (hypothèse de récurrence), et démontrer que P(k+1) est vraie.</li>
+</ol>
+
+<p><strong>Exemple :</strong> Démontrer que pour tout n ∈ ℕ*, 1 + 2 + ... + n = n(n+1)/2.</p>
+<p><em>Démonstration :</em> Soit P(n) : 1 + 2 + ... + n = n(n+1)/2.</p>
+<ul>
+<li><strong>Initialisation (n = 1)</strong> : 1 = 1 × 2/2 = 1. Vrai.</li>
+<li><strong>Hérédité</strong> : Supposons P(k) vraie : 1 + 2 + ... + k = k(k+1)/2.</li>
+</ul>
+<p>Alors : 1 + 2 + ... + k + (k+1) = k(k+1)/2 + (k+1) = (k+1)(k/2 + 1) = (k+1)(k+2)/2.</p>
+<p>Donc P(k+1) est vraie.</p>
+<p>Par récurrence, P(n) est vraie pour tout n ∈ ℕ*. □</p>
+
+<h2>IV. Exercices</h2>
+
+<h3>Exercice 1</h3>
+<p>Donner la négation des propositions suivantes :</p>
+<ul>
+<li>a) ∀x ∈ ℝ, x² + 1 > 0</li>
+<li>b) ∃x ∈ ℤ, x² = 2</li>
+<li>c) ∀n ∈ ℕ, ∃m ∈ ℕ, m > n</li>
+</ul>
+
+<h3>Exercice 2</h3>
+<p>Montrer que l'implication « Si x² = 4, alors x = 2 » est fausse en donnant un contre-exemple.</p>
+
+<h3>Exercice 3</h3>
+<p>Démontrer par récurrence que pour tout n ∈ ℕ*, 1² + 2² + ... + n² = n(n+1)(2n+1)/6.</p>
+
+<h3>Exercice 4</h3>
+<p>Démontrer par l'absurde que si a et b sont des entiers tels que a² + b² est impair, alors a et b ne sont pas tous les deux pairs.</p>

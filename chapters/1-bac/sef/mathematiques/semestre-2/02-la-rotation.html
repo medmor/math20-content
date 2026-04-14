@@ -1,0 +1,113 @@
+<!-- La rotation dans le plan -->
+<h1>La rotation dans le plan</h1>
+
+<h2>I. Rotation et rotation réciproque</h2>
+
+<h3>1-1. Définition</h3>
+<p>Soit Ω un point du plan et α un réel. La <strong>rotation</strong> de centre Ω et d'angle α, notée r<sub>Ω,α</sub>, est la transformation du plan qui à tout point M associe le point M' tel que :</p>
+<ul>
+<li>ΩM' = ΩM</li>
+<li>(ΩM⃗, ΩM'⃗) ≡ α [2π]</li>
+</ul>
+<p>On note : M' = r<sub>Ω,α</sub>(M).</p>
+
+<h3>1-2. Propriétés</h3>
+<ul>
+<li>La rotation conserve les distances : pour tous points M et N, M'N' = MN.</li>
+<li>La rotation conserve les angles orientés : l'image d'un angle orienté est un angle orienté de même mesure.</li>
+<li>La rotation conserve l'orientation du plan (c'est une isométrie directe).</li>
+<li>La rotation transforme une droite en une droite, un cercle en un cercle de même rayon, un segment en un segment de même longueur.</li>
+<li>Le seul point invariant par r<sub>Ω,α</sub> est le centre Ω (si α ≢ 0 [2π]).</li>
+<li>Si α ≡ 0 [2π], r<sub>Ω,α</sub> est l'identité du plan.</li>
+<li>Si α ≡ π [2π], r<sub>Ω,α</sub> est la symétrie centrale de centre Ω.</li>
+</ul>
+
+<h3>1-3. Rotation réciproque</h3>
+<p>La rotation r<sub>Ω,α</sub> est une bijection du plan. Sa réciproque est la rotation de même centre et d'angle opposé :</p>
+<p>r<sub>Ω,α</sub><sup>−1</sup> = r<sub>Ω,−α</sub></p>
+
+<h2>II. Caractérisations et propriétés de la rotation</h2>
+
+<h3>2-1. Expression analytique</h3>
+<p>Soit Ω(a, b) le centre de rotation et α l'angle. L'image de M(x, y) par r<sub>Ω,α</sub> est le point M'(x', y') avec :</p>
+<p>x' = a + (x − a) cos α − (y − b) sin α</p>
+<p>y' = b + (x − a) sin α + (y − b) cos α</p>
+
+<p><strong>Démonstration :</strong> On compose la translation de vecteur −ΩM⃗, la rotation d'angle α centrée à l'origine, puis la translation de vecteur ΩM⃗. □</p>
+
+<p><strong>Cas particuliers :</strong></p>
+<ul>
+<li>Rotation de centre O et d'angle α : x' = x cos α − y sin α et y' = x sin α + y cos α</li>
+<li>Rotation d'angle π/2 : x' = a − (y − b) et y' = b + (x − a)</li>
+<li>Rotation d'angle π : x' = 2a − x et y' = 2b − y (symétrie centrale)</li>
+</ul>
+
+<h3>2-2. Expression complexe</h3>
+<p>En identifiant le plan au plan complexe, soit Ω d'affixe ω et M d'affixe z. L'image M' de M par r<sub>Ω,α</sub> a pour affixe z' :</p>
+<p>z' = e<sup>iα</sup>(z − ω) + ω</p>
+
+<p><strong>Démonstration :</strong> Par définition de la rotation, |z' − ω| = |z − ω| et arg(z' − ω) = arg(z − ω) + α. Donc (z' − ω)/(z − ω) = e<sup>iα</sup>, d'où z' − ω = e<sup>iα</sup>(z − ω). □</p>
+
+<p><strong>Exemple :</strong> Soit Ω d'affixe 1 + i et α = π/2. Déterminer l'image de A d'affixe 3 + 2i.</p>
+<p>z' = e<sup>iπ/2</sup>((3 + 2i) − (1 + i)) + (1 + i) = i(2 + i) + (1 + i) = 2i − 1 + 1 + i = 2i.</p>
+<p>L'image A' a pour affixe 2i, donc A'(0, 2).</p>
+
+<h3>2-3. Composition de rotations</h3>
+<p>Soient r<sub>Ω₁,α</sub> et r<sub>Ω₂,β</sub> deux rotations.</p>
+
+<p><strong>Cas 1 : Même centre.</strong> Si Ω₁ = Ω₂ = Ω, alors :</p>
+<p>r<sub>Ω,β</sub> ∘ r<sub>Ω,α</sub> = r<sub>Ω,α+β</sub></p>
+
+<p><strong>Cas 2 : Centres distincts.</strong> Si Ω₁ ≠ Ω₂ :</p>
+<ul>
+<li>Si α + β ≢ 0 [2π], alors r<sub>Ω₂,β</sub> ∘ r<sub>Ω₁,α</sub> est une rotation d'angle α + β.</li>
+<li>Si α + β ≡ 0 [2π], alors r<sub>Ω₂,β</sub> ∘ r<sub>Ω₁,α</sub> est une translation.</li>
+</ul>
+
+<p><strong>Preuve (centres confondus) :</strong> En notations complexes, z₁ = e<sup>iα</sup>(z − ω) + ω puis z₂ = e<sup>iβ</sup>(z₁ − ω) + ω = e<sup>i(α+β)</sup>(z − ω) + ω. □</p>
+
+<h2>III. Image d'une droite, d'un segment et d'un cercle par une rotation</h2>
+
+<h3>3-1. Image d'une droite</h3>
+<p>L'image d'une droite D par une rotation r<sub>Ω,α</sub> est une droite D'. Si D ne passe pas par Ω, alors D' ne passe pas par Ω. Si D passe par Ω, alors D' = D (invariante).</p>
+<p>Plus précisément, l'angle entre D et D' est égal à α.</p>
+
+<h3>3-2. Image d'un segment</h3>
+<p>L'image d'un segment [AB] par une rotation est le segment [A'B'] où A' = r<sub>Ω,α</sub>(A) et B' = r<sub>Ω,α</sub>(B). On a A'B' = AB.</p>
+
+<h3>3-3. Image d'un cercle</h3>
+<p>L'image d'un cercle C(O, r) par une rotation r<sub>Ω,α</sub> est le cercle C(O', r) où O' = r<sub>Ω,α</sub>(O). Le rayon est conservé.</p>
+
+<h3>3-4. Conservation des angles</h3>
+<p>Pour tous vecteurs u⃗ et v⃗ non nuls, si u⃗' et v⃗' sont leurs images par la rotation, alors :</p>
+<p>(u⃗', v⃗') = (u⃗, v⃗)</p>
+<p>La rotation conserve les angles orientés.</p>
+
+<h3>3-5. Figures invariantes par rotation</h3>
+<ul>
+<li>Un triangle équilatéral est invariant par la rotation de centre son centre de gravité et d'angle 2π/3.</li>
+<li>Un carré est invariant par les rotations de centre son centre et d'angles π/2, π et 3π/2.</li>
+<li>Un polygone régulier à n côtés est invariant par les rotations de centre son centre et d'angles 2kπ/n (k = 0, 1, ..., n−1).</li>
+</ul>
+
+<p><strong>Exemple :</strong> Soit ABC un triangle équilatéral de centre G. La rotation r<sub>G,2π/3</sub> envoie A sur B, B sur C, C sur A.</p>
+
+<h2>IV. Exercices</h2>
+
+<h3>Exercice 1</h3>
+<p>Soit r la rotation de centre I(1, 2) et d'angle π/4. Déterminer l'image du point A(3, 5) par r.</p>
+
+<h3>Exercice 2</h3>
+<p>Montrer que la composée de deux rotations de même centre est encore une rotation de même centre.</p>
+
+<h3>Exercice 3</h3>
+<p>Déterminer l'image du point A(2, −1) par la rotation r<sub>O,π/3</sub>.</p>
+
+<h3>Exercice 4</h3>
+<p>Soit ABC un triangle équilatéral direct de côté 2, avec A(1, 0), B(0, √3) et C(−1, 0). Déterminer l'image de B par la rotation r<sub>A,π/3</sub>.</p>
+
+<h3>Exercice 5</h3>
+<p>Soient r₁ la rotation de centre O et d'angle π/2, et r₂ la rotation de centre I(1, 0) et d'angle π/2. Montrer que r₂ ∘ r₁ est une translation. Déterminer son vecteur.</p>
+
+<h3>Exercice 6</h3>
+<p>Soit Ω d'affixe 2 − i. Déterminer l'affixe de l'image du point M d'affixe 3 + 4i par la rotation r<sub>Ω,π/6</sub>.</p>

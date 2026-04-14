@@ -1,0 +1,152 @@
+<!-- Arithmétique dans IN -->
+<h1>Arithmétique dans IN</h1>
+
+<h2>1. La divisibilité dans IN</h2>
+
+<h3>Définition : Diviseur</h3>
+<p>Soient $a, b \in \mathbb{N}$, avec $b \neq 0$.</p>
+<p>On dit que <strong>$b$ divise $a$</strong> (ou que <strong>$b$ est un diviseur de $a$</strong>) si et seulement s'il existe un entier naturel $k$ tel que :</p>
+<p>$$a = b \cdot k$$</p>
+<p>On note : $b \mid a$.</p>
+
+<blockquote>
+<p><strong>Remarque :</strong> Tout entier naturel non nul divise 0, car $0 = b \cdot 0$.</p>
+</blockquote>
+
+<h3>Propriétés de la divisibilité</h3>
+<p>Soient $a, b, c \in \mathbb{N}$, avec $b \neq 0$, $c \neq 0$.</p>
+
+<ol>
+<li><strong>Réflexivité :</strong> $a \mid a$</li>
+<li><strong>Transitivité :</strong> Si $a \mid b$ et $b \mid c$, alors $a \mid c$</li>
+<li><strong>Antisymétrie (dans IN) :</strong> Si $a \mid b$ et $b \mid a$, alors $a = b$</li>
+<li><strong>Linéarité :</strong> Si $a \mid b$ et $a \mid c$, alors $a \mid (b + c)$ et $a \mid (b - c)$ (si $b \geq c$)</li>
+<li><strong>Multiplicativité :</strong> Si $a \mid b$, alors $a \mid (b \cdot k)$ pour tout $k \in \mathbb{N}$</li>
+</ol>
+
+<h2>2. Nombres Premiers</h2>
+
+<h3>Définition : Nombre premier</h3>
+<p>Un nombre premier est un entier naturel <strong>supérieur à 1</strong> qui admet exactement <strong>deux diviseurs distincts</strong> : 1 et lui-même.</p>
+
+<blockquote>
+<p><strong>Exemples :</strong> 2, 3, 5, 7, 11, 13, 17, 19, 23, ...</p>
+<p><strong>Remarque :</strong> 1 n'est pas premier (seul diviseur : 1).</p>
+</blockquote>
+
+<h3>Théorème fondamental de l'arithmétique</h3>
+<p>Tout entier naturel $n > 1$ peut s'écrire de manière <strong>unique</strong>, à l'ordre près des facteurs, comme un produit de nombres premiers :</p>
+<p>$$n = p_1^{\alpha_1} \cdot p_2^{\alpha_2} \cdots p_k^{\alpha_k}$$</p>
+<p>où les $p_i$ sont des nombres premiers distincts et les $\alpha_i \in \mathbb{N}^*$.</p>
+
+<blockquote>
+<p><strong>Exemple :</strong> $60 = 2^2 \cdot 3 \cdot 5$</p>
+</blockquote>
+
+<h2>3. Plus Grand Commun Diviseur (PGCD)</h2>
+
+<h3>Définition : PGCD</h3>
+<p>Soient $a, b \in \mathbb{N}$, non tous deux nuls.</p>
+<p>Le <strong>plus grand commun diviseur</strong> de $a$ et $b$, noté $\gcd(a, b)$ ou $\text{pgcd}(a, b)$, est le plus grand entier naturel qui divise à la fois $a$ et $b$.</p>
+
+<blockquote>
+<p><strong>Cas particulier :</strong> $\gcd(a, 0) = a$ si $a \neq 0$</p>
+</blockquote>
+
+<h3>Propriétés du PGCD</h3>
+<ol>
+<li>$\gcd(a, b) = \gcd(b, a)$</li>
+<li>$\gcd(a, b) = \gcd(a, b - a)$ si $a \leq b$</li>
+<li>$\gcd(a, b) = \gcd(a, b \mod a)$ — base de l'algorithme d'Euclide</li>
+<li>$\gcd(a, b) = d \Rightarrow \exists u, v \in \mathbb{Z}$ tels que $au + bv = d$ (Théorème de Bézout)</li>
+</ol>
+
+<h3>Algorithme d'Euclide</h3>
+<p>Pour calculer $\gcd(a, b)$ avec $a \geq b > 0$ :</p>
+<pre>
+Tant que b ≠ 0 :
+   r ← a mod b
+   a ← b
+   b ← r
+Retourner a
+</pre>
+
+<blockquote>
+<p><strong>Exemple :</strong> $\gcd(48, 18)$</p>
+<ul>
+<li>$48 = 2 \cdot 18 + 12$</li>
+<li>$18 = 1 \cdot 12 + 6$</li>
+<li>$12 = 2 \cdot 6 + 0$</li>
+</ul>
+<p>→ $\gcd(48, 18) = 6$</p>
+</blockquote>
+
+<h2>4. Plus Petit Commun Multiple (PPCM)</h2>
+
+<h3>Définition : PPCM</h3>
+<p>Soient $a, b \in \mathbb{N}^*$.</p>
+<p>Le <strong>plus petit commun multiple</strong> de $a$ et $b$, noté $\text{lcm}(a, b)$ ou $\text{ppcm}(a, b)$, est le plus petit entier naturel strictement positif divisible par $a$ et $b$.</p>
+
+<h3>Propriété fondamentale</h3>
+<p>Pour tous $a, b \in \mathbb{N}^*$ :</p>
+<p>$$\gcd(a, b) \cdot \text{lcm}(a, b) = a \cdot b$$</p>
+
+<blockquote>
+<p><strong>Exemple :</strong> $a = 12, b = 18$</p>
+<ul>
+<li>$\gcd(12, 18) = 6$</li>
+<li>$\text{lcm}(12, 18) = \frac{12 \cdot 18}{6} = 36$</li>
+</ul>
+</blockquote>
+
+<h2>5. Nombres premiers entre eux</h2>
+
+<h3>Définition</h3>
+<p>Deux entiers naturels $a$ et $b$ sont <strong>premiers entre eux</strong> si leur PGCD est égal à 1 :</p>
+<p>$$\gcd(a, b) = 1$$</p>
+
+<blockquote>
+<p><strong>Exemple :</strong> 8 et 15 sont premiers entre eux car $\gcd(8, 15) = 1$</p>
+</blockquote>
+
+<h2>6. Théorèmes importants</h2>
+
+<h3>Théorème de Bézout</h3>
+<p>Soient $a, b \in \mathbb{N}^*$.</p>
+<p>Il existe des entiers relatifs $u, v$ tels que :</p>
+<p>$$au + bv = \gcd(a, b)$$</p>
+
+<blockquote>
+<p><strong>Conséquence :</strong> $a$ et $b$ sont premiers entre eux si et seulement s'il existe $u, v \in \mathbb{Z}$ tels que $au + bv = 1$.</p>
+</blockquote>
+
+<h3>Lemme de Gauss</h3>
+<p>Si $a \mid bc$ et $\gcd(a, b) = 1$, alors $a \mid c$.</p>
+
+<h3>Théorème de Gauss (version forte)</h3>
+<p>Si $a \mid c$, $b \mid c$ et $\gcd(a, b) = 1$, alors $ab \mid c$.</p>
+
+<h2>Exercices</h2>
+
+<h3>Exercice 1</h3>
+<p>Déterminer tous les diviseurs de 36.</p>
+
+<h3>Exercice 2</h3>
+<p>Décomposer en facteurs premiers les nombres suivants :</p>
+<ul>
+<li>120</li>
+<li>225</li>
+<li>1001</li>
+</ul>
+
+<h3>Exercice 3</h3>
+<p>Calculer $\gcd(144, 84)$ en utilisant l'algorithme d'Euclide.</p>
+
+<h3>Exercice 4</h3>
+<p>Trouver $\text{lcm}(24, 36)$ en utilisant la relation avec le PGCD.</p>
+
+<h3>Exercice 5</h3>
+<p>Montrer que 25 et 36 sont premiers entre eux.</p>
+
+<h3>Exercice 6</h3>
+<p>Trouver deux entiers $x$ et $y$ tels que $15x + 22y = 1$ (utiliser l'algorithme d'Euclide étendu).</p>

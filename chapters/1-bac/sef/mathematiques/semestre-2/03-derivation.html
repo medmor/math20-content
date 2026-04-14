@@ -1,0 +1,350 @@
+<!-- Dérivation -->
+<h1>Dérivation</h1>
+
+<h2>I. La dérivabilité d'une fonction en un point</h2>
+
+<h3>1-1. Le nombre dérivé</h3>
+
+<h4>Définition</h4>
+<p>Soit <em>f</em> une fonction définie sur un intervalle ouvert <em>I</em> et <em>a</em> ∈ <em>I</em>.</p>
+<p>On dit que la fonction <em>f</em> est <strong>dérivable en <em>a</em></strong>, s'il existe un nombre réel <em>l</em> tel que :</p>
+<p>lim<sub>h→0</sub> (f(a+h) − f(a)) / h = l</p>
+<p>Le réel <em>l</em> est appelé le <strong>nombre dérivé</strong> de la fonction <em>f</em> en <em>a</em>, il est noté : f′(a)</p>
+<p>On écrit : f′(a) = lim<sub>h→0</sub> (f(a+h) − f(a)) / h = l ou f′(a) = lim<sub>x→a</sub> (f(x) − f(a)) / (x − a) = l</p>
+
+<h4>Exemple</h4>
+<p>Étudions la dérivabilité de la fonction <em>f</em> : x ↦ 2x² en a = 1</p>
+
+<h3>1-2. Interprétation géométrique du nombre dérivé – La tangente à la courbe en un point</h3>
+
+<p>Le coefficient directeur α de la droite (AB) est :</p>
+<p>α = (f(a + h) − f(a)) / h</p>
+<p>Si le point B se rapproche du point A (h tend vers 0), la droite (AB) se rapproche de la tangente (T) à la courbe en x = a.</p>
+<p>Le coefficient directeur de cette tangente (T) est appelé nombre dérivé. Ce nombre dérivé est noté f′(a).</p>
+<p>f′(a) = lim<sub>h→0</sub> (f(a + h) − f(a)) / h</p>
+
+<h4>Définition</h4>
+<p>Soit <em>f</em> une fonction dérivable en un point <em>a</em> et (C<sub>f</sub>) sa courbe représentative dans un repère orthonormé (O ; <em>i</em>⃗ ; <em>j</em>⃗).</p>
+<p>La droite (T) qui passe par le point A(a, f(a)) et qui a pour coefficient directeur f′(a) est appelée la tangente à la courbe (C<sub>f</sub>) au point A.</p>
+
+<h4>Propriété</h4>
+<p>Soit <em>f</em> une fonction dérivable en un point <em>a</em>.</p>
+<p>Une équation de la droite tangente à la courbe (C<sub>f</sub>) de la fonction <em>f</em> au point A(a, f(a)) est :</p>
+<p>(T) : y = f′(a)(x − a) + f(a)</p>
+
+<h3>1-3. Approximation d'une fonction dérivable en un point par une fonction affine</h3>
+
+<h4>Définition</h4>
+<p>Soit <em>f</em> une fonction dérivable en un point <em>a</em>.</p>
+<p>La fonction <em>u</em> : x ↦ f′(a)(x − a) + f(a) est appelée la fonction affine tangente à la fonction <em>f</em> au point <em>a</em>.</p>
+<p>Le réel f′(a)(x − a) + f(a) est l'approximation affine du réel f(x) au voisinage de <em>a</em>, on écrit :</p>
+<p>f(x) ∼<sub>a</sub> f′(a)(x − a) + f(a)</p>
+
+<h2>II. Dérivabilité à droite – Dérivabilité à gauche</h2>
+
+<h3>2-1. Définitions et propriétés</h3>
+
+<h4>Définition 1</h4>
+<p>Soit <em>f</em> une fonction définie sur un intervalle de la forme [a ; a + r[ (r > 0).</p>
+<p>On dit que <em>f</em> est <strong>dérivable à droite en <em>a</em></strong> s'il existe un réel <em>l</em> tel que :</p>
+<p>lim<sub>h→0⁺</sub> (f(a+h) − f(a)) / h = l</p>
+<p>Le réel <em>l</em> est appelé le nombre dérivé de la fonction <em>f</em> à droite en <em>a</em>, et on le note par : f′<sub>d</sub>(a)</p>
+<p>On écrit : f′<sub>d</sub>(a) = lim<sub>h→0⁺</sub> (f(a+h) − f(a)) / h = lim<sub>x→a⁺</sub> (f(x) − f(a)) / (x − a)</p>
+
+<h4>Définition 2</h4>
+<p>Soit <em>f</em> une fonction définie sur un intervalle de la forme ]a − r ; a] (r > 0).</p>
+<p>On dit que <em>f</em> est <strong>dérivable à gauche en <em>a</em></strong> s'il existe un réel <em>l</em> tel que :</p>
+<p>lim<sub>h→0⁻</sub> (f(a+h) − f(a)) / h = l</p>
+<p>Le réel <em>l</em> est appelé le nombre dérivé de la fonction <em>f</em> à gauche en <em>a</em>, et on le note par : f′<sub>g</sub>(a)</p>
+<p>On écrit : f′<sub>g</sub>(a) = lim<sub>h→0⁻</sub> (f(a+h) − f(a)) / h = lim<sub>x→a⁻</sub> (f(x) − f(a)) / (x − a)</p>
+
+<h4>Propriété</h4>
+<p>Soit <em>f</em> une fonction définie sur un intervalle ouvert <em>I</em> et a ∈ <em>I</em>.</p>
+<p><em>f</em> est dérivable en <em>a</em> si et seulement si <em>f</em> est dérivable à droite en <em>a</em> et <em>f</em> est dérivable à gauche en <em>a</em> et f′<sub>d</sub>(a) = f′<sub>g</sub>(a)</p>
+
+<h3>2-2. Interprétation géométrique – Demi-droite tangente en un point de la courbe</h3>
+
+<p>Si <em>f</em> est dérivable à droite en <em>a</em>, cela signifie graphiquement que la courbe de la fonction <em>f</em> admet une demi-tangente au point A(a ; f(a)) d'équation :</p>
+<p>(T<sub>d</sub>) : y = f′<sub>d</sub>(a)(x − a) + f(a)</p>
+<p>Si <em>f</em> est dérivable à gauche en <em>a</em>, cela signifie graphiquement que la courbe de la fonction <em>f</em> admet une demi-tangente au point A(a ; f(a)) d'équation :</p>
+<p>(T<sub>g</sub>) : y = f′<sub>g</sub>(a)(x − a) + f(a)</p>
+
+<h4>Résumé – La dérivabilité en un point et interprétation géométrique du nombre dérivé</h4>
+<table border="1" cellpadding="5" cellspacing="0">
+  <tr>
+    <th>La limite</th>
+    <th>La dérivabilité</th>
+    <th>Interprétation géométrique</th>
+  </tr>
+  <tr>
+    <td>lim<sub>x→a</sub> (f(x) − f(a)) / (x − a) = l</td>
+    <td><em>f</em> est dérivable en <em>a</em> et on a : f′(a) = l</td>
+    <td>(C<sub>f</sub>) admet une tangente d'équation : y = f′(a)(x − a) + f(a) au point A(a ; f(a))</td>
+  </tr>
+  <tr>
+    <td>lim<sub>x→a⁺</sub> (f(x) − f(a)) / (x − a) = ∞</td>
+    <td><em>f</em> n'est pas dérivable en <em>a</em></td>
+    <td>(C<sub>f</sub>) admet une demi-tangente verticale d'équation x = a au point A(a ; f(a))</td>
+  </tr>
+  <tr>
+    <td>lim<sub>x→a⁺</sub> (f(x) − f(a)) / (x − a) = l</td>
+    <td><em>f</em> est dérivable à droite en <em>a</em> et on a : f′<sub>d</sub>(a) = l</td>
+    <td>(C<sub>f</sub>) admet une demi-tangente au point A(a ; f(a)) d'équation y = f′<sub>d</sub>(a)(x − a) + f(a) et x ≥ a</td>
+  </tr>
+  <tr>
+    <td>lim<sub>x→a⁻</sub> (f(x) − f(a)) / (x − a) = l</td>
+    <td><em>f</em> est dérivable à gauche en <em>a</em> et on a : f′<sub>g</sub>(a) = l</td>
+    <td>(C<sub>f</sub>) admet une demi-tangente au point A(a ; f(a)) d'équation y = f′<sub>g</sub>(a)(x − a) + f(a) et x ≤ a</td>
+  </tr>
+</table>
+
+<h2>III. La fonction dérivée d'une fonction dérivable</h2>
+
+<h3>3-1. La fonction dérivée</h3>
+
+<h4>Définitions</h4>
+<p>On dit qu'une fonction <em>f</em> est <strong>dérivable sur un intervalle ouvert</strong> ]a ; b[ si <em>f</em> est dérivable en tout point de ]a ; b[.</p>
+<p>On dit qu'une fonction <em>f</em> est <strong>dérivable sur l'intervalle fermé</strong> [a ; b] si <em>f</em> est dérivable sur ]a ; b[ et <em>f</em> dérivable à droite en <em>a</em> et à gauche en <em>b</em>.</p>
+<p>Si <em>f</em> est dérivable sur un intervalle ouvert <em>I</em>, alors la fonction dérivée de <em>f</em> est la fonction notée <em>f</em>′ est définie de <em>I</em> vers ℝ :</p>
+<p>f′ : I ↦ ℝ ; x ↦ f′(x)</p>
+
+<h4>Exemples</h4>
+<p>1- Montrons que la fonction <em>f</em> définie sur ℝ par f(x) = x² est dérivable sur ℝ et déterminons la fonction dérivée f′(x).</p>
+<p>2- Étudier la dérivabilité de la fonction <em>g</em> définie sur [0 ; +∞[ par g(x) = √x et déterminons la fonction dérivée g′(x) sur ]0 ; +∞[.</p>
+
+<h3>3-2. La fonction dérivée seconde – La fonction dérivée d'ordre n</h3>
+
+<h4>Définition</h4>
+<p>Soit <em>f</em> une fonction dérivable sur un intervalle <em>I</em> de fonction dérivée <em>f</em>′.</p>
+<p>Si <em>f</em>′ est aussi dérivable sur un intervalle <em>I</em>, alors on dit que <em>f</em> est <strong>dérivable deux fois</strong> sur l'intervalle <em>I</em> et la dérivée de <em>f</em>′ notée f″ est appelée la <strong>dérivée seconde</strong> de la fonction <em>f</em>, et on a : f″ = (f′)′</p>
+<p>Si <em>f</em> est <em>n</em> fois dérivable sur l'intervalle <em>I</em> (n ∈ ℕ*), alors la fonction dérivée de <em>f</em> d'ordre <em>n</em> notée f<sup>(n)</sup> :</p>
+<p>f<sup>(n)</sup> : I ↦ ℝ ; x ↦ f<sup>(n)</sup>(x)</p>
+
+<h4>Exemple</h4>
+<p>Montrons que la fonction <em>f</em> définie par f(x) = x² est dérivable deux fois sur ℝ et déterminons f″(x).</p>
+
+<h3>3-3. Fonction dérivée des fonctions usuelles</h3>
+<table border="1" cellpadding="5" cellspacing="0">
+  <tr>
+    <th>La fonction <em>f</em></th>
+    <th>L'ensemble de définition de <em>f</em></th>
+    <th>La fonction <em>f</em>′</th>
+    <th>L'ensemble de définition de <em>f</em>′</th>
+  </tr>
+  <tr>
+    <td>f : x ↦ a (a ∈ ℝ)</td>
+    <td>ℝ</td>
+    <td>f′ : x ↦ 0</td>
+    <td>ℝ</td>
+  </tr>
+  <tr>
+    <td>f : x ↦ x</td>
+    <td>ℝ</td>
+    <td>f′ : x ↦ 1</td>
+    <td>ℝ</td>
+  </tr>
+  <tr>
+    <td>f : x ↦ x<sup>n</sup> (n ∈ ℕ* − {1})</td>
+    <td>ℝ</td>
+    <td>f′ : x ↦ nx<sup>n−1</sup></td>
+    <td>ℝ</td>
+  </tr>
+  <tr>
+    <td>f : x ↦ √x</td>
+    <td>[0 ; +∞[</td>
+    <td>f′ : x ↦ 1/(2√x)</td>
+    <td>]0 ; +∞[</td>
+  </tr>
+  <tr>
+    <td>f : x ↦ 1/x</td>
+    <td>ℝ*</td>
+    <td>f′ : x ↦ −1/x²</td>
+    <td>]0 ; +∞[ ou ]−∞ ; 0[</td>
+  </tr>
+  <tr>
+    <td>f : x ↦ sin(x)</td>
+    <td>ℝ</td>
+    <td>f′ : x ↦ cos(x)</td>
+    <td>ℝ</td>
+  </tr>
+  <tr>
+    <td>f : x ↦ cos(x)</td>
+    <td>ℝ</td>
+    <td>f′ : x ↦ −sin(x)</td>
+    <td>ℝ</td>
+  </tr>
+  <tr>
+    <td>f : x ↦ ax + b</td>
+    <td>ℝ</td>
+    <td>f′ : x ↦ a</td>
+    <td>ℝ</td>
+  </tr>
+</table>
+
+<h3>3-4. Opérations sur les fonctions dérivables</h3>
+
+<h4>Propriété</h4>
+<p>Si <em>f</em> et <em>g</em> sont deux fonctions dérivables sur un intervalle <em>I</em> et k ∈ ℝ, alors on a :</p>
+<ol>
+  <li>La fonction f + g est dérivable sur l'intervalle <em>I</em> et on a : (f + g)′ = f′ + g′</li>
+  <li>La fonction k.f est dérivable sur l'intervalle <em>I</em> et on a : (k.f)′ = k.f′</li>
+  <li>La fonction f × g est dérivable sur l'intervalle <em>I</em> et on a : (f × g)′ = f′ × g + f × g′</li>
+  <li>Si de plus (∀x ∈ I) g(x) ≠ 0, alors :
+    <ul>
+      <li>La fonction 1/g est dérivable sur l'intervalle <em>I</em> et on a : (1/g)′ = −g′/g²</li>
+      <li>La fonction f/g est dérivable sur l'intervalle <em>I</em> et on a : (f/g)′ = (f′×g − f×g′)/g²</li>
+    </ul>
+  </li>
+</ol>
+
+<h4>Remarque</h4>
+<p>Toute fonction polynôme est dérivable sur ℝ.</p>
+<p>Toute fonction rationnelle est dérivable sur chaque intervalle inclus dans son ensemble de définition.</p>
+
+<table border="1" cellpadding="5" cellspacing="0">
+  <tr><td>Dérivée de la somme</td><td>(u + v)′ = u′ + v′</td></tr>
+  <tr><td>Dérivée du produit par un scalaire</td><td>(λu)′ = λu′</td></tr>
+  <tr><td>Dérivée du produit</td><td>(uv)′ = u′v + uv′</td></tr>
+  <tr><td>Dérivée de l'inverse</td><td>(1/v)′ = −v′/v²</td></tr>
+  <tr><td>Dérivée du quotient</td><td>(u/v)′ = (u′v − uv′)/v²</td></tr>
+  <tr><td>Dérivée de la puissance</td><td>(u<sup>n</sup>)′ = nu′u<sup>n−1</sup></td></tr>
+  <tr><td>Dérivée de la racine</td><td>(√u)′ = u′/(2√u)</td></tr>
+</table>
+
+<h4>Propriété</h4>
+<p>Si <em>f</em> est une fonction dérivable et strictement positive sur un intervalle <em>I</em>, alors la fonction √f est dérivable sur <em>I</em> et :</p>
+<p>(√f)′ = f′/(2√f)</p>
+
+<h2>IV. Applications de la dérivation</h2>
+
+<h3>4-1. Monotonie d'une fonction et signe de sa fonction dérivée</h3>
+
+<p>Soit <em>f</em> une fonction dérivable sur un intervalle <em>I</em>.</p>
+<ul>
+  <li>Si <em>f</em> est croissante sur l'intervalle <em>I</em>, alors : (∀x ∈ I) f′(x) ≥ 0</li>
+  <li>Si <em>f</em> est décroissante sur l'intervalle <em>I</em>, alors : (∀x ∈ I) f′(x) ≤ 0</li>
+  <li>Si <em>f</em> est constante sur l'intervalle <em>I</em>, alors : (∀x ∈ I) f′(x) = 0</li>
+</ul>
+<p>Soit <em>f</em> une fonction dérivable sur un intervalle <em>I</em>.</p>
+<ul>
+  <li>Si la dérivée f′ est strictement positive sur l'intervalle <em>I</em>, sauf peut-être en des points isolés de <em>I</em> où f′ s'annule, alors la fonction <em>f</em> est strictement croissante sur <em>I</em>.</li>
+  <li>Si la dérivée f′ est strictement négative sur l'intervalle <em>I</em>, sauf peut-être en des points isolés de <em>I</em> où f′ s'annule, alors la fonction <em>f</em> est strictement décroissante sur <em>I</em>.</li>
+  <li>Si f′ est nulle sur <em>I</em>, alors <em>f</em> est constante sur <em>I</em>.</li>
+</ul>
+
+<h3>4-2. Extremums d'une fonction dérivable</h3>
+
+<p>Soit <em>f</em> une fonction dérivable sur un intervalle ouvert <em>I</em> et a ∈ <em>I</em>.</p>
+<p>Si <em>f</em> admet un extremum local au point <em>a</em>, alors f′(a) = 0.</p>
+
+<h2>V. Équation différentielle y″ + ω²y = 0</h2>
+
+<h4>Définition</h4>
+<p>Soit ω un nombre réel non nul.</p>
+<p>L'équation y″ + ω²y = 0 où l'inconnue est une fonction <em>y</em> telle que y″ est sa dérivée seconde est appelée <strong>équation différentielle</strong>.</p>
+<p>Toute fonction <em>f</em> deux fois dérivable sur ℝ et vérifie l'égalité f″(x) + ω²f(x) = 0, pour tout x ∈ ℝ, est appelée solution de l'équation différentielle y″ + ω²y = 0.</p>
+
+<h4>Propriété</h4>
+<p>Soit ω un nombre réel non nul.</p>
+<p>La solution générale de l'équation différentielle y″ + ω²y = 0 est l'ensemble des fonctions <em>y</em> définies sur ℝ par :</p>
+<p>y(x) = α cos(ωx) + β sin(ωx) où α, β ∈ ℝ</p>
+
+<h2>VI. Exercices</h2>
+
+<h3>Exercice 1</h3>
+<p>Étudier la dérivabilité de la fonction <em>f</em> au point x<sub>0</sub>, puis donner une interprétation géométrique du résultat obtenu dans chacun des cas suivants :</p>
+<table border="1" cellpadding="5" cellspacing="0">
+  <tr>
+    <td>
+      <ol>
+        <li>f(x) = 3x² + x − 2 ; x<sub>0</sub> = 1</li>
+        <li>f(x) = x³ + 2x² + x − 2 ; x<sub>0</sub> = 1</li>
+        <li>f(x) = (3x − 2)/(x² + 1) ; x<sub>0</sub> = 0</li>
+        <li>f(x) = (x² − 3x − 1)/(x² + 1) ; x<sub>0</sub> = 0</li>
+      </ol>
+    </td>
+    <td>
+      <ol>
+        <li value="5">f(x) = √(x + 1) ; x<sub>0</sub> = 3</li>
+        <li>f(x) = √(x² − 3x + 2) ; x<sub>0</sub> = 2</li>
+        <li>f(x) = √(x + 10) ; x<sub>0</sub> = −1</li>
+      </ol>
+    </td>
+  </tr>
+</table>
+
+<h3>Exercice 2</h3>
+<p>Soit la fonction <em>f</em> définie par :</p>
+<p>f(x) = 2x² − 3x − 1 si x < 1</p>
+<p>f(x) = (x − 3)/(2x − 1) si x > 1</p>
+<p>f(1) = −2</p>
+<ol>
+  <li>Étudier la dérivabilité de <em>f</em> à droite en 1, et donner une interprétation géométrique du résultat.</li>
+  <li>Étudier la dérivabilité de <em>f</em> à gauche en 1, et donner une interprétation géométrique du résultat.</li>
+  <li>Étudier la dérivabilité de <em>f</em> au point 1.</li>
+</ol>
+
+<h3>Exercice 3</h3>
+<p>Soit la fonction <em>f</em> définie par :</p>
+<p>f(x) = x³ + 2x² + x + 3 si x < −1</p>
+<p>f(x) = (x + 4)/(2x + 3) si x > −1</p>
+<p>f(−1) = 3</p>
+<ol>
+  <li>Étudier la dérivabilité de <em>f</em> à droite en −1, et donner une interprétation géométrique du résultat.</li>
+  <li>Étudier la dérivabilité de <em>f</em> à gauche en −1, et donner une interprétation géométrique du résultat.</li>
+  <li>Étudier la dérivabilité de <em>f</em> au point −1.</li>
+</ol>
+
+<h3>Exercice 4</h3>
+<p>Déterminer la fonction dérivée de la fonction <em>f</em> dans chacun des cas suivants :</p>
+<table border="1" cellpadding="5" cellspacing="0">
+  <tr>
+    <td>
+      <ol>
+        <li>f(x) = 3x² + x − 2</li>
+        <li>f(x) = (x³ + 2x² + x − 2)<sup>7</sup></li>
+        <li>f(x) = (3x − 2)/(x² + 1)</li>
+        <li>f(x) = (x² + 3x − 1)/(x² + 1)</li>
+        <li>f(x) = √(x² − 3x + 2)</li>
+        <li>f(x) = (3x + 2)√(x² − 3x + 2)</li>
+      </ol>
+    </td>
+    <td>
+      <ol>
+        <li value="7">f(x) = x² − √(x + 10)</li>
+        <li value="8">f(x) = √x/(x − 2)</li>
+        <li value="9">f(x) = (√(x + 3))³ sin(x)</li>
+        <li value="10">f(x) = cos(x)√(x + 4)</li>
+        <li value="11">f(x) = sin(3x − 2) + 5cos(7x + 3)</li>
+        <li value="12">f(x) = sin(3x² − 2x + 3)</li>
+      </ol>
+    </td>
+  </tr>
+</table>
+
+<h3>Exercice 5</h3>
+<p>Soit <em>f</em> la fonction suivante : f(x) = ((3x − 2)/(2x + 3))<sup>4</sup></p>
+<ol>
+  <li>Déterminer D<sub>f</sub> le domaine de définition de <em>f</em>.</li>
+  <li>Étudier la dérivabilité de <em>f</em> sur D<sub>f</sub>.</li>
+  <li>Déterminer l'équation cartésienne de la droite tangente (T) à la courbe de <em>f</em> au point A(2/3 ; 0).</li>
+  <li>Déterminer f′(x) la dérivée de <em>f</em> sur D<sub>f</sub>.</li>
+</ol>
+
+<h3>Exercice 6</h3>
+
+<h4>Partie 1</h4>
+<p>On considère la fonction <em>g</em> définie sur I = [−2 ; 3] par g(x) = 3x − x³.</p>
+<ol>
+  <li>Calculer g′(x) la fonction dérivée de <em>g</em> sur <em>I</em>.</li>
+  <li>Étudier les variations de <em>g</em>, puis donner son tableau de variations sur <em>I</em>.</li>
+  <li>Déterminer les extremums de <em>g</em> sur ]−3/2 ; 0[ et [−2 ; 0] et <em>I</em>.</li>
+</ol>
+
+<h4>Partie 2</h4>
+<p>Résoudre dans ℝ les équations différentielles suivantes :</p>
+<ol>
+  <li>y″ + 3y = 0</li>
+  <li>y″ + 2y = 0</li>
+  <li>6y″ + 3y = 0</li>
+</ol>

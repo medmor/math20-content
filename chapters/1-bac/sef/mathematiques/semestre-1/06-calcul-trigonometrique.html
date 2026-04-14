@@ -1,0 +1,185 @@
+<!-- Calcul trigonométrique -->
+<h1>Calcul trigonométrique</h1>
+
+<h2>I. Formules d'addition et de soustraction</h2>
+
+<h3>1-1. Formules du cosinus</h3>
+<p>Pour tous réels α et β :</p>
+<ul>
+<li>cos(α + β) = cos α cos β − sin α sin β</li>
+<li>cos(α − β) = cos α cos β + sin α sin β</li>
+</ul>
+
+<h3>1-2. Formules du sinus</h3>
+<p>Pour tous réels α et β :</p>
+<ul>
+<li>sin(α + β) = sin α cos β + cos α sin β</li>
+<li>sin(α − β) = sin α cos β − cos α sin β</li>
+</ul>
+
+<h3>1-3. Formules de la tangente</h3>
+<p>Pour tous réels α et β tels que cos α cos β ≠ 0 :</p>
+<ul>
+<li>tan(α + β) = (tan α + tan β) / (1 − tan α tan β)</li>
+<li>tan(α − β) = (tan α − tan β) / (1 + tan α tan β)</li>
+</ul>
+
+<p><strong>Exemple :</strong> Calculer cos(7π/12).</p>
+<p>7π/12 = π/3 + π/4. Donc : cos(7π/12) = cos(π/3)cos(π/4) − sin(π/3)sin(π/4) = (1/2)(√2/2) − (√3/2)(√2/2) = (√2 − √6)/4.</p>
+
+<h2>II. Transformation de sommes en produits et réciproquement</h2>
+
+<h3>2-1. Sommes en produits (factorisation)</h3>
+<p>Pour tous réels p et q :</p>
+<ul>
+<li>cos p + cos q = 2 cos((p+q)/2) cos((p−q)/2)</li>
+<li>cos p − cos q = −2 sin((p+q)/2) sin((p−q)/2)</li>
+<li>sin p + sin q = 2 sin((p+q)/2) cos((p−q)/2)</li>
+<li>sin p − sin q = 2 cos((p+q)/2) sin((p−q)/2)</li>
+</ul>
+
+<h3>2-2. Produits en sommes (linéarisation)</h3>
+<p>Pour tous réels a et b :</p>
+<ul>
+<li>cos a cos b = ½[cos(a+b) + cos(a−b)]</li>
+<li>sin a sin b = ½[cos(a−b) − cos(a+b)]</li>
+<li>sin a cos b = ½[sin(a+b) + sin(a−b)]</li>
+</ul>
+
+<p><strong>Exemple :</strong> Linéariser cos²x.</p>
+<p>cos²x = cos x × cos x = ½[cos(2x) + cos(0)] = ½[cos(2x) + 1] = (1 + cos(2x))/2.</p>
+
+<h2>III. Autres transformations</h2>
+
+<h3>3-1. Formules de duplication</h3>
+<p>Pour tout réel α :</p>
+<ul>
+<li>cos(2α) = cos²α − sin²α = 2cos²α − 1 = 1 − 2sin²α</li>
+<li>sin(2α) = 2 sin α cos α</li>
+<li>tan(2α) = 2tanα / (1 − tan²α), si tan²α ≠ 1</li>
+</ul>
+
+<h3>3-2. Formules de linéarisation</h3>
+<p>Pour tout réel α :</p>
+<ul>
+<li>cos²α = (1 + cos(2α)) / 2</li>
+<li>sin²α = (1 − cos(2α)) / 2</li>
+</ul>
+
+<h3>3-3. Expression a cos x + b sin x</h3>
+<p>Soient a et b deux réels non simultanément nuls. On peut écrire :</p>
+<p>a cos x + b sin x = √(a² + b²) cos(x − φ)</p>
+<p>où φ est défini par : cos φ = a/√(a² + b²) et sin φ = b/√(a² + b²).</p>
+
+<p><strong>Exemple :</strong> Écrire 3 cos x + 4 sin x sous la forme R cos(x − φ).</p>
+<p>R = √(9+16) = 5, cos φ = 3/5, sin φ = 4/5. Donc 3 cos x + 4 sin x = 5 cos(x − φ) où φ = arctan(4/3).</p>
+
+<h3>3-4. Changement de variable (substitution de Weierstrass)</h3>
+<p>Pour résoudre certaines équations trigonométriques, on pose t = tan(x/2). Alors :</p>
+<ul>
+<li>sin x = 2t / (1 + t²)</li>
+<li>cos x = (1 − t²) / (1 + t²)</li>
+<li>tan x = 2t / (1 − t²)</li>
+</ul>
+
+<h2>IV. Équations trigonométriques</h2>
+
+<h3>4-1. Équation cos x = a</h3>
+<p>Soit a ∈ [−1, 1]. L'équation cos x = a admet pour solutions :</p>
+<ul>
+<li>Si a > 1 ou a < −1 : aucune solution.</li>
+<li>Si |a| ≤ 1 : x = ± arccos(a) + 2kπ, k ∈ ℤ.</li>
+</ul>
+
+<p><strong>Cas particuliers :</strong></p>
+<ul>
+<li>cos x = 1 ⇔ x = 2kπ, k ∈ ℤ</li>
+<li>cos x = 0 ⇔ x = π/2 + kπ, k ∈ ℤ</li>
+<li>cos x = −1 ⇔ x = π + 2kπ, k ∈ ℤ</li>
+</ul>
+
+<h3>4-2. Équation sin x = a</h3>
+<p>Soit a ∈ [−1, 1]. L'équation sin x = a admet pour solutions :</p>
+<ul>
+<li>Si a > 1 ou a < −1 : aucune solution.</li>
+<li>Si |a| ≤ 1 : x = arcsin(a) + 2kπ ou x = π − arcsin(a) + 2kπ, k ∈ ℤ.</li>
+</ul>
+
+<p><strong>Cas particuliers :</strong></p>
+<ul>
+<li>sin x = 1 ⇔ x = π/2 + 2kπ, k ∈ ℤ</li>
+<li>sin x = 0 ⇔ x = kπ, k ∈ ℤ</li>
+<li>sin x = −1 ⇔ x = −π/2 + 2kπ, k ∈ ℤ</li>
+</ul>
+
+<h3>4-3. Équation tan x = a</h3>
+<p>Pour tout réel a, l'équation tan x = a admet pour solutions :</p>
+<ul>
+<li>x = arctan(a) + kπ, k ∈ ℤ</li>
+</ul>
+
+<h3>4-4. Exemples résolus</h3>
+
+<p><strong>Exemple 1 :</strong> Résoudre cos x = 1/2.</p>
+<p>x = ±π/3 + 2kπ, k ∈ ℤ.</p>
+
+<p><strong>Exemple 2 :</strong> Résoudre sin x = √2/2.</p>
+<p>x = π/4 + 2kπ ou x = 3π/4 + 2kπ, k ∈ ℤ.</p>
+
+<p><strong>Exemple 3 :</strong> Résoudre 2cos x − 1 = 0.</p>
+<p>cos x = 1/2 ⇒ x = ±π/3 + 2kπ, k ∈ ℤ.</p>
+
+<p><strong>Exemple 4 :</strong> Résoudre cos(2x) = 1/2 sur ]−π, π].</p>
+<p>2x = ±π/3 + 2kπ ⇒ x = ±π/6 + kπ. Sur ]−π, π] : x ∈ {−5π/6, −π/6, π/6, 5π/6}.</p>
+
+<h2>V. Cercle trigonométrique</h2>
+
+<h3>5-1. Définition</h3>
+<p>Le <strong>cercle trigonométrique</strong> est le cercle de rayon 1 centré à l'origine du repère orthonormé (O ; i⃗, j⃗). Un point M du cercle est repéré par un réel x (mesure en radians de l'angle orienté (i⃗, OM⃗)). Ses coordonnées sont (cos x, sin x).</p>
+
+<h3>5-2. Propriétés fondamentales</h3>
+<ul>
+<li>cos²x + sin²x = 1</li>
+<li>−1 ≤ cos x ≤ 1 et −1 ≤ sin x ≤ 1</li>
+<li>cos et sin sont 2π-périodiques : cos(x + 2π) = cos x et sin(x + 2π) = sin x</li>
+<li>tan est π-périodique : tan(x + π) = tan x</li>
+<li>cos est paire : cos(−x) = cos x</li>
+<li>sin est impaire : sin(−x) = −sin x</li>
+<li>tan est impaire : tan(−x) = −tan x</li>
+</ul>
+
+<h3>5-3. Valeurs remarquables</h3>
+
+<table border="1" cellpadding="5" cellspacing="0">
+<tr><th>x</th><th>0</th><th>π/6</th><th>π/4</th><th>π/3</th><th>π/2</th></tr>
+<tr><td>cos x</td><td>1</td><td>√3/2</td><td>√2/2</td><td>1/2</td><td>0</td></tr>
+<tr><td>sin x</td><td>0</td><td>1/2</td><td>√2/2</td><td>√3/2</td><td>1</td></tr>
+<tr><td>tan x</td><td>0</td><td>√3/3</td><td>1</td><td>√3</td><td>indéfini</td></tr>
+</table>
+
+<h3>5-4. Formules liées au cercle trigonométrique</h3>
+
+<p><strong>Angles associés :</strong></p>
+<ul>
+<li>cos(π − x) = −cos x ; sin(π − x) = sin x</li>
+<li>cos(π + x) = −cos x ; sin(π + x) = −sin x</li>
+<li>cos(π/2 − x) = sin x ; sin(π/2 − x) = cos x</li>
+<li>cos(π/2 + x) = −sin x ; sin(π/2 + x) = cos x</li>
+</ul>
+
+<p><strong>Démonstration de cos²x + sin²x = 1 :</strong></p>
+<p>Soit M(cos x, sin x) un point du cercle trigonométrique. La distance OM = 1, donc OM² = cos²x + sin²x = 1² = 1. □</p>
+
+<h2>VI. Exercices</h2>
+
+<h3>Exercice 1</h3>
+<p>Calculer cos(7π/12) en utilisant les formules d'addition.</p>
+
+<h3>Exercice 2</h3>
+<p>Linéariser sin²x et exprimer le résultat en fonction de cos(2x).</p>
+
+<h3>Exercice 3</h3>
+<p>Résoudre dans ℝ l'équation : 2sin²x + sin x − 1 = 0.</p>
+
+<h3>Exercice 4</h3>
+<p>Écrire 4 cos x + 3 sin x sous la forme R cos(x − φ) où R > 0 et φ ∈ [0, 2π[.</p>

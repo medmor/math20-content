@@ -1,0 +1,226 @@
+<!-- Généralités sur les fonctions numériques -->
+<h1>Généralités sur les fonctions numériques</h1>
+
+<h2>I. Rappels</h2>
+
+<h3>1-1. Fonction numérique</h3>
+<p>Une <strong>fonction numérique</strong> f est une relation qui à chaque élément x d'un ensemble de départ D<sub>f</sub> (appelé <strong>domaine de définition</strong>) associe un unique élément y d'un ensemble d'arrivée. On note : f : D<sub>f</sub> → ℝ et y = f(x).</p>
+
+<p><strong>Définitions :</strong></p>
+<ul>
+<li>Le <strong>domaine de définition</strong> D<sub>f</sub> est l'ensemble des valeurs de x pour lesquelles f(x) existe.</li>
+<li>L'<strong>image</strong> de x par f est le nombre f(x).</li>
+<li>Un <strong>antécédent</strong> de y par f est tout x ∈ D<sub>f</sub> tel que f(x) = y.</li>
+<li>L'<strong>ensemble image</strong> Im(f) est l'ensemble de toutes les images f(x) lorsque x parcourt D<sub>f</sub>.</li>
+</ul>
+
+<p><strong>Règles pour déterminer D<sub>f</sub> :</strong></p>
+<ul>
+<li>Fonction polynôme : D<sub>f</sub> = ℝ</li>
+<li>Fonction rationnelle : D<sub>f</sub> = ℝ \ {valeurs qui annulent le dénominateur}</li>
+<li>Fonction racine carrée : D<sub>f</sub> = {x ∈ ℝ | expression sous la racine ≥ 0}</li>
+</ul>
+
+<p><strong>Exemple :</strong> Soit f(x) = 1/x. On a D<sub>f</sub> = ℝ \ {0}. L'image de 3 est f(3) = 1/3. Un antécédent de 5 est x = 1/5 car f(1/5) = 5.</p>
+
+<p><strong>Représentation graphique :</strong> La courbe représentative de f, notée C<sub>f</sub>, est l'ensemble des points M(x ; f(x)) avec x ∈ D<sub>f</sub>.</p>
+
+<h3>1-2. Fonction paire – fonction impaire</h3>
+<p>Soit f une fonction définie sur un ensemble D symétrique par rapport à 0 (si x ∈ D, alors −x ∈ D).</p>
+
+<p><strong>Fonction paire :</strong> f est paire si ∀x ∈ D, f(−x) = f(x). Sa courbe C<sub>f</sub> est symétrique par rapport à l'axe des ordonnées.</p>
+
+<p><strong>Fonction impaire :</strong> f est impaire si ∀x ∈ D, f(−x) = −f(x). Sa courbe C<sub>f</sub> est symétrique par rapport à l'origine du repère.</p>
+
+<p><strong>Exemples :</strong></p>
+<ul>
+<li>f(x) = x² est paire car f(−x) = (−x)² = x² = f(x).</li>
+<li>g(x) = x³ est impaire car g(−x) = (−x)³ = −x³ = −g(x).</li>
+<li>h(x) = x + 1 n'est ni paire ni impaire : h(−x) = −x + 1 ≠ h(x) et ≠ −h(x).</li>
+</ul>
+
+<h3>1-3. Monotonie d'une fonction numérique</h3>
+<p>Soit f une fonction définie sur un intervalle I.</p>
+
+<ul>
+<li>f est <strong>croissante</strong> sur I si pour tous x₁, x₂ ∈ I tels que x₁ ≤ x₂, on a f(x₁) ≤ f(x₂).</li>
+<li>f est <strong>strictement croissante</strong> sur I si pour tous x₁, x₂ ∈ I tels que x₁ < x₂, on a f(x₁) < f(x₂).</li>
+<li>f est <strong>décroissante</strong> sur I si pour tous x₁, x₂ ∈ I tels que x₁ ≤ x₂, on a f(x₁) ≥ f(x₂).</li>
+<li>f est <strong>strictement décroissante</strong> sur I si pour tous x₁, x₂ ∈ I tels que x₁ < x₂, on a f(x₁) > f(x₂).</li>
+</ul>
+
+<p><strong>Exemples :</strong></p>
+<ul>
+<li>f(x) = x² est décroissante sur ]−∞ ; 0] et croissante sur [0 ; +∞[.</li>
+<li>g(x) = 1/x est strictement décroissante sur ]−∞ ; 0[ et sur ]0 ; +∞[.</li>
+</ul>
+
+<h3>1-4. Taux d'accroissement d'une fonction f</h3>
+<p>Soit f une fonction définie sur un intervalle I et soient x₁, x₂ ∈ I avec x₁ ≠ x₂. Le <strong>taux d'accroissement</strong> (ou taux de variation) de f entre x₁ et x₂ est :</p>
+
+<p>(f(x₂) − f(x₁)) / (x₂ − x₁)</p>
+
+<p><strong>Propriété :</strong></p>
+<ul>
+<li>f est croissante sur I si et seulement si pour tous x₁, x₂ ∈ I (x₁ ≠ x₂), (f(x₂) − f(x₁))/(x₂ − x₁) ≥ 0.</li>
+<li>f est décroissante sur I si et seulement si pour tous x₁, x₂ ∈ I (x₁ ≠ x₂), (f(x₂) − f(x₁))/(x₂ − x₁) ≤ 0.</li>
+</ul>
+
+<h2>II. Fonction majorée – minorée – bornée</h2>
+
+<h3>2-1. Définitions</h3>
+<p>Soit f une fonction définie sur un ensemble D.</p>
+
+<ul>
+<li>f est <strong>majorée</strong> sur D s'il existe un réel M tel que pour tout x ∈ D, f(x) ≤ M. On dit que M est un <strong>majorant</strong> de f sur D.</li>
+<li>f est <strong>minorée</strong> sur D s'il existe un réel m tel que pour tout x ∈ D, f(x) ≥ m. On dit que m est un <strong>minorant</strong> de f sur D.</li>
+<li>f est <strong>bornée</strong> sur D si f est à la fois majorée et minorée sur D.</li>
+</ul>
+
+<p><strong>Exemples :</strong></p>
+<ul>
+<li>f(x) = sin(x) est bornée sur ℝ car −1 ≤ sin(x) ≤ 1 pour tout x ∈ ℝ.</li>
+<li>g(x) = x² est minorée sur ℝ par 0, mais non majorée.</li>
+</ul>
+
+<h3>2-2. Extremums d'une fonction</h3>
+<p>Soit f une fonction définie sur un intervalle I.</p>
+
+<ul>
+<li>f admet un <strong>maximum</strong> en a ∈ I si pour tout x ∈ I, f(x) ≤ f(a). Le nombre f(a) est le maximum de f sur I.</li>
+<li>f admet un <strong>minimum</strong> en a ∈ I si pour tout x ∈ I, f(x) ≥ f(a). Le nombre f(a) est le minimum de f sur I.</li>
+</ul>
+
+<p><strong>Exemple :</strong> f(x) = x² admet un minimum en x = 0, qui vaut f(0) = 0.</p>
+
+<h3>2-3. Fonction périodique</h3>
+<p>Une fonction f définie sur D<sub>f</sub> est <strong>périodique</strong> de période T > 0 si :</p>
+<ul>
+<li>Pour tout x ∈ D<sub>f</sub>, x + T ∈ D<sub>f</sub></li>
+<li>f(x + T) = f(x)</li>
+</ul>
+
+<p><strong>Exemple :</strong> La fonction sinus est périodique de période 2π car sin(x + 2π) = sin(x) pour tout x ∈ ℝ.</p>
+
+<p><strong>Propriété :</strong> Si f est périodique de période T, il suffit d'étudier f sur un intervalle de longueur T, puis de reproduire la courbe par translation de vecteur T·i⃗.</p>
+
+<h2>III. Comparaison de deux fonctions et interprétation géométrique</h2>
+
+<h3>3-1. Égalité de deux fonctions</h3>
+<p>Deux fonctions f et g sont <strong>égales</strong> sur un ensemble D si :</p>
+<ul>
+<li>D<sub>f</sub> = D<sub>g</sub> = D</li>
+<li>Pour tout x ∈ D, f(x) = g(x)</li>
+</ul>
+
+<p>On note alors f = g sur D.</p>
+
+<h3>3-2. Comparaison de deux fonctions</h3>
+<p>Soient f et g deux fonctions définies sur un même ensemble D.</p>
+
+<ul>
+<li>On dit que <strong>f ≤ g</strong> sur D si pour tout x ∈ D, f(x) ≤ g(x).</li>
+<li>On dit que <strong>f ≥ g</strong> sur D si pour tout x ∈ D, f(x) ≥ g(x).</li>
+</ul>
+
+<p><strong>Interprétation géométrique :</strong></p>
+<ul>
+<li>f ≤ g sur D signifie que la courbe C<sub>f</sub> est en dessous de (ou sur) la courbe C<sub>g</sub> sur D.</li>
+<li>f ≥ g sur D signifie que la courbe C<sub>f</sub> est au-dessus de (ou sur) la courbe C<sub>g</sub> sur D.</li>
+</ul>
+
+<p><strong>Exemple :</strong> Soient f(x) = x² et g(x) = x. Sur [0 ; 1], on a f(x) ≤ g(x) car x² ≤ x pour x ∈ [0 ; 1]. Sur [1 ; +∞[, on a f(x) ≥ g(x) car x² ≥ x pour x ≥ 1.</p>
+
+<h2>IV. Composée de deux fonctions</h2>
+
+<h3>4-1. Vocabulaire</h3>
+<p>Soient f : A → B et g : B → C deux fonctions. La fonction <strong>composée</strong> de f suivie de g, notée g ∘ f, est la fonction qui à tout x ∈ A associe g(f(x)).</p>
+
+<h3>4-2. Définition</h3>
+<p>Soient f définie sur I et g définie sur J telles que f(I) ⊆ J. La <strong>composée</strong> g ∘ f est définie sur I par :</p>
+
+<p>(g ∘ f)(x) = g(f(x))</p>
+
+<p><strong>Exemple :</strong> Soit f(x) = x + 1 et g(x) = x². Alors (g ∘ f)(x) = g(f(x)) = (x + 1)². Et (f ∘ g)(x) = f(g(x)) = x² + 1. On remarque que g ∘ f ≠ f ∘ g en général.</p>
+
+<h3>4-3. Monotonie de fonctions composées</h3>
+<p>Soient f définie sur I et g définie sur J avec f(I) ⊆ J.</p>
+
+<table border="1" cellpadding="5" cellspacing="0">
+<tr><th>f sur I</th><th>g sur J</th><th>g ∘ f sur I</th></tr>
+<tr><td>croissante</td><td>croissante</td><td>croissante</td></tr>
+<tr><td>croissante</td><td>décroissante</td><td>décroissante</td></tr>
+<tr><td>décroissante</td><td>croissante</td><td>décroissante</td></tr>
+<tr><td>décroissante</td><td>décroissante</td><td>croissante</td></tr>
+</table>
+
+<p><strong>Propriété sur la parité :</strong></p>
+<ul>
+<li>Si f et g sont paires, alors g ∘ f est paire.</li>
+<li>Si f et g sont impaires, alors g ∘ f est impaire.</li>
+<li>Si f est paire et g quelconque, alors g ∘ f est paire.</li>
+</ul>
+
+<h2>V. Étude et représentation graphique de certaines fonctions</h2>
+
+<h3>5-1. Fonction f(x) = ax³ (a ≠ 0)</h3>
+
+<p><strong>Propriétés :</strong></p>
+<ul>
+<li>D<sub>f</sub> = ℝ</li>
+<li>f est impaire : f(−x) = a(−x)³ = −ax³ = −f(x)</li>
+<li>C<sub>f</sub> est symétrique par rapport à l'origine</li>
+<li>f(0) = 0, donc C<sub>f</sub> passe par l'origine</li>
+</ul>
+
+<p><strong>Sens de variation :</strong></p>
+<ul>
+<li>Si a > 0 : f est croissante sur ℝ</li>
+<li>Si a < 0 : f est décroissante sur ℝ</li>
+</ul>
+
+<p><strong>Tableau de variation (a > 0) :</strong></p>
+<table border="1" cellpadding="5" cellspacing="0">
+<tr><th>x</th><th>−∞</th><th></th><th>0</th><th></th><th>+∞</th></tr>
+<tr><th>f(x)</th><td>−∞</td><td>↗</td><td>0</td><td>↗</td><td>+∞</td></tr>
+</table>
+
+<p><strong>Exemple :</strong> f(x) = 2x³. f est impaire, strictement croissante sur ℝ (car a = 2 > 0).</p>
+
+<h3>5-2. Fonction f(x) = √(x + a)</h3>
+
+<p><strong>Domaine de définition :</strong> D<sub>f</sub> = [−a ; +∞[ (il faut que x + a ≥ 0).</p>
+
+<p><strong>Propriétés :</strong></p>
+<ul>
+<li>f(−a) = 0, donc C<sub>f</sub> passe par le point (−a ; 0)</li>
+<li>f est strictement croissante sur [−a ; +∞[</li>
+<li>f n'est ni paire ni impaire (sauf si a = 0 et le domaine n'est pas symétrique)</li>
+</ul>
+
+<p><strong>Tableau de variation :</strong></p>
+<table border="1" cellpadding="5" cellspacing="0">
+<tr><th>x</th><th>−a</th><th></th><th>+∞</th></tr>
+<tr><th>f(x)</th><td>0</td><td>↗</td><td>+∞</td></tr>
+</table>
+
+<p><strong>Exemple :</strong> f(x) = √(x − 2). D<sub>f</sub> = [2 ; +∞[. f(2) = 0. L'antécédent de 3 : √(x − 2) = 3 ⇒ x − 2 = 9 ⇒ x = 11.</p>
+
+<h2>VI. Exercices</h2>
+
+<h3>Exercice 1</h3>
+<p>Soit la fonction f définie par f(x) = x² − 4x + 3.</p>
+<ol>
+<li>Déterminer D<sub>f</sub>.</li>
+<li>Calculer f(2) et les antécédents de 0.</li>
+<li>Étudier la parité de f.</li>
+<li>Étudier les variations de f.</li>
+</ol>
+
+<h3>Exercice 2</h3>
+<p>Soit f(x) = √(x + 1) et g(x) = x² − 1.</p>
+<ol>
+<li>Déterminer D<sub>f</sub> et D<sub>g</sub>.</li>
+<li>Déterminer D<sub>g∘f</sub> et exprimer (g ∘ f)(x).</li>
+<li>Étudier la parité de g ∘ f.</li>
+</ol>

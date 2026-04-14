@@ -1,0 +1,76 @@
+<!-- La projection dans le plan -->
+<h1>La projection dans le plan</h1>
+
+<h2>1. Projection orthogonale</h2>
+
+<h3>Définition</h3>
+<p>La <strong>projection orthogonale</strong> d'un point $M$ sur une droite $(d)$ est le point $H$ de $(d)$ tel que $(MH) \perp (d)$.</p>
+<p>$H$ est le point de $(d)$ le plus proche de $M$.</p>
+
+<h3>Projection orthogonale d'un vecteur</h3>
+<p>La projection orthogonale d'un vecteur $\vec{u}$ sur un vecteur non nul $\vec{v}$ est :</p>
+<p>$$\text{proj}_{\vec{v}}(\vec{u}) = \frac{\vec{u} \cdot \vec{v}}{\|\vec{v}\|^2} \cdot \vec{v}$$</p>
+
+<h3>Projection sur un axe</h3>
+<p>La projection orthogonale d'un vecteur $\vec{u} = (u_x, u_y)$ sur :</p>
+<ul>
+<li><strong>L'axe $(Ox)$ :</strong> $\text{proj}_{Ox}(\vec{u}) = (u_x, 0)$</li>
+<li><strong>L'axe $(Oy)$ :</strong> $\text{proj}_{Oy}(\vec{u}) = (0, u_y)$</li>
+</ul>
+
+<h2>2. Coordonnées d'un point projeté</h2>
+
+<h3>Projection sur une droite d'équation $ax + by + c = 0$</h3>
+<p>Le projeté orthogonal $H(x_H, y_H)$ du point $M(x_M, y_M)$ sur la droite $(d)$ d'équation $ax + by + c = 0$ a pour coordonnées :</p>
+<p>$$x_H = x_M - \frac{a(ax_M + by_M + c)}{a^2 + b^2}$$</p>
+<p>$$y_H = y_M - \frac{b(ax_M + by_M + c)}{a^2 + b^2}$$</p>
+
+<h2>3. Distance d'un point à une droite</h2>
+
+<h3>Formule</h3>
+<p>La distance du point $M(x_M, y_M)$ à la droite $(d)$ d'équation $ax + by + c = 0$ est :</p>
+<p>$$d(M, (d)) = \frac{|ax_M + by_M + c|}{\sqrt{a^2 + b^2}}$$</p>
+
+<h3>Démonstration</h3>
+<p>La distance est égale à la longueur du segment $MH$ où $H$ est le projeté orthogonal de $M$ sur $(d)$.</p>
+
+<h2>4. Projection et produit scalaire</h2>
+
+<h3>Relation</h3>
+<p>Pour deux vecteurs $\vec{u}$ et $\vec{v}$ :</p>
+<p>$$\vec{u} \cdot \vec{v} = \|\vec{u}\| \cdot \|\vec{v}\| \cdot \cos\theta$$</p>
+<p>où $\theta$ est l'angle entre $\vec{u}$ et $\vec{v}$.</p>
+
+<h3>Projection sur $\vec{v}$</h3>
+<p>$$\|\text{proj}_{\vec{v}}(\vec{u})\| = \|\vec{u}\| \cdot \cos\theta = \frac{\vec{u} \cdot \vec{v}}{\|\vec{v}\|}$$</p>
+
+<h2>5. Propriétés de la projection</h2>
+
+<h3>Linéarité</h3>
+<p>$$\text{proj}_{\vec{v}}(\vec{u} + \vec{w}) = \text{proj}_{\vec{v}}(\vec{u}) + \text{proj}_{\vec{v}}(\vec{w})$$</p>
+<p>$$\text{proj}_{\vec{v}}(\lambda\vec{u}) = \lambda \cdot \text{proj}_{\vec{v}}(\vec{u})$$</p>
+
+<h3>Idempotence</h3>
+<p>$$\text{proj}_{\vec{v}}(\text{proj}_{\vec{v}}(\vec{u})) = \text{proj}_{\vec{v}}(\vec{u})$$</p>
+
+<h3>Orthogonalité</h3>
+<p>Pour tout vecteur $\vec{u}$ :</p>
+<p>$$\vec{u} = \text{proj}_{\vec{v}}(\vec{u}) + \vec{w}$$</p>
+<p>où $\vec{w}$ est orthogonal à $\vec{v}$.</p>
+
+<h2>Exercices</h2>
+
+<h3>Exercice 1</h3>
+<p>Calculer la projection orthogonale du point $M(3, 4)$ sur la droite $(d)$ d'équation $2x + y - 1 = 0$.</p>
+
+<h3>Exercice 2</h3>
+<p>Calculer la distance du point $A(1, 2)$ à la droite $(d)$ d'équation $3x - 4y + 5 = 0$.</p>
+
+<h3>Exercice 3</h3>
+<p>Soient $\vec{u} = (2, 3)$ et $\vec{v} = (1, 0)$. Calculer $\text{proj}_{\vec{v}}(\vec{u})$.</p>
+
+<h3>Exercice 4</h3>
+<p>Soient $\vec{u} = (3, 4)$ et $\vec{v} = (1, 1)$. Calculer la projection de $\vec{u}$ sur $\vec{v}$ et vérifier que le vecteur restant est orthogonal à $\vec{v}$.</p>
+
+<h3>Exercice 5</h3>
+<p>Trouver les coordonnées du projeté orthogonal du point $M(2, -1)$ sur la droite passant par $A(1, 1)$ et $B(4, 5)$.</p>

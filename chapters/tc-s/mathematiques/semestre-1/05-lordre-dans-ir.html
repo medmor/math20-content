@@ -1,0 +1,137 @@
+<!-- L'ordre dans IR -->
+<h1>L'ordre dans IR</h1>
+
+<h2>1. Inégalités dans IR</h2>
+
+<h3>Définitions</h3>
+<p>Pour $a, b \in \mathbb{R}$ :</p>
+<ul>
+<li>$a < b$ signifie que $a$ est strictement inférieur à $b$</li>
+<li>$a \leq b$ signifie que $a$ est inférieur ou égal à $b$</li>
+<li>$a > b$ signifie que $a$ est strictement supérieur à $b$</li>
+<li>$a \geq b$ signifie que $a$ est supérieur ou égal à $b$</li>
+</ul>
+
+<h3>Propriétés de la relation d'ordre</h3>
+<ol>
+<li><strong>Réflexivité :</strong> $a \leq a$</li>
+<li><strong>Antisymétrie :</strong> Si $a \leq b$ et $b \leq a$, alors $a = b$</li>
+<li><strong>Transitivité :</strong> Si $a \leq b$ et $b \leq c$, alors $a \leq c$</li>
+<li><strong>Totalité :</strong> Pour tous $a, b \in \mathbb{R}$, $a \leq b$ ou $b \leq a$</li>
+</ol>
+
+<h2>2. Opérations et inégalités</h2>
+
+<h3>Addition</h3>
+<p>Si $a \leq b$ et $c \in \mathbb{R}$, alors :</p>
+<p>$$a + c \leq b + c$$</p>
+
+<h3>Multiplication</h3>
+<ul>
+<li>Si $a \leq b$ et $c > 0$, alors $ac \leq bc$</li>
+<li>Si $a \leq b$ et $c < 0$, alors $ac \geq bc$ <strong>(le sens change)</strong></li>
+</ul>
+
+<h3>Inversion</h3>
+<ul>
+<li>Si $0 < a \leq b$, alors $\frac{1}{a} \geq \frac{1}{b}$</li>
+<li>Si $a \leq b < 0$, alors $\frac{1}{a} \geq \frac{1}{b}$</li>
+</ul>
+
+<h2>3. Intervalles</h2>
+
+<h3>Définition</h3>
+<p>Un <strong>intervalle</strong> est une partie de $\mathbb{R}$ telle que, pour tout couple de points de cette partie, tous les points intermédiaires lui appartiennent.</p>
+
+<h3>Types d'intervalles</h3>
+<table>
+<tr><th>Notation</th><th>Ensemble</th><th>Description</th></tr>
+<tr><td>$[a, b]$</td><td>$\{x \in \mathbb{R} \mid a \leq x \leq b\}$</td><td>Fermé</td></tr>
+<tr><td>$]a, b[$</td><td>$\{x \in \mathbb{R} \mid a < x < b\}$</td><td>Ouvert</td></tr>
+<tr><td>$[a, b[$</td><td>$\{x \in \mathbb{R} \mid a \leq x < b\}$</td><td>Semi-ouvert</td></tr>
+<tr><td>$]a, b]$</td><td>$\{x \in \mathbb{R} \mid a < x \leq b\}$</td><td>Semi-ouvert</td></tr>
+<tr><td>$[a, +\infty[$</td><td>$\{x \in \mathbb{R} \mid x \geq a\}$</td><td>Non borné</td></tr>
+<tr><td>$]-\infty, a]$</td><td>$\{x \in \mathbb{R} \mid x \leq a\}$</td><td>Non borné</td></tr>
+</table>
+
+<h3>Propriétés des intervalles</h3>
+<ul>
+<li>L'intersection de deux intervalles est un intervalle</li>
+<li>L'union de deux intervalles n'est pas toujours un intervalle</li>
+</ul>
+
+<h2>4. Valeur absolue</h2>
+
+<h3>Définition</h3>
+<p>La <strong>valeur absolue</strong> d'un réel $x$ est :</p>
+<p>$$|x| = \begin{cases} x & \text{si } x \geq 0 \\ -x & \text{si } x < 0 \end{cases}$$</p>
+
+<h3>Propriétés</h3>
+<ul>
+<li>$|x| \geq 0$ et $|x| = 0 \Leftrightarrow x = 0$</li>
+<li>$|-x| = |x|$</li>
+<li>$|xy| = |x| \cdot |y|$</li>
+<li>$|x + y| \leq |x| + |y|$ <strong>(Inégalité triangulaire)</strong></li>
+<li>$|x - y| \geq ||x| - |y||$</li>
+</ul>
+
+<h3>Distance dans IR</h3>
+<p>La distance entre deux réels $x$ et $y$ est :</p>
+<p>$$d(x, y) = |x - y|$$</p>
+
+<h2>5. Majorants et minorants</h2>
+
+<h3>Définitions</h3>
+<ul>
+<li>$M$ est un <strong>majorant</strong> de $A \subset \mathbb{R}$ si $\forall x \in A, x \leq M$</li>
+<li>$m$ est un <strong>minorant</strong> de $A \subset \mathbb{R}$ si $\forall x \in A, x \geq m$</li>
+<li>Un ensemble est <strong>majoré</strong> s'il admet un majorant</li>
+<li>Un ensemble est <strong>minoré</strong> s'il admet un minorant</li>
+<li>Un ensemble est <strong>borné</strong> s'il est majoré et minoré</li>
+</ul>
+
+<h3>Borne supérieure et inférieure</h3>
+<ul>
+<li>La <strong>borne supérieure</strong> de $A$ est le plus petit majorant, notée $\sup(A)$</li>
+<li>La <strong>borne inférieure</strong> de $A$ est le plus grand minorant, notée $\inf(A)$</li>
+</ul>
+
+<h2>6. Encadrements</h2>
+
+<h3>Définition</h3>
+<p>Encadrer un réel $x$, c'est trouver deux réels $a$ et $b$ tels que $a \leq x \leq b$.</p>
+
+<h3>Abscisse d'un point</h3>
+<p>L'amplitude de l'encadrement est $b - a$.</p>
+
+<h2>Exercices</h2>
+
+<h3>Exercice 1</h3>
+<p>Résoudre les inéquations suivantes :</p>
+<ul>
+<li>$2x - 3 < x + 5$</li>
+<li>$-2x + 1 \leq 3x - 4$</li>
+<li>$\frac{x + 1}{x - 2} \geq 0$</li>
+</ul>
+
+<h3>Exercice 2</h3>
+<p>Simplifier :</p>
+<ul>
+<li>$|3 - 5|$</li>
+<li>$|x - 2|$ si $x \geq 2$</li>
+<li>$|x - 2|$ si $x < 2$</li>
+</ul>
+
+<h3>Exercice 3</h3>
+<p>Résoudre dans $\mathbb{R}$ :</p>
+<ul>
+<li>$|x - 3| = 5$</li>
+<li>$|x + 2| < 4$</li>
+<li>$|2x - 1| \geq 3$</li>
+</ul>
+
+<h3>Exercice 4</h3>
+<p>Montrer que pour tous $x, y \in \mathbb{R}$ : $|x| + |y| \geq |x + y|$.</p>
+
+<h3>Exercice 5</h3>
+<p>Encadrer $\sqrt{2}$ entre deux décimaux à $10^{-2}$ près.</p>

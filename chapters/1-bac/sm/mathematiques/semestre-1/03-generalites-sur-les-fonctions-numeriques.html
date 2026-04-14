@@ -1,0 +1,368 @@
+<!-- Généralités sur les fonctions numériques -->
+<h1>Généralités sur les fonctions numériques</h1>
+
+<h2>I. Ensemble de définition – Parité d'une fonction</h2>
+
+<h3>1-1. Ensemble de définition d'une fonction numérique</h3>
+
+<h4>Définition</h4>
+<p>On appelle <strong>ensemble de définition</strong> d'une fonction f l'ensemble des réels x pour lesquels f(x) est défini.</p>
+<p>On note D<sub>f</sub> l'ensemble de définition de f.</p>
+<p>On a donc : D<sub>f</sub> = {x ∈ ℝ / f(x) ∈ ℝ}</p>
+<p>En pratique, on utilise souvent l'équivalence : x ∈ D<sub>f</sub> ⇔ (x ∈ ℝ et f(x) ∈ ℝ)</p>
+
+<h4>Applications</h4>
+<p>Déterminer l'ensemble de définition de la fonction f dans chacun des cas suivants :</p>
+<table border="1" cellpadding="5" cellspacing="0">
+  <tr><td>① f(x) = (x + 1)/(2x² − x − 1)</td><td>④ f(x) = (1 − √x)/(2|x| − 1)</td></tr>
+  <tr><td>② f(x) = √((x − 1)/(x² − 5x − 6))</td><td>⑤ f(x) = tan(x)/(cos(x) − 1)</td></tr>
+  <tr><td>③ f(x) = √(x − 1)/√(x² − 5x − 6)</td><td>⑥ f(x) = √x/(sin²x + sin x − 2)</td></tr>
+</table>
+
+<h3>1-2. Parité d'une fonction numérique</h3>
+
+<h4>Définition</h4>
+<p>Soit f une fonction numérique et D<sub>f</sub> son ensemble de définition.</p>
+<ul>
+  <li>On dit que f est <strong>paire</strong> si pour tout x ∈ D<sub>f</sub> : −x ∈ D<sub>f</sub> et f(−x) = f(x)</li>
+  <li>On dit que f est <strong>impaire</strong> si pour tout x ∈ D<sub>f</sub> : −x ∈ D<sub>f</sub> et f(−x) = −f(x)</li>
+</ul>
+
+<h4>Proposition</h4>
+<p>Si f est une fonction paire, alors l'axe des ordonnées est un axe de symétrie de sa courbe C<sub>f</sub>.</p>
+<p>Si f est une fonction impaire, alors l'origine du repère est un centre de symétrie de sa courbe C<sub>f</sub>.</p>
+
+<h4>Applications</h4>
+<p>Étudier la parité de la fonction f dans chacun des cas suivants :</p>
+<table border="1" cellpadding="5" cellspacing="0">
+  <tr><td>① f(x) = 3x/(x² + 1)</td><td>④ f(x) = sin(x)/(2cos(x) − 1)</td></tr>
+  <tr><td>② f(x) = (x² − 1)/√(4 − x²)</td><td>⑤ f(x) = x⁴/(x³ − 1)</td></tr>
+  <tr><td>③ f(x) = x³ − x² + 1</td><td>⑥ f(x) = |x|/(x⁴ + 1)</td></tr>
+</table>
+
+<h2>II. Monotonie d'une fonction numérique</h2>
+
+<h3>2-1. Sens de variations d'une fonction (Rappels)</h3>
+
+<h4>Définition</h4>
+<p>Soit f une fonction numérique définie sur un intervalle I inclus dans son ensemble de définition.</p>
+<p>On dit que f est <strong>croissante</strong> sur I si : (∀(x₁ ; x₂) ∈ I²) (x₁ ≤ x₂ ⇒ f(x₁) ≤ f(x₂))</p>
+<p>On dit que f est <strong>strictement croissante</strong> sur I si : (∀(x₁ ; x₂) ∈ I²) (x₁ < x₂ ⇒ f(x₁) < f(x₂))</p>
+<p>On dit que f est <strong>décroissante</strong> sur I si : (∀(x₁ ; x₂) ∈ I²) (x₁ ≤ x₂ ⇒ f(x₁) ≥ f(x₂))</p>
+<p>On dit que f est <strong>strictement décroissante</strong> sur I si : (∀(x₁ ; x₂) ∈ I²) (x₁ < x₂ ⇒ f(x₁) > f(x₂))</p>
+
+<h4>Proposition</h4>
+<p>Soit f une fonction numérique définie sur un intervalle I, et x₁ et x₂ deux éléments distincts de I. Le nombre T(x₁ ; x₂) = (f(x₁) − f(x₂))/(x₁ − x₂) est appelé <strong>taux de variation</strong> (ou taux d'accroissement) de la fonction f entre x₁ et x₂.</p>
+<ul>
+  <li>f est croissante sur I si et seulement si : (∀(x₁ ; x₂) ∈ I²) (x₁ ≠ x₂ ⇒ T(x₁ ; x₂) ≥ 0)</li>
+  <li>f est strictement croissante sur I si et seulement si : (∀(x₁ ; x₂) ∈ I²) (x₁ ≠ x₂ ⇒ T(x₁ ; x₂) > 0)</li>
+  <li>f est décroissante sur I si et seulement si : (∀(x₁ ; x₂) ∈ I²) (x₁ ≠ x₂ ⇒ T(x₁ ; x₂) ≤ 0)</li>
+  <li>f est strictement décroissante sur I si et seulement si : (∀(x₁ ; x₂) ∈ I²) (x₁ ≠ x₂ ⇒ T(x₁ ; x₂) < 0)</li>
+</ul>
+
+<h4>Applications</h4>
+<ol>
+  <li>Étudier les variations de la fonction numérique f sur les intervalles I et J dans les deux cas suivants :
+    <p>① f(x) = (2x − 3)/(x + 1) ; I = ]−1 ; +∞[ ; J = ]−∞ ; −1[</p>
+    <p>② f(x) = √(x² − 4x + 3) ; I = ]−∞ ; 1] ; J = [3 ; +∞[</p>
+  </li>
+</ol>
+
+<h3>2-2. Monotonie et parité</h3>
+
+<h4>Proposition</h4>
+<p>Soit f une fonction numérique d'ensemble de définition D<sub>f</sub> symétrique par rapport à 0. Pour tout intervalle I inclus dans ℝ⁺ ∩ D<sub>f</sub>, on pose : I' = {−x / x ∈ I}.</p>
+<ul>
+  <li>Si f est paire, alors les sens de monotonie sur I et I' sont <strong>opposés</strong>.</li>
+  <li>Si f est impaire, alors les sens de monotonie sur I et I' sont <strong>identiques</strong>.</li>
+</ul>
+
+<h4>Applications</h4>
+<p>Soit f la fonction numérique définie sur ℝ* par : f(x) = x + 2/x</p>
+<ol>
+  <li>Étudier la parité de la fonction f.</li>
+  <li>Étudier la monotonie de f sur chacun des intervalles ]0 ; √2] et [√2 ; +∞[.</li>
+  <li>En déduire la monotonie de f sur [−√2 ; 0[ et ]−∞ ; −√2].</li>
+</ol>
+<p>Soit g la fonction numérique définie sur ℝ par : g(x) = |x|/(x² + |x| + 1)</p>
+<ol start="4">
+  <li>Étudier la parité de la fonction g.</li>
+  <li>Étudier la monotonie de g sur ℝ⁺.</li>
+  <li>En déduire la monotonie de g sur ℝ⁻, puis dresser son tableau de variations.</li>
+</ol>
+<p>Soit h la fonction numérique définie sur ℝ par : h(x) = x + |2x − 3| − |2x + 3|</p>
+<ol start="7">
+  <li>Montrer que h est impaire.</li>
+  <li>Étudier la monotonie de h sur [0 ; 3/2] et [3/2 ; +∞[.</li>
+  <li>Dresser le tableau de variations de h.</li>
+</ol>
+
+<h3>2-3. Variations des fonctions f + λ et λf</h3>
+
+<h4>Proposition</h4>
+<p>Soit f une fonction numérique définie sur un intervalle I, et λ un nombre réel non nul.</p>
+<ul>
+  <li>Les fonctions f et f + λ ont le même sens de variation sur I.</li>
+  <li>Si λ > 0, alors f et λf ont le même sens de variation sur I.</li>
+  <li>Si λ < 0, alors f et λf ont des sens de variation opposés sur I.</li>
+</ul>
+
+<h4>Applications</h4>
+<p>Étudier la monotonie de la fonction f sur l'intervalle I dans chacun des cas suivants :</p>
+<ol>
+  <li>① f(x) = 2√x − 3 et I = ℝ⁺</li>
+  <li>② f(x) = x² − 5 et I = ℝ⁻</li>
+  <li>③ f(x) = (x + 1)/x et I = ]0 ; +∞[</li>
+  <li>④ f(x) = (14x − 10)/x et I = ]−∞ ; 0[</li>
+</ol>
+
+<h2>III. Comparaison de deux fonctions numériques</h2>
+
+<h3>3-1. Fonction positive – Fonction négative</h3>
+
+<h4>Définition</h4>
+<p>Soit f une fonction numérique d'ensemble de définition D<sub>f</sub>.</p>
+<ul>
+  <li>On dit que f est <strong>positive</strong> sur D<sub>f</sub> si (∀x ∈ D<sub>f</sub>) f(x) ≥ 0, et on écrit : f ≥ 0</li>
+  <li>On dit que f est <strong>négative</strong> sur D<sub>f</sub> si (∀x ∈ D<sub>f</sub>) f(x) ≤ 0, et on écrit : f ≤ 0</li>
+</ul>
+
+<h4>Applications</h4>
+<p>Étudier le signe de la fonction f dans chacun des cas suivants :</p>
+<ol>
+  <li>① f(x) = (3x + 2)/(−2x² + x + 1)</li>
+  <li>② f(x) = (x² + x − 6)/(2x + 1)</li>
+  <li>③ f(x) = (x² + x + 1)(√(x + 1) − 1)</li>
+</ol>
+
+<h3>3-2. Comparaison de deux fonctions numériques</h3>
+
+<h4>Définition</h4>
+<p>Soit f et g deux fonctions numériques définies sur un même ensemble D. On dit que f est <strong>inférieure ou égale</strong> à g sur D si :</p>
+<p>(∀x ∈ D) f(x) ≤ g(x)</p>
+<p>On écrit : f ≤ g sur D.</p>
+
+<h4>Applications</h4>
+<ol>
+  <li>Comparer les fonctions f et g dans chacun des cas suivants :
+    <p>① f(x) = x et g(x) = 1/x</p>
+    <p>② f(x) = x/(x + 1) et g(x) = x²</p>
+    <p>③ f(x) = (1 + 2x)/(1 + 4x) et g(x) = (1 − 4x)/(1 − 2x)</p>
+    <p>④ f(x) = √(x² + 4) et g(x) = x + 2</p>
+  </li>
+</ol>
+
+<h2>IV. Fonction majorée – Fonction minorée – Fonction bornée</h2>
+
+<h4>Définition</h4>
+<p>Soit f une fonction numérique et D<sub>f</sub> son ensemble de définition.</p>
+<ul>
+  <li>On dit que f est <strong>majorée</strong> s'il existe un réel M tel que : (∀x ∈ D<sub>f</sub>) f(x) ≤ M. Le nombre M est dit un <strong>majorant</strong> de f.</li>
+  <li>On dit que f est <strong>minorée</strong> s'il existe un réel m tel que : (∀x ∈ D<sub>f</sub>) f(x) ≥ m. Le nombre m est dit un <strong>minorant</strong> de f.</li>
+  <li>On dit que f est <strong>bornée</strong> si elle est à la fois majorée et minorée, c'est-à-dire qu'il existe deux réels m et M tels que : (∀x ∈ D<sub>f</sub>) m ≤ f(x) ≤ M</li>
+</ul>
+
+<h4>Proposition</h4>
+<p>Pour que f soit bornée, il faut et il suffit que :</p>
+<p>(∃α ∈ ℝ⁺)(∀x ∈ D<sub>f</sub>) |f(x)| ≤ α</p>
+
+<h4>Applications</h4>
+<p>On considère f : ℝ → ℝ ; f(x) = (2x² + 7x + 7)/(x² + 3x + 3)</p>
+<ol>
+  <li>Montrer que f est majorée par 7/3.</li>
+  <li>Montrer que f est minorée par 1.</li>
+</ol>
+<p>Soit g : ℝ* → ℝ ; g(x) = x + 1/x</p>
+<ol start="3">
+  <li>Montrer que g est majorée par 2 sur ℝ⁺*.</li>
+  <li>En déduire que g est minorée par −2 sur ℝ⁻*.</li>
+</ol>
+<p>Soit u : ℝ → ℝ ; u(x) = (x⁴ − x²)/(x⁴ + 1) et v : ℝ → ℝ ; v(x) = 2cos(x) − 7sin(2x) + 3</p>
+<ol start="5">
+  <li>Montrer que u et v sont bornées sur ℝ.</li>
+</ol>
+<p>Soit w : ℝ⁺ → ℝ ; w(x) = x − √(x + 1)</p>
+<ol start="6">
+  <li>Montrer par l'absurde que w n'est pas majorée sur ℝ⁺.</li>
+</ol>
+
+<h2>V. Extremums d'une fonction numérique</h2>
+
+<h4>Définition</h4>
+<p>Soit f une fonction numérique, D<sub>f</sub> son ensemble de définition et x₀ ∈ D<sub>f</sub>.</p>
+<ul>
+  <li>On dit que f(x₀) est la <strong>valeur maximale absolue</strong> (ou le <strong>maximum absolu</strong>) de f si : (∀x ∈ D<sub>f</sub>) f(x) ≤ f(x₀)</li>
+  <li>On dit que f(x₀) est une <strong>valeur maximale relative</strong> de f s'il existe un intervalle ouvert I centré en x₀ et inclus dans D<sub>f</sub> tel que : (∀x ∈ I) f(x) ≤ f(x₀)</li>
+  <li>On dit que f(x₀) est la <strong>valeur minimale absolue</strong> (ou le <strong>minimum absolu</strong>) de f si : (∀x ∈ D<sub>f</sub>) f(x) ≥ f(x₀)</li>
+  <li>On dit que f(x₀) est une <strong>valeur minimale relative</strong> de f s'il existe un intervalle ouvert I centré en x₀ et inclus dans D<sub>f</sub> tel que : (∀x ∈ I) f(x) ≥ f(x₀)</li>
+  <li>Les valeurs minimales et maximales de f sont appelées les <strong>extremums</strong> de f.</li>
+</ul>
+
+<h4>Remarques</h4>
+<p>Le réel m est une valeur minimale de f sur I si et seulement si : {(∀x ∈ I) f(x) ≥ m et (∃x₀ ∈ I) f(x₀) = m}</p>
+<p>Le réel M est une valeur maximale de f sur I si et seulement si : {(∀x ∈ I) f(x) ≤ M et (∃x₀ ∈ I) f(x₀) = M}</p>
+
+<h4>Applications</h4>
+<p>On considère f et g définies sur ℝ par f(x) = x² + 2x + 3 et g(x) = −x² + 3x + 5.</p>
+<ol>
+  <li>Montrer que 2 est la valeur minimale absolue de f.</li>
+  <li>Montrer que 29/4 est la valeur maximale absolue de g.</li>
+</ol>
+<p>Soit h définie sur ℝ* par h(x) = |x| + 1/|x|</p>
+<ol start="3">
+  <li>Montrer que h admet un minimum absolu au point 1.</li>
+</ol>
+
+<h2>VI. Représentation graphique de quelques fonctions usuelles</h2>
+
+<h3>6-1. La fonction trinôme du second degré – Parabole</h3>
+
+<p>Soit f la fonction définie sur ℝ par f(x) = ax² + bx + c où a, b et c sont des réels avec a ≠ 0.</p>
+<p>Si a > 0, f est strictement décroissante sur ]−∞ ; −b/(2a)] et strictement croissante sur [−b/(2a) ; +∞[.</p>
+<p>Si a < 0, f est strictement croissante sur ]−∞ ; −b/(2a)] et strictement décroissante sur [−b/(2a) ; +∞[.</p>
+<p>C<sub>f</sub> est une parabole de sommet Ω(−b/(2a) ; f(−b/(2a))) et d'axe de symétrie d'équation x = −b/(2a).</p>
+
+<h4>Applications</h4>
+<ol>
+  <li>Dresser le tableau de variations de chacune des fonctions suivantes puis tracer sa courbe représentative :
+    <p>f(x) = −2x² + x + 1 ; g(x) = x² + 2x + 2 ; h(x) = −x² + |x|</p>
+  </li>
+</ol>
+
+<h3>6-2. La fonction homographique – Hyperbole</h3>
+
+<p>Soit f la fonction numérique définie sur ℝ − {−d/c} par f(x) = (ax + b)/(cx + d) où a, b, c et d sont des réels avec c ≠ 0 et ad − bc ≠ 0.</p>
+<p>On pose Δ = ad − bc.</p>
+<p>Si Δ > 0 : f est strictement croissante sur ]−∞ ; −d/c[ et sur ]−d/c ; +∞[.</p>
+<p>Si Δ < 0 : f est strictement décroissante sur ]−∞ ; −d/c[ et sur ]−d/c ; +∞[.</p>
+<p>C<sub>f</sub> est une hyperbole de centre Ω(−d/c ; a/c) et d'asymptotes les droites d'équations x = −d/c et y = a/c.</p>
+
+<h4>Applications</h4>
+<ol>
+  <li>Dresser le tableau de variations de chacune des fonctions suivantes puis tracer sa courbe représentative :
+    <p>f(x) = (2x + 1)/(x − 1) ; g(x) = (3x + 1)/(x + 1) ; h(x) = −1 + 1/x ; k(x) = |x|/(|x| + 2)</p>
+  </li>
+</ol>
+
+<h3>6-3. La fonction x ↦ ax³ (a ∈ ℝ)</h3>
+
+<p>Soit f la fonction définie sur ℝ par f(x) = ax³ où a est un réel non nul.</p>
+<p>Si a > 0 : f est strictement croissante sur ℝ. Si a < 0 : f est strictement décroissante sur ℝ.</p>
+<p>La fonction f : x ↦ ax³ est impaire et sa courbe C<sub>f</sub> est symétrique par rapport à l'origine du repère. La courbe C<sub>f</sub> passe aussi par le point de coordonnées (1 ; a) car f(1) = a.</p>
+
+<h4>Applications</h4>
+<ol>
+  <li>Dresser le tableau de variations de chacune des fonctions suivantes puis tracer sa courbe représentative :
+    <p>f(x) = x³ ; g(x) = −½x³ ; h(x) = ¼x²|x|</p>
+  </li>
+</ol>
+
+<h3>6-4. La fonction x ↦ √(x + a) (a ∈ ℝ)</h3>
+
+<p>Soit f la fonction définie par f(x) = √(x + a) où a est un nombre réel.</p>
+<p>La fonction f est définie et strictement croissante sur l'intervalle [−a ; +∞[.</p>
+
+<h4>Applications</h4>
+<ol>
+  <li>Dresser le tableau de variations de chacune des fonctions suivantes puis tracer sa courbe représentative :
+    <p>f(x) = √(x + 1) ; g(x) = √(2 − x) ; h(x) = −√x</p>
+  </li>
+</ol>
+
+<h3>6-5. La fonction partie entière</h3>
+
+<h4>Définition</h4>
+<p>Soit x un nombre réel. La <strong>partie entière</strong> de x est le plus grand entier relatif n qui est inférieur ou égal à x. On la note E(x) ou [x].</p>
+
+<h4>Applications</h4>
+<ol>
+  <li>Déterminer la partie entière de chacun des nombres suivants :
+    <p>17/3 ; −2020/19 ; −2018 ; 24/25 ; π/2 ; n/(n+1) ; (n+1)/n ; √(n+1) − √n</p>
+  </li>
+</ol>
+
+<h4>Proposition</h4>
+<p>Pour tout x ∈ ℝ : E(x) ≤ x < E(x) + 1 et x − 1 < E(x) ≤ x</p>
+<p>Pour tout x ∈ ℝ : E(x) = x ⇔ x ∈ ℤ</p>
+<p>Pour tout x ∈ ℝ et pour tout n ∈ ℤ : E(n + x) = E(x) + n</p>
+
+<h4>Applications</h4>
+<ol>
+  <li>Résoudre dans ℝ les équations et les inéquations suivantes :
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr><td>E(x) = 0<br>E(x) = 2<br>E(x) = −3<br>3E(x) − 1 = 0</td><td>E(x) < 2<br>E(x) ≥ −1<br>−1 ≤ E(x) < 3<br>2E(x) + 3 < 0</td></tr>
+    </table>
+  </li>
+</ol>
+<p>On considère f : ℝ → ℝ ; f(x) = x − E(x)</p>
+<ol start="2">
+  <li>Calculer : f(−5) ; f(√2) ; f(8) ; f(3/2) ; f(5,2)</li>
+  <li>Montrer que : (∀x ∈ ℝ) 0 ≤ f(x) < 1</li>
+  <li>Tracer la courbe représentative de f sur l'intervalle [−6 ; 6].</li>
+</ol>
+
+<h2>VII. Composée de deux fonctions numériques</h2>
+
+<h4>Définition</h4>
+<p>Soit f et g deux fonctions définies respectivement sur deux ensembles I et J tels que f(I) ⊂ J.</p>
+<p>La fonction numérique h définie sur I par h(x) = g(f(x)) est appelée <strong>composée</strong> des fonctions f et g dans cet ordre. Elle est notée g ∘ f.</p>
+<p>(∀x ∈ I) g ∘ f(x) = g(f(x))</p>
+
+<h4>Proposition</h4>
+<p>Si f et g ont le même sens de variation, alors g ∘ f est croissante (éventuellement strictement croissante) sur l'intervalle I.</p>
+<p>Si f et g ont des sens de variation contraires, alors g ∘ f est décroissante (éventuellement strictement décroissante) sur l'intervalle I.</p>
+
+<h4>Applications</h4>
+<ol>
+  <li>En utilisant la propriété de la monotonie de la composée de deux fonctions, étudier la monotonie de la fonction f sur l'intervalle I dans chacun des cas suivants :
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr><td>① f(x) = 1 + 5/x³ et I = ℝ⁻</td><td>④ f(x) = (cos x − 1)/(cos x + 1) et I = [0 ; π[</td></tr>
+      <tr><td>② f(x) = −3/(x² + 1) et I = ℝ⁺</td><td>⑤ f(x) = (x³ − 1)/(x³ + 1) et I = ]−∞ ; −1[</td></tr>
+      <tr><td>③ f(x) = x⁴ + x² et I = ℝ⁺</td><td>⑥ f(x) = 1 + 1/sin(x) et I = ]0 ; π/2[</td></tr>
+    </table>
+  </li>
+</ol>
+<p>Soit f : ℝ → ℝ ; f(x) = (x² − 2x + 2)/(2x² − 4x + 3)</p>
+<ol start="2">
+  <li>Montrer que : (∀x ∈ ℝ) ½ < f(x) ≤ 1</li>
+</ol>
+<p>On considère u : ℝ → ℝ ; u(x) = x² − 2x et v : ℝ → ℝ ; v(x) = (x + 2)/(2x + 3)</p>
+<ol start="3">
+  <li>Donner le tableau de variations de chacune des fonctions u et v.</li>
+  <li>En utilisant les variations des fonctions u et v, étudier les variations de la fonction f sur [1 ; +∞[ et ]−∞ ; 1].</li>
+</ol>
+
+<h2>VIII. Fonction périodique</h2>
+
+<h4>Définition</h4>
+<p>Soit f une fonction numérique et D<sub>f</sub> son ensemble de définition. On dit que f est <strong>périodique</strong> s'il existe un réel non nul T tel que pour tout x ∈ D<sub>f</sub> :</p>
+<p>(x + T) ∈ D<sub>f</sub> et (x − T) ∈ D<sub>f</sub> et f(x + T) = f(x)</p>
+<p>Le nombre réel T est appelé alors une <strong>période</strong> de f.</p>
+<p>La plus petite période strictement positive de la fonction f (lorsqu'elle existe) est appelée la <strong>période</strong> de la fonction f.</p>
+
+<h4>Applications</h4>
+<p>Soit a un réel strictement positif.</p>
+<ol>
+  <li>Montrer que la fonction x ↦ tan(ax) est périodique et donner sa période.</li>
+  <li>Déterminer la période de chacune des fonctions suivantes :
+    <p>f₁ : x ↦ cos²(x)</p>
+    <p>f₂ : x ↦ sin(x/2 − π/3)</p>
+    <p>f₃ : x ↦ sin(3x) + cos(2x)</p>
+    <p>f₄ : x ↦ tan(3x) − cos(4x)</p>
+  </li>
+  <li>Montrer que la fonction x ↦ x − E(x) est périodique de période égale à 1.</li>
+</ol>
+
+<h4>Proposition</h4>
+<p>Soit f une fonction périodique de période T et C<sub>f</sub> sa courbe représentative dans un repère (O ; <em>i</em>⃗ ; <em>j</em>⃗).</p>
+<p>Pour tout k ∈ ℤ*, le nombre kT est aussi une période de la fonction f.</p>
+<p>La courbe C<sub>f</sub> est invariante par toute translation de vecteur kT<em>i</em>⃗ avec k ∈ ℤ.</p>
+<p>Ainsi, pour étudier une fonction périodique de période T, il suffit de l'étudier sur un intervalle de ℝ de longueur T (très souvent [0 ; T[ ou [−T/2 ; T/2[).</p>
+
+<h4>Applications</h4>
+<p>On considère la fonction f définie sur ℝ, périodique de période T = 3 et telle que (∀x ∈ [0 ; 3]) f(x) = |x − 2|.</p>
+<ol>
+  <li>Représenter graphiquement la fonction f sur l'intervalle I = [−6 ; 9].</li>
+  <li>Calculer : f(9,78) ; f(−8,75) ; f(2020)</li>
+  <li>Pour tout k ∈ ℤ, on pose I<sub>k</sub> = [3k ; 3(k+1)[. Calculer f(x) en fonction de x et k lorsque x ∈ I<sub>k</sub>.</li>
+</ol>

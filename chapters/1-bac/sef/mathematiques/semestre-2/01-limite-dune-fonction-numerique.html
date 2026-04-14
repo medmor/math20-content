@@ -1,0 +1,168 @@
+<!-- Les limites d'une fonction numérique -->
+<h1>Les limites d'une fonction numérique</h1>
+
+<h2>I. Limite finie en un point</h2>
+
+<h3>1-1. Définition</h3>
+<p>Soit f une fonction définie sur un intervalle ouvert contenant a (sauf peut-être en a), et soit ℓ un réel. On dit que f(x) tend vers ℓ quand x tend vers a, et on note :</p>
+<p>lim<sub>x→a</sub> f(x) = ℓ</p>
+<p>si pour tout ε > 0, il existe δ > 0 tel que :</p>
+<p>0 < |x − a| < δ ⇒ |f(x) − ℓ| < ε</p>
+
+<p><strong>Exemple :</strong> Montrer que lim<sub>x→2</sub> (3x − 1) = 5.</p>
+<p>Soit ε > 0. On a |(3x − 1) − 5| = |3x − 6| = 3|x − 2|. Il suffit de choisir δ = ε/3. Alors si 0 < |x − 2| < δ, on a |f(x) − 5| < ε. □</p>
+
+<h3>1-2. Unicité de la limite</h3>
+<p>Si f admet une limite en a, alors cette limite est unique.</p>
+
+<h2>II. Limite infinie en un point</h2>
+
+<h3>2-1. Définition</h3>
+<p>On dit que f(x) tend vers +∞ (resp. −∞) quand x tend vers a si :</p>
+<p>Pour tout A > 0, il existe δ > 0 tel que : 0 < |x − a| < δ ⇒ f(x) > A (resp. f(x) < −A).</p>
+<p>On note : lim<sub>x→a</sub> f(x) = +∞ (resp. −∞).</p>
+
+<p><strong>Exemple :</strong> Montrer que lim<sub>x→0</sub> 1/x² = +∞.</p>
+<p>Soit A > 0. On a 1/x² > A ⇔ x² < 1/A ⇔ |x| < 1/√A. On choisit δ = 1/√A. □</p>
+
+<h2>III. Limite en +∞ ou −∞</h2>
+
+<h3>3-1. Limite finie en +∞</h3>
+<p>Soit f définie sur ]b, +∞[. On dit que lim<sub>x→+∞</sub> f(x) = ℓ si :</p>
+<p>Pour tout ε > 0, il existe B > 0 tel que : x > B ⇒ |f(x) − ℓ| < ε.</p>
+
+<p>On définit de manière analogue lim<sub>x→−∞</sub> f(x) = ℓ.</p>
+
+<h3>3-2. Limite infinie en +∞</h3>
+<p>On dit que lim<sub>x→+∞</sub> f(x) = +∞ si :</p>
+<p>Pour tout A > 0, il existe B > 0 tel que : x > B ⇒ f(x) > A.</p>
+
+<p>On définit de manière analogue les limites −∞ en +∞, et les limites en −∞.</p>
+
+<p><strong>Exemple :</strong> Montrer que lim<sub>x→+∞</sub> 1/x = 0.</p>
+<p>Soit ε > 0. On a |1/x| < ε ⇔ x > 1/ε. On choisit B = 1/ε. □</p>
+
+<h2>IV. Limites à gauche et à droite</h2>
+
+<p><strong>Limite à droite :</strong> lim<sub>x→a⁺</sub> f(x) = ℓ si x tend vers a par valeurs supérieures à a.</p>
+<p><strong>Limite à gauche :</strong> lim<sub>x→a⁻</sub> f(x) = ℓ si x tend vers a par valeurs inférieures à a.</p>
+
+<p><strong>Théorème :</strong> lim<sub>x→a</sub> f(x) = ℓ ⇔ lim<sub>x→a⁻</sub> f(x) = lim<sub>x→a⁺</sub> f(x) = ℓ.</p>
+
+<p><strong>Exemple :</strong> Étudier lim<sub>x→0</sub> 1/x.</p>
+<p>On a lim<sub>x→0⁺</sub> 1/x = +∞ et lim<sub>x→0⁻</sub> 1/x = −∞. Les limites à gauche et à droite sont différentes, donc lim<sub>x→0</sub> 1/x n'existe pas.</p>
+
+<h2>V. Propriétés des limites</h2>
+
+<h3>5-1. Opérations sur les limites</h3>
+<p>Soient f et g admettant des limites finies en a : lim f(x) = ℓ et lim g(x) = ℓ'.</p>
+<ul>
+<li>lim [f(x) + g(x)] = ℓ + ℓ'</li>
+<li>lim [f(x) × g(x)] = ℓ × ℓ'</li>
+<li>Si ℓ' ≠ 0, lim [f(x)/g(x)] = ℓ/ℓ'</li>
+<li>lim [k × f(x)] = k × ℓ, pour tout réel k</li>
+</ul>
+
+<p>Ces règles s'étendent aux limites infinies avec les conventions usuelles (+∞ + +∞ = +∞, etc.), sauf dans les cas de formes indéterminées.</p>
+
+<h3>5-2. Formes indéterminées</h3>
+<p>Les formes suivantes ne permettent pas de conclure directement :</p>
+<ul>
+<li>+∞ − ∞</li>
+<li>0 × ∞</li>
+<li>∞ / ∞</li>
+<li>0 / 0</li>
+</ul>
+<p>Il faut transformer l'expression (factorisation, division par le terme dominant, etc.).</p>
+
+<h3>5-3. Théorème des gendarmes</h3>
+<p>Soient f, g, h trois fonctions telles que g(x) ≤ f(x) ≤ h(x) au voisinage de a. Si lim<sub>x→a</sub> g(x) = lim<sub>x→a</sub> h(x) = ℓ, alors lim<sub>x→a</sub> f(x) = ℓ.</p>
+
+<p><strong>Exemple :</strong> Calculer lim<sub>x→0</sub> x sin(1/x).</p>
+<p>On a −1 ≤ sin(1/x) ≤ 1, donc −|x| ≤ x sin(1/x) ≤ |x|. Or lim<sub>x→0</sub> (−|x|) = lim<sub>x→0</sub> |x| = 0. Par le théorème des gendarmes, lim<sub>x→0</sub> x sin(1/x) = 0.</p>
+
+<h3>5-4. Théorème de comparaison</h3>
+<p>Si f(x) ≥ g(x) au voisinage de a et lim<sub>x→a</sub> g(x) = +∞, alors lim<sub>x→a</sub> f(x) = +∞.</p>
+<p>Si f(x) ≤ g(x) au voisinage de a et lim<sub>x→a</sub> g(x) = −∞, alors lim<sub>x→a</sub> f(x) = −∞.</p>
+
+<h3>5-5. Théorème de composition</h3>
+<p>Si lim<sub>x→a</sub> f(x) = b et lim<sub>y→b</sub> g(y) = L (avec g continue en b), alors lim<sub>x→a</sub> g(f(x)) = L.</p>
+
+<h3>5-6. Limites usuelles</h3>
+<ul>
+<li>lim<sub>x→0</sub> sin(x)/x = 1</li>
+<li>lim<sub>x→0</sub> (1 − cos(x))/x = 0</li>
+<li>lim<sub>x→0</sub> (1 − cos(x))/x² = 1/2</li>
+<li>lim<sub>x→+∞</sub> x<sup>n</sup> = +∞ (n ∈ ℕ*)</li>
+<li>lim<sub>x→+∞</sub> 1/x<sup>n</sup> = 0 (n ∈ ℕ*)</li>
+<li>lim<sub>x→0⁺</sub> 1/x = +∞ ; lim<sub>x→0⁻</sub> 1/x = −∞</li>
+</ul>
+
+<h2>VI. Exemples résolus</h2>
+
+<p><strong>Exemple 1 :</strong> Calculer lim<sub>x→2</sub> (x² − 4)/(x − 2).</p>
+<p>Forme indéterminée 0/0. On factorise : (x² − 4)/(x − 2) = (x − 2)(x + 2)/(x − 2) = x + 2 pour x ≠ 2. Donc lim = 4.</p>
+
+<p><strong>Exemple 2 :</strong> Calculer lim<sub>x→+∞</sub> (3x² + 2x − 1)/(x² + 5).</p>
+<p>Forme ∞/∞. On divise par x² : = (3 + 2/x − 1/x²)/(1 + 5/x²) → 3/1 = 3.</p>
+
+<p><strong>Exemple 3 :</strong> Calculer lim<sub>x→+∞</sub> (2x + 1)/(x − 3).</p>
+<p>On divise par x : = (2 + 1/x)/(1 − 3/x) → 2/1 = 2.</p>
+
+<p><strong>Exemple 4 :</strong> Calculer lim<sub>x→1</sub> (x³ − 1)/(x − 1).</p>
+<p>Forme 0/0. On factorise : x³ − 1 = (x − 1)(x² + x + 1). Donc lim = 1² + 1 + 1 = 3.</p>
+
+<p><strong>Exemple 5 :</strong> Calculer lim<sub>x→0</sub> sin(x)/x.</p>
+<p>On a cos x ≤ sin(x)/x ≤ 1 pour x ∈ ]−π/2, π/2[ \ {0}. Comme lim<sub>x→0</sub> cos x = 1, par le théorème des gendarmes, lim<sub>x→0</sub> sin(x)/x = 1.</p>
+
+<h2>VII. Asymptotes</h2>
+
+<h3>7-1. Asymptote horizontale</h3>
+<p>La droite d'équation y = ℓ est <strong>asymptote horizontale</strong> à C<sub>f</sub> en +∞ (resp. −∞) si lim<sub>x→+∞</sub> f(x) = ℓ (resp. lim<sub>x→−∞</sub> f(x) = ℓ).</p>
+
+<h3>7-2. Asymptote verticale</h3>
+<p>La droite d'équation x = a est <strong>asymptote verticale</strong> à C<sub>f</sub> si lim<sub>x→a⁺</sub> f(x) = ±∞ ou lim<sub>x→a⁻</sub> f(x) = ±∞.</p>
+
+<h3>7-3. Asymptote oblique</h3>
+<p>La droite d'équation y = ax + b est <strong>asymptote oblique</strong> à C<sub>f</sub> en +∞ (resp. −∞) si :</p>
+<p>lim<sub>x→+∞</sub> [f(x) − (ax + b)] = 0</p>
+<p>où a = lim<sub>x→+∞</sub> f(x)/x et b = lim<sub>x→+∞</sub> [f(x) − ax].</p>
+
+<p><strong>Exemple :</strong> Soit f(x) = (x² + 1)/(x − 1). Déterminer les asymptotes.</p>
+<ul>
+<li>Asymptote verticale : x = 1 car lim<sub>x→1</sub> f(x) = ±∞.</li>
+<li>Asymptote oblique : f(x) = x + 1 + 2/(x − 1). Donc lim<sub>x→±∞</sub> [f(x) − (x + 1)] = lim<sub>x→±∞</sub> 2/(x − 1) = 0. Asymptote oblique : y = x + 1.</li>
+</ul>
+
+<h2>VIII. Limites et continuité</h2>
+
+<p>Une fonction f est <strong>continue en a</strong> si et seulement si :</p>
+<p>lim<sub>x→a</sub> f(x) = f(a)</p>
+
+<p><strong>Propriétés :</strong></p>
+<ul>
+<li>Les fonctions polynômes sont continues sur ℝ.</li>
+<li>Les fonctions rationnelles sont continues sur leur domaine de définition.</li>
+<li>La composée de deux fonctions continues est continue.</li>
+<li>Si f est continue en a et g est continue en f(a), alors g ∘ f est continue en a.</li>
+</ul>
+
+<h2>IX. Exercices</h2>
+
+<h3>Exercice 1</h3>
+<p>Calculer lim<sub>x→3</sub> (x² − 9)/(x − 3).</p>
+
+<h3>Exercice 2</h3>
+<p>Calculer lim<sub>x→+∞</sub> (2x² − x + 3)/(x² + 4x − 1).</p>
+
+<h3>Exercice 3</h3>
+<p>Déterminer les asymptotes de f(x) = (2x + 1)/(x − 3).</p>
+
+<h3>Exercice 4</h3>
+<p>Montrer que la droite y = 2x − 1 est asymptote oblique à la courbe de f(x) = (2x² + x − 3)/(x + 1) en +∞.</p>
+
+<h3>Exercice 5</h3>
+<p>Calculer lim<sub>x→0</sub> x² sin(1/x) en utilisant le théorème des gendarmes.</p>
+
+<h3>Exercice 6</h3>
+<p>Étudier la continuité de f en 0, où f(x) = (sin x)/x pour x ≠ 0 et f(0) = 1.</p>

@@ -1,0 +1,119 @@
+<!-- Calcul vectoriel dans le plan -->
+<h1>Calcul vectoriel dans le plan</h1>
+
+<h2>1. Vecteurs</h2>
+
+<h3>Définition : Vecteur</h3>
+<p>Un <strong>vecteur</strong> dans le plan est un couple ordonné de nombres réels, noté :</p>
+<p>$$\vec{v} = (v_1, v_2) \quad \text{ou} \quad \vec{v} = \begin{pmatrix} v_1 \\ v_2 \end{pmatrix}$$</p>
+<p>où $v_1$ et $v_2$ sont les composantes du vecteur.</p>
+
+<h3>Interprétation géométrique</h3>
+<p>Un vecteur peut être représenté comme un segment orienté d'un point initial $A(x_1, y_1)$ à un point final $B(x_2, y_2)$, avec :</p>
+<p>$$\vec{AB} = (x_2 - x_1, y_2 - y_1)$$</p>
+
+<h3>Vecteur nul</h3>
+<p>$$\vec{0} = (0, 0)$$</p>
+
+<h3>Opposé d'un vecteur</h3>
+<p>$$-\vec{v} = (-v_1, -v_2)$$</p>
+
+<h2>2. Opérations sur les vecteurs</h2>
+
+<h3>Addition de vecteurs</h3>
+<p>Pour deux vecteurs $\vec{u} = (u_1, u_2)$ et $\vec{v} = (v_1, v_2)$ :</p>
+<p>$$\vec{u} + \vec{v} = (u_1 + v_1, u_2 + v_2)$$</p>
+
+<h4>Propriétés de l'addition</h4>
+<ul>
+<li><strong>Commutativité :</strong> $\vec{u} + \vec{v} = \vec{v} + \vec{u}$</li>
+<li><strong>Associativité :</strong> $(\vec{u} + \vec{v}) + \vec{w} = \vec{u} + (\vec{v} + \vec{w})$</li>
+<li><strong>Élément neutre :</strong> $\vec{u} + \vec{0} = \vec{u}$</li>
+<li><strong>Opposé :</strong> $\vec{u} + (-\vec{u}) = \vec{0}$</li>
+</ul>
+
+<h3>Multiplication par un scalaire</h3>
+<p>Pour un scalaire $\lambda \in \mathbb{R}$ et un vecteur $\vec{v} = (v_1, v_2)$ :</p>
+<p>$$\lambda \vec{v} = (\lambda v_1, \lambda v_2)$$</p>
+
+<h4>Propriétés</h4>
+<ul>
+<li>$\lambda(\vec{u} + \vec{v}) = \lambda\vec{u} + \lambda\vec{v}$</li>
+<li>$(\lambda + \mu)\vec{v} = \lambda\vec{v} + \mu\vec{v}$</li>
+<li>$(\lambda \mu)\vec{v} = \lambda(\mu\vec{v})$</li>
+<li>$1 \cdot \vec{v} = \vec{v}$</li>
+</ul>
+
+<h2>3. Norme d'un vecteur</h2>
+
+<h3>Définition</h3>
+<p>La <strong>norme</strong> (ou longueur) d'un vecteur $\vec{v} = (v_1, v_2)$ est :</p>
+<p>$$\|\vec{v}\| = \sqrt{v_1^2 + v_2^2}$$</p>
+
+<h3>Propriétés</h3>
+<ul>
+<li>$\|\vec{v}\| \geq 0$ et $\|\vec{v}\| = 0 \Leftrightarrow \vec{v} = \vec{0}$</li>
+<li>$\|\lambda\vec{v}\| = |\lambda| \cdot \|\vec{v}\|$</li>
+<li><strong>Inégalité triangulaire :</strong> $\|\vec{u} + \vec{v}\| \leq \|\vec{u}\| + \|\vec{v}\|$</li>
+</ul>
+
+<h2>4. Vecteur unitaire</h2>
+
+<h3>Définition</h3>
+<p>Un <strong>vecteur unitaire</strong> est un vecteur de norme 1.</p>
+<p>Pour tout vecteur non nul $\vec{v}$, le vecteur unitaire dans la direction de $\vec{v}$ est :</p>
+<p>$$\hat{v} = \frac{\vec{v}}{\|\vec{v}\|} = \left(\frac{v_1}{\|\vec{v}\|}, \frac{v_2}{\|\vec{v}\|}\right)$$</p>
+
+<h2>5. Colinéarité</h2>
+
+<h3>Définition</h3>
+<p>Deux vecteurs $\vec{u}$ et $\vec{v}$ sont <strong>colinéaires</strong> s'il existe un réel $\lambda$ tel que :</p>
+<p>$$\vec{u} = \lambda\vec{v} \quad \text{ou} \quad \vec{v} = \lambda\vec{u}$$</p>
+
+<h3>Condition de colinéarité</h3>
+<p>Deux vecteurs $\vec{u} = (u_1, u_2)$ et $\vec{v} = (v_1, v_2)$ sont colinéaires si et seulement si :</p>
+<p>$$u_1 \cdot v_2 - u_2 \cdot v_1 = 0$$</p>
+<p>c'est-à-dire que le déterminant est nul.</p>
+
+<h3>Vecteurs de même direction</h3>
+<ul>
+<li>Si $\lambda > 0$ : les vecteurs ont le même sens</li>
+<li>Si $\lambda < 0$ : les vecteurs ont des sens opposés</li>
+</ul>
+
+<h2>6. Base du plan</h2>
+
+<h3>Définition</h3>
+<p>Une <strong>base</strong> du plan est un couple de deux vecteurs non colinéaires $(\vec{i}, \vec{j})$.</p>
+<p>Tout vecteur $\vec{v}$ du plan peut s'écrire de manière unique :</p>
+<p>$$\vec{v} = x\vec{i} + y\vec{j}$$</p>
+<p>où $(x, y)$ sont les coordonnées de $\vec{v}$ dans cette base.</p>
+
+<h3>Base orthonormée</h3>
+<p>Une base $(\vec{i}, \vec{j})$ est <strong>orthonormée</strong> si :</p>
+<ul>
+<li>$\|\vec{i}\| = \|\vec{j}\| = 1$</li>
+<li>$\vec{i}$ et $\vec{j}$ sont orthogonaux</li>
+</ul>
+
+<h2>Exercices</h2>
+
+<h3>Exercice 1</h3>
+<p>Soient $\vec{u} = (2, 3)$ et $\vec{v} = (-1, 4)$. Calculer :</p>
+<ul>
+<li>$\vec{u} + \vec{v}$</li>
+<li>$2\vec{u} - 3\vec{v}$</li>
+<li>$\|\vec{u}\|$ et $\|\vec{v}\|$</li>
+</ul>
+
+<h3>Exercice 2</h3>
+<p>Déterminer si les vecteurs $\vec{u} = (2, -3)$ et $\vec{v} = (4, -6)$ sont colinéaires.</p>
+
+<h3>Exercice 3</h3>
+<p>Soit $\vec{u} = (3, 4)$. Calculer le vecteur unitaire dans la direction de $\vec{u}$.</p>
+
+<h3>Exercice 4</h3>
+<p>Soient $A(1, 2)$ et $B(4, 6)$. Calculer les coordonnées du vecteur $\vec{AB}$ et sa norme.</p>
+
+<h3>Exercice 5</h3>
+<p>Vérifier que les vecteurs $\vec{u} = (1, 0)$ et $\vec{v} = (0, 1)$ forment une base orthonormée du plan.</p>

@@ -1,0 +1,465 @@
+<!-- Les ensembles et les applications -->
+<h1>Les ensembles et les applications</h1>
+
+<h2>I. Généralités sur les ensembles</h2>
+
+<h3>1-1. Notion d'ensemble – Élément d'un ensemble</h3>
+
+<h4>Définition</h4>
+<p>Un <strong>ensemble</strong> est une collection d'objets bien définis, appelés les <strong>éléments</strong> de cet ensemble.</p>
+<p>Si x est un élément de l'ensemble E, on écrit x ∈ E et on lit « x appartient à E ».</p>
+<p>Si x n'est pas un élément de E, on écrit x ∉ E et on lit « x n'appartient pas à E ».</p>
+
+<h3>1-2. Définition d'un ensemble</h3>
+
+<p>On peut définir un ensemble de deux façons :</p>
+<ul>
+  <li><strong>En extension</strong> : en listant tous ses éléments entre accolades. Exemple : E = {1, 2, 3}</li>
+  <li><strong>En compréhension</strong> : en décrivant la propriété qui caractérise ses éléments. Si P(x) est la propriété qui caractérise les éléments de E, alors on écrit : E = {x / P(x)}</li>
+</ul>
+
+<h4>Applications</h4>
+<ol>
+  <li>Écrire en extension les ensembles suivants :
+    <p>A = {x ∈ ℤ / −5/2 ≤ x ≤ 3/2}</p>
+    <p>B = {x ∈ ℝ / x² + x + 1 = 0}</p>
+    <p>C = {x ∈ ℕ / x² ≤ 51 et √(x − 1) ∈ ℕ}</p>
+    <p>D = {x ∈ ℤ / x² + (x + 1)² + (x² − 2)² = 0}</p>
+    <p>E = {n ∈ ℕ / n³ < 200}</p>
+    <p>F = {n ∈ ℕ / |3n − 14| ≤ 10}</p>
+  </li>
+  <li>Écrire en compréhension les ensembles suivants :
+    <p>G = {3 ; 6 ; 9 ; 12 ; 15}</p>
+    <p>H = {1 ; 3 ; 9 ; 27 ; 81 ; ...}</p>
+    <p>J = {... ; −8 ; −3 ; 2 ; 7 ; 12 ; ...}</p>
+    <p>K = {1 ; −½ ; ¼ ; −⅛ ; 1/16 ; ...}</p>
+    <p>L = {... ; 1/9 ; 1/3 ; 1 ; 3 ; 9 ; ...}</p>
+  </li>
+</ol>
+
+<h3>1-3. Égalité de deux ensembles</h3>
+
+<h4>Définition</h4>
+<p>Soit E et F deux ensembles. On dit que E et F sont <strong>égaux</strong> lorsqu'ils ont les mêmes éléments, et on écrit E = F.</p>
+
+<h4>Applications</h4>
+<p>On considère l'ensemble : E = {x ∈ ℝ / −¼ < x/(x² + 4) < ¼}</p>
+<ol>
+  <li>Montrer que : E = ℝ</li>
+</ol>
+<p>On considère les deux ensembles A = ]−∞ ; −1[ et B = {x ∈ ℝ / x/(x + 1) > 1}.</p>
+<ol start="2">
+  <li>Montrer que : A = B</li>
+</ol>
+
+<h2>II. Parties d'un ensemble – Inclusion – Complémentaire</h2>
+
+<h3>2-1. Inclusion</h3>
+
+<h4>Définition</h4>
+<p>Soit A et B deux parties d'un ensemble E. On dit que A est <strong>incluse</strong> dans B si chaque élément de A est un élément de B. On note A ⊂ B.</p>
+<p>En d'autres termes : A ⊂ B ⇔ [(∀x ∈ E) ; x ∈ A ⇒ x ∈ B]</p>
+
+<h4>Remarques</h4>
+<p>Pour tout ensemble A, on a toujours ∅ ⊂ A et A ⊂ A.</p>
+<p>Dire que A n'est pas incluse dans B signifie qu'il existe au moins un élément x ∈ A tel que x ∉ B, et on écrit A ⊄ B.</p>
+
+<h4>Proposition</h4>
+<p>Soit A, B et C trois parties d'un ensemble E.</p>
+<ul>
+  <li>Si A ⊂ B et B ⊂ C, alors A ⊂ C.</li>
+  <li>A = B si et seulement si A ⊂ B et B ⊂ A.</li>
+</ul>
+
+<h4>Remarques</h4>
+<p>A = B ⇔ [(∀x ∈ E) ; x ∈ A ⇔ x ∈ B]</p>
+<p>Si A ⊂ B et B ⊂ C, alors on peut écrire A ⊂ B ⊂ C. Par exemple : ℕ ⊂ ℤ ⊂ ℝ</p>
+
+<h3>2-2. Complémentaire</h3>
+
+<h4>Définition</h4>
+<p>Soit A une partie d'un ensemble E. L'ensemble des éléments de E n'appartenant pas à l'ensemble A est appelé le <strong>complémentaire</strong> de A dans E. On le note C<sub>E</sub><sup>A</sup> ou Ā.</p>
+<p>C<sub>E</sub><sup>A</sup> = {x ∈ E / x ∉ A} et x ∈ Ā ⇔ x ∉ A</p>
+
+<h4>Applications</h4>
+<p>On considère l'ensemble : A = {x ∈ ℕ / x² − 4x > 0}</p>
+<ol>
+  <li>Décrire en extension l'ensemble C<sub>ℕ</sub><sup>A</sup>.</li>
+</ol>
+<p>On considère l'ensemble : B = {x ∈ ℝ / x² + x < 5}</p>
+<ol start="2">
+  <li>Montrer que : [2 ; +∞[ ⊂ C<sub>ℝ</sub><sup>B</sup></li>
+</ol>
+<p>On considère l'ensemble : E = {x ∈ ℝ / x⁴ + x³ + x² + x = 2}</p>
+<ol start="3">
+  <li>Montrer que : [1 ; +∞[ ⊂ C<sub>ℝ</sub><sup>E</sup></li>
+</ol>
+
+<h4>Proposition</h4>
+<p>Soit A et B deux parties d'un ensemble E. Alors :</p>
+<ul>
+  <li>C<sub>E</sub><sup>E</sup> = ∅ et C<sub>E</sub><sup>∅</sup> = E et C<sub>E</sub><sup>Ā</sup> = A</li>
+  <li>A ⊂ B ⇔ B̄ ⊂ Ā</li>
+</ul>
+
+<h3>2-3. Ensemble des parties d'un ensemble</h3>
+
+<h4>Définition</h4>
+<p>Soit E un ensemble. On appelle <strong>ensemble des parties</strong> de E, et on note 𝒫(E), l'ensemble des sous-ensembles de E.</p>
+<p>A ∈ 𝒫(E) ⇔ A ⊂ E</p>
+
+<h4>Remarques</h4>
+<p>Les éléments de 𝒫(E) sont des ensembles. En particulier, on a ∅ ∈ 𝒫(E) et E ∈ 𝒫(E). Si E est un ensemble non vide, alors : a ∈ E ⇔ {a} ∈ 𝒫(E)</p>
+
+<h2>III. Opérations dans 𝒫(E)</h2>
+
+<h3>3-1. Intersection</h3>
+
+<h4>Définition</h4>
+<p>Soit A et B deux parties d'un ensemble E. L'<strong>intersection</strong> des ensembles A et B, notée A ∩ B, est l'ensemble des éléments de E qui sont dans A et dans B.</p>
+<p>x ∈ A ∩ B ⇔ (x ∈ A et x ∈ B) donc A ∩ B = {x ∈ E / x ∈ A et x ∈ B}</p>
+
+<h4>Proposition</h4>
+<p>Soit A, B et C trois parties d'un ensemble E.</p>
+<table border="1" cellpadding="5" cellspacing="0">
+  <tr><td>① A ∩ B = B ∩ A</td><td>④ A ∩ B ⊂ A et A ∩ B ⊂ B</td></tr>
+  <tr><td>② A ∩ E = A et A ∩ ∅ = ∅</td><td>⑤ A ∩ (B ∩ C) = (A ∩ B) ∩ C</td></tr>
+  <tr><td>③ A ∩ A = A et A ∩ Ā = ∅</td><td>⑥ A ∩ B = A ⇔ A ⊂ B</td></tr>
+</table>
+
+<h3>3-2. Réunion</h3>
+
+<h4>Définition</h4>
+<p>Soit A et B deux parties d'un ensemble E. La <strong>réunion</strong> des ensembles A et B, notée A ∪ B, est l'ensemble des éléments de E qui sont dans A ou dans B.</p>
+<p>x ∈ A ∪ B ⇔ (x ∈ A ou x ∈ B) donc A ∪ B = {x ∈ E / x ∈ A ou x ∈ B}</p>
+
+<h4>Proposition</h4>
+<p>Soit A, B et C trois parties d'un ensemble E.</p>
+<table border="1" cellpadding="5" cellspacing="0">
+  <tr><td>① A ∪ B = B ∪ A</td><td>④ A ⊂ A ∪ B et B ⊂ A ∪ B</td></tr>
+  <tr><td>② A ∪ E = E et A ∪ ∅ = A</td><td>⑤ A ∪ (B ∪ C) = (A ∪ B) ∪ C</td></tr>
+  <tr><td>③ A ∪ A = A et A ∪ Ā = E</td><td>⑥ A ∪ B = A ⇔ B ⊂ A</td></tr>
+</table>
+
+<h3>3-3. Règles de calcul</h3>
+
+<p>Soit A, B et C trois parties d'un ensemble E.</p>
+<p><strong>Distributivité :</strong></p>
+<ul>
+  <li>A ∪ (B ∩ C) = (A ∪ B) ∩ (A ∪ C)</li>
+  <li>A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C)</li>
+</ul>
+<p><strong>Lois de Morgan :</strong></p>
+<ul>
+  <li><span>Ā ∩ B</span> = Ā ∪ B̄</li>
+  <li><span>Ā ∪ B</span> = Ā ∩ B̄</li>
+</ul>
+
+<h4>Applications</h4>
+<p>On considère les deux ensembles A et B définis par :</p>
+<p>A = {π/6 + kπ/3 / k ∈ ℤ} et B = {−π/4 + kπ/3 / k ∈ ℤ}</p>
+<ol>
+  <li>Montrer que : A ∩ B = ∅</li>
+  <li>Déterminer l'ensemble (A ∪ B) ∩ [−π/2 ; π/2]</li>
+</ol>
+<p>Soit A, B et C trois parties d'un ensemble E.</p>
+<ol start="3">
+  <li>Montrer que A ∩ (B ∪ (A ∩ C)) = A ∩ (B ∪ C) et A ∪ (B ∩ (A ∪ C)) = A ∪ (B ∩ C)</li>
+  <li>Montrer que : (A ∪ B) ∩ (B ∪ C) ∩ (C ∪ A) = (A ∩ B) ∪ (B ∩ C) ∪ (C ∩ A)</li>
+  <li>Simplifier A ∩ (B ∩ C)̄ et (A ∩ B̄) ∩ (A ∩ C̄)̄</li>
+</ol>
+
+<h3>3-4. Différence de deux ensembles</h3>
+
+<h4>Définition</h4>
+<p>Soit A et B deux parties d'un ensemble E. La <strong>différence</strong> des ensembles A et B dans cet ordre, notée A\B, est l'ensemble des éléments de A qui ne sont pas dans B.</p>
+<p>x ∈ A\B ⇔ (x ∈ A et x ∉ B) donc A\B = {x ∈ E / x ∈ A et x ∉ B}</p>
+<p>A\B se lit « A moins B » ou « A privé de B »</p>
+
+<h4>Proposition</h4>
+<p>Soit A et B deux parties d'un ensemble E.</p>
+<ol>
+  <li>A\B = A ∩ C<sub>E</sub><sup>B</sup> = A ∩ B̄</li>
+  <li>A = (A\B) ∪ (A ∩ B)</li>
+</ol>
+
+<h4>Applications</h4>
+<ol>
+  <li>Déterminer les ensembles A et B sachant que : A ∪ B = {1 ; 2 ; 3 ; ... ; 11} et A ∩ B = {4 ; 5 ; 6 ; 11} et A\B = {7 ; 8 ; 9 ; 10}</li>
+  <li>Montrer que A\(B ∩ C) = (A\B) ∪ (A\C) et A\(B ∪ C) = (A\B) ∩ (A\C)</li>
+  <li>Montrer que si A ∩ B = A ∩ C et B\A = C\A, alors B = C</li>
+  <li>Montrer que : [(B\C) ⊂ A et (C\D) ⊂ A] ⇒ (B\A) ⊂ A</li>
+</ol>
+<p>Soit A et B deux parties d'un ensemble E. On pose : AΔB = (A\B) ∪ (B\A). L'ensemble AΔB s'appelle la <strong>différence symétrique</strong> des ensembles A et B.</p>
+<ol start="5">
+  <li>On suppose A = {1 ; 2 ; 3 ; 5 ; 6} et B = {2 ; 3 ; 7 ; 8 ; 9}. Déterminer AΔB.</li>
+  <li>Montrer que pour tous A et B de 𝒫(E) :
+    <p>AΔA = ∅ ; AΔE = Ā ; AΔ∅ = A</p>
+    <p>AΔB = (A ∪ B)\(A ∩ B) ; AΔB = ĀΔB̄</p>
+  </li>
+  <li>Montrer que : AΔB = ∅ ⇔ A = B et AΔB = A ∩ B ⇔ (A = ∅ et B = ∅)</li>
+  <li>Établir : A ∩ (BΔC) = (A ∩ B)Δ(A ∩ C) et AΔ(BΔC) = (AΔB)ΔC</li>
+</ol>
+
+<h3>3-5. Produit cartésien</h3>
+
+<h4>Définition</h4>
+<p>Soit E et F deux ensembles. Le <strong>produit cartésien</strong> des ensembles E et F, noté E × F, est l'ensemble des couples (x ; y) tels que x ∈ E et y ∈ F.</p>
+<p>E × F = {(x ; y) / x ∈ E et y ∈ F}</p>
+
+<h4>Remarques</h4>
+<p>Si E = F, le produit cartésien E × E est noté E² et appelé le <strong>carré cartésien</strong> de E.</p>
+<p>E × F = ∅ ⇔ (E = ∅ ou F = ∅)</p>
+
+<h4>Applications</h4>
+<p>On considère les deux ensembles : A = {n ∈ ℕ / n² < 16} et B = {n ∈ ℕ / |n − 2| ≤ 1}</p>
+<ol>
+  <li>Écrire en extension l'ensemble A × B, puis représenter un diagramme cartésien de cet ensemble.</li>
+  <li>Justifier que : (E × F) ∪ (G × H) ≠ (E ∪ G) × (F ∪ H)</li>
+  <li>Représenter dans un repère orthonormé les ensembles : [−1 ; 1] × [0 ; 2] et [0 ; +∞[ × [0 ; 2[</li>
+  <li>Déterminer les éléments de l'ensemble 𝒫(E × F) avec E = {2 ; 1} et F = {0}</li>
+</ol>
+
+<h2>IV. Application d'un ensemble vers un autre</h2>
+
+<h3>4-1. Applications</h3>
+
+<h4>Définition</h4>
+<p>Soit f une application d'un ensemble E vers un ensemble F.</p>
+<p>E est appelé <strong>ensemble de départ</strong> de l'application f. F est appelé <strong>ensemble d'arrivée</strong> de l'application f.</p>
+<p>Pour tout x ∈ E, l'unique élément y de F tel que y = f(x) est appelé <strong>image</strong> de x par f.</p>
+<p>Pour tout y ∈ F, tout élément x de E tel que y = f(x) est appelé un <strong>antécédent</strong> de y par f.</p>
+<p>On appelle <strong>graphe</strong> de l'application f l'ensemble des couples (x ; f(x)) lorsque x décrit E. On le note G(f). G(f) = {(x ; y) ∈ E × F / y = f(x)}</p>
+
+<h4>Applications</h4>
+<p>On considère l'application f définie par : f : ℕ² → ℕ ; (x ; y) ↦ x + y</p>
+<ol>
+  <li>Déterminer les antécédents de 0 par f.</li>
+  <li>Déterminer l'ensemble des antécédents des éléments 2 et 3.</li>
+  <li>L'implication f(a ; b) = f(c ; d) ⇒ (a ; b) = (c ; d) est-elle vraie ?</li>
+</ol>
+<p>On considère E = {−√5 ; −√2 ; −1 ; √2 ; √5} et F = {1 ; 2 ; 5}.</p>
+<ol start="4">
+  <li>Définir une application de E vers F.</li>
+  <li>Définir une application de F vers E.</li>
+</ol>
+
+<h3>4-2. Égalité de deux applications</h3>
+
+<h4>Définition</h4>
+<p>Soit f une application de E vers F et g une application de E' vers F'. On dit que f et g sont <strong>égales</strong> et on écrit f = g si E = E', F = F' et (∀x ∈ E) f(x) = g(x).</p>
+
+<h4>Applications</h4>
+<p>Dans chacun des cas suivants, montrer que les applications f et g sont égales :</p>
+<p>1er cas : f : ℝ → ℝ ; x ↦ 1 − cos⁶x − sin⁶x et g : ℝ → ℝ ; x ↦ 3 cos²x sin²x</p>
+<p>2ème cas : f : ]−π/2 ; π/2[ → ℝ ; x ↦ 1 − (cos x − sin x)² et g : ]−π/2 ; π/2[ → ℝ ; x ↦ 2 tan x / (1 + tan²x)</p>
+<p>3ème cas : f : ]0 ; π[ → ℝ ; x ↦ sin x / (1 + cos x) et g : ]0 ; π[ → ℝ ; x ↦ (1 − cos x) / sin x</p>
+
+<h3>4-3. Image directe et image réciproque d'une partie</h3>
+
+<h4>Définition</h4>
+<p>Soit f une application de E vers F. Pour toute partie A de E, on définit l'<strong>image directe</strong> de A par f : f(A) = {f(x) / x ∈ A}. y ∈ f(A) ⇔ [(∃x ∈ A) ; y = f(x)]</p>
+<p>Pour toute partie B de F, on définit l'<strong>image réciproque</strong> de B par f : f⁻¹(B) = {x ∈ E / f(x) ∈ B}. x ∈ f⁻¹(B) ⇔ f(x) ∈ B</p>
+
+<h4>Proposition (image directe)</h4>
+<p>Soit f une application de E vers F, et A et B deux parties de E. Alors :</p>
+<ol>
+  <li>f(A) ⊂ F</li>
+  <li>A = ∅ ⇔ f(A) = ∅</li>
+  <li>A ⊂ B ⇒ f(A) ⊂ f(B)</li>
+  <li>f(A ∪ B) = f(A) ∪ f(B)</li>
+  <li>f(A ∩ B) ⊂ f(A) ∩ f(B)</li>
+</ol>
+
+<h4>Proposition (image réciproque)</h4>
+<p>Soit f une application de E vers F, et A et B deux parties de F. Alors :</p>
+<ol>
+  <li>f⁻¹(A) ⊂ E</li>
+  <li>A ⊂ B ⇒ f⁻¹(A) ⊂ f⁻¹(B)</li>
+  <li>f⁻¹(A ∪ B) = f⁻¹(A) ∪ f⁻¹(B)</li>
+  <li>f⁻¹(A ∩ B) = f⁻¹(A) ∩ f⁻¹(B)</li>
+</ol>
+
+<h4>Applications</h4>
+<p>On considère f : ℝ⁺ → ℝ ; x ↦ x − 4√x + 1</p>
+<ol>
+  <li>Déterminer f([0 ; 4]).</li>
+  <li>Montrer que : f([1 ; +∞[) = [−3 ; +∞[</li>
+</ol>
+<p>On considère g : ℝ → ℝ ; x ↦ cos x + sin x</p>
+<ol start="3">
+  <li>En déduire que : g(ℝ) ⊂ [−√2 ; √2]</li>
+</ol>
+<p>On considère f : ℝ → ℝ ; x ↦ x² + 2x</p>
+<ol start="4">
+  <li>Déterminer f⁻¹([−1 ; 0]) et f⁻¹([3 ; +∞[)</li>
+</ol>
+<p>On considère g : ℝ⁺* → ℝ ; x ↦ 1 + 1/x</p>
+<ol start="5">
+  <li>Déterminer g⁻¹([1 ; 2] ∪ [5 ; +∞[)</li>
+</ol>
+
+<h2>V. Restriction et prolongement d'une application</h2>
+
+<h3>5-1. Restriction d'une application</h3>
+
+<h4>Définition</h4>
+<p>Soit f : E → F une application et A une partie de E. On appelle <strong>restriction</strong> de f à la partie A, l'application g définie par : g : A → F ; x ↦ f(x). On a A ⊂ E et g(x) = f(x) pour tout x ∈ A.</p>
+
+<h4>Applications</h4>
+<p>On considère g : ℝ → ℝ ; x ↦ 2x − |x| + 3</p>
+<ol>
+  <li>Déterminer la restriction de g à l'intervalle ]−∞ ; 0].</li>
+</ol>
+<p>Soit f : ℝ → ℝ ; f(x) = x² − 2x</p>
+<ol start="2">
+  <li>A-t-on l'implication (∀(a ; b) ∈ ℝ²) f(a) = f(b) ⇒ a = b ?</li>
+  <li>Montrer que la restriction de f à [1 ; +∞[ vérifie l'implication précédente.</li>
+</ol>
+
+<h3>5-2. Prolongement d'une application</h3>
+
+<h4>Définition</h4>
+<p>Soit f : E → F une application et G un ensemble tel que E ⊂ G. On appelle <strong>prolongement</strong> de f à G, toute application g définie de G vers F telle que : (∀x ∈ E) g(x) = f(x)</p>
+
+<h4>Remarque</h4>
+<p>La restriction d'une application à une partie est unique mais on a en général plusieurs prolongements possibles d'une application à un même ensemble.</p>
+
+<h2>VI. Injectivité – Surjectivité – Bijectivité</h2>
+
+<h3>6-1. Application injective</h3>
+
+<h4>Définition</h4>
+<p>Soit f une application de E vers F. On dit que f est <strong>injective</strong> si tout élément de F a au plus un antécédent dans E par f.</p>
+<p>Cela s'écrit : (∀(x ; x') ∈ E²) f(x) = f(x') ⇒ x = x'</p>
+
+<h4>Applications</h4>
+<ol>
+  <li>Dans chacun des cas suivants, montrer que f est injective :
+    <p>f : ℝ → ℝ ; x ↦ x/(2018 + |x|)</p>
+    <p>f : ℝ → ℝ ; x ↦ x/√(x² + 1)</p>
+    <p>f : ]−∞ ; 1] → ℝ ; x ↦ x² − x</p>
+  </li>
+</ol>
+
+<h3>6-2. Application surjective</h3>
+
+<h4>Définition</h4>
+<p>Soit f une application de E vers F. On dit que f est <strong>surjective</strong> si tout élément de F a au moins un antécédent dans E par f.</p>
+<p>Cela s'écrit : (∀y ∈ F)(∃x ∈ E) y = f(x)</p>
+
+<h4>Proposition</h4>
+<p>(f est surjective) ⇔ f(E) = F</p>
+
+<h4>Applications</h4>
+<ol>
+  <li>Dans chacun des cas suivants, montrer que f est surjective :
+    <p>f : ]−∞ ; 3[ → ]−∞ ; 2[ ; x ↦ (2x + 1)/(x − 3)</p>
+    <p>f : [1 ; +∞[ → ℝ⁺ ; x ↦ √(x² − x)</p>
+    <p>f : ℝ → ]−1 ; √2] ; x ↦ (x + 1)/√(x² + 1)</p>
+  </li>
+</ol>
+<p>Soit g : ℕ* → ℕ ; n ↦ n³ − n</p>
+<ol start="2">
+  <li>Montrer que g est injective.</li>
+  <li>Montrer que pour tout n ∈ ℕ*, g(n) est paire.</li>
+  <li>En déduire que g n'est pas surjective.</li>
+</ol>
+<p>Soit h : ℝ → F ; x ↦ x² − 6x + 5</p>
+<ol start="5">
+  <li>Déterminer F pour que h soit surjective.</li>
+</ol>
+
+<h3>6-3. Application bijective</h3>
+
+<h4>Définition</h4>
+<p>Soit f une application de E vers F. On dit que f est <strong>bijective</strong> si tout élément de F admet exactement un antécédent dans E par f.</p>
+<p>Cela s'écrit : (∀y ∈ F)(∃!x ∈ E) y = f(x)</p>
+
+<h4>Proposition</h4>
+<p>f est bijective si et seulement si f est injective et surjective.</p>
+
+<h4>Applications</h4>
+<p>Soit f : ℝ → ]−1 ; 1[ ; f(x) = x/(1 + |x|)</p>
+<ol>
+  <li>Montrer que f est injective.</li>
+  <li>Montrer que f est surjective.</li>
+  <li>En déduire que f est bijective.</li>
+</ol>
+<p>Soit g : ℝ⁺ → ℝ ; g(x) = (x² − 1)/√(x² + 1)</p>
+<ol start="4">
+  <li>Montrer que g est injective et surjective.</li>
+  <li>Que peut-on en conclure ?</li>
+</ol>
+
+<h3>6-4. L'application réciproque d'une bijection</h3>
+
+<h4>Définition</h4>
+<p>Soit f une application bijective de E vers F. En associant à tout élément y ∈ F son unique antécédent par f, on définit une application de F dans E appelée <strong>application réciproque</strong> de f, notée f⁻¹.</p>
+<p>y = f(x), x ∈ E ⇔ x = f⁻¹(y), y ∈ F</p>
+
+<h4>Applications</h4>
+<p>On considère g : [1 ; +∞[ → [√2 ; +∞[ ; x ↦ √(x² + x)</p>
+<ol>
+  <li>Montrer que g est bijective.</li>
+  <li>Déterminer son application réciproque g⁻¹.</li>
+</ol>
+
+<h2>VII. Composition des applications</h2>
+
+<h4>Définition</h4>
+<p>Soit f : E → F et g : F → G deux applications. L'application h définie de E dans G par h(x) = g(f(x)) est appelée <strong>composée</strong> des applications f et g dans cet ordre. Elle est notée g ∘ f.</p>
+<p>(∀x ∈ E) g ∘ f(x) = g(f(x))</p>
+
+<h4>Remarques</h4>
+<p>La composition des applications n'est pas une opération commutative.</p>
+<p>La composition des applications est <strong>associative</strong> : pour f : E → F, g : F → G et h : G → H, on a : h ∘ (g ∘ f) = (h ∘ g) ∘ f</p>
+
+<h4>Propositions</h4>
+<ol>
+  <li>Si f et g sont injectives, alors g ∘ f est injective de E dans G.</li>
+  <li>Si f et g sont surjectives, alors g ∘ f est surjective de E dans G.</li>
+  <li>Si f et g sont bijectives, alors g ∘ f est bijective de E dans G, et : (g ∘ f)⁻¹ = f⁻¹ ∘ g⁻¹</li>
+  <li>Si f est bijective, alors : (∀x ∈ E) f⁻¹ ∘ f(x) = x et (∀x ∈ F) f ∘ f⁻¹(x) = x</li>
+</ol>
+
+<h4>Remarque</h4>
+<p>Si f est bijective de E vers F et f⁻¹ son application réciproque, alors :</p>
+<p>f⁻¹ ∘ f = Id<sub>E</sub> et f ∘ f⁻¹ = Id<sub>F</sub></p>
+<p>où Id<sub>E</sub> : E → E ; x ↦ x et Id<sub>F</sub> : F → F ; x ↦ x</p>
+
+<h4>Applications</h4>
+<p>On considère f : ℝ → ℝ ; x ↦ (x² + 4)/(x² + 1) et g : ℝ → ℝ ; x ↦ 1/(3x + 2)</p>
+<ol>
+  <li>Déterminer f ∘ g, g ∘ f, f ∘ f et g ∘ g.</li>
+</ol>
+<p>On considère f : ℝ → ℝ⁺ ; x ↦ x² + 2 et g : ℝ⁺ → ℝ ; x ↦ 3 + √x</p>
+<ol start="2">
+  <li>Déterminer f ∘ g, g ∘ f et f ∘ f.</li>
+</ol>
+<p>Soit E un ensemble non vide. On considère f : 𝒫(E) → 𝒫(E) ; f(A) = Ā</p>
+<ol start="3">
+  <li>Montrer que f est injective.</li>
+  <li>Montrer que f est surjective.</li>
+  <li>En déduire que f est bijective, puis déterminer sa bijection réciproque.</li>
+</ol>
+<p>On considère g : [0 ; ¼] → [0 ; ¼] ; g(x) = x − √x</p>
+<ol start="6">
+  <li>Montrer que g est bijective et déterminer sa bijection réciproque.</li>
+</ol>
+<p>On considère f : [1 ; +∞[ → ℝ ; x ↦ x − 1 − 2√(x − 1)</p>
+<ol start="7">
+  <li>Déterminer f⁻¹({−½}).</li>
+  <li>f est-elle injective ?</li>
+  <li>Montrer que f([1 ; +∞[) = [0 ; +∞[.</li>
+  <li>f est-elle surjective ?</li>
+</ol>
+<p>On considère g : [0 ; +∞[ → ]−1 ; +∞[ ; x ↦ x² − 2x</p>
+<ol start="11">
+  <li>Déterminer une application h telle que f = g ∘ h.</li>
+  <li>Montrer que g et h sont surjectives et en déduire que f est surjective.</li>
+</ol>
+<p>On considère h : ]1 ; +∞[ → ]1 ; √3[ ; h(x) = √(x² + x + 1) / √(x² − x + 1)</p>
+<ol start="13">
+  <li>Montrer que h est bijective et donner sa bijection réciproque.</li>
+</ol>

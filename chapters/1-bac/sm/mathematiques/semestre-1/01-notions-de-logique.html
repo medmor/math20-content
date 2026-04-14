@@ -1,0 +1,395 @@
+<!-- Notions de logique -->
+<h1>Notions de logique</h1>
+
+<h2>I. Proposition – Fonction propositionnelle</h2>
+
+<h3>Définition</h3>
+<p>Une <strong>proposition</strong> est un énoncé qui peut être vrai (V) ou faux (F), mais pas les deux à la fois.</p>
+
+<h3>Définition</h3>
+<p>Soit E un ensemble non vide. On appelle <strong>fonction propositionnelle</strong> (ou prédicat) d'une variable x de E, tout énoncé contenant la variable x, qui devient une proposition lorsque la variable x est remplacée par un élément de E.</p>
+
+<h3>Applications</h3>
+<p>Soient les fonctions propositionnelles suivantes :</p>
+<p>A(x) : « x ∈ ℝ ; 3x² − 2x − 65 = 0 »</p>
+<p>B(x) : « x ∈ ℝ ; 5x² − 2√15 x + 3 = 0 »</p>
+<p>C(x) : « x ∈ ℝ ; x³ − 6x + 7 = 0 »</p>
+<p>D(x) : « x ∈ ℝ ; −x² + x + 6 ≥ 0 »</p>
+<p>P(x) : « x ∈ ℝ ; (2 sin x − 1) cos x = 0 »</p>
+<p>Q(x) : « x ∈ [−π ; π] ; sin(x) cos(x) ≥ 0 »</p>
+
+<h2>II. Quantificateurs</h2>
+
+<h3>Définition</h3>
+<p>Soit P(x) une fonction propositionnelle d'une variable x d'un ensemble non vide E.</p>
+<p>À partir de la fonction propositionnelle « (x ∈ E) ; P(x) », on définit :</p>
+<ul>
+  <li>La proposition « (∃x ∈ E) ; P(x) » qui se lit « il existe au moins x ∈ E tel que P(x) », et qui est vraie lorsqu'il existe au moins x ∈ E vérifiant la propriété P(x). Le symbole ∃ s'appelle le <strong>quantificateur existentiel</strong>.</li>
+  <li>La proposition « (∀x ∈ E) ; P(x) » qui se lit « pour tout x ∈ E, P(x) » ou « quel que soit x ∈ E ; P(x) » et qui est vraie lorsque tous les éléments de E vérifient la propriété P(x). Le symbole ∀ s'appelle le <strong>quantificateur universel</strong>.</li>
+</ul>
+
+<h3>Remarques</h3>
+<ul>
+  <li>Dans les apparences, « (∀x ∈ E) ; P(x) » ne dépend d'aucun x ! La lettre x figurant dans cette proposition a le statut de <strong>variable muette</strong>. En effet, cette proposition peut aussi être écrite : « (∀y ∈ E) ; P(y) », ou encore « (∀z ∈ E) ; P(z) », sans en modifier le sens.</li>
+  <li>Il en est de même de la proposition « (∃x ∈ E) ; P(x) » : elle affirme qu'il existe au moins un élément x ∈ E tel que P(x) soit vraie, mais n'en définit aucun en particulier.</li>
+  <li>Pour le quantificateur existentiel, on rencontre dans certains énoncés « (∃!x ∈ E) ; P(x) ». L'ajout du signe ! derrière le symbole ∃ le transforme et l'énoncé devient : « il existe un unique élément x ∈ E tel que P(x) soit vraie ».</li>
+  <li>Les quantificateurs doivent être placés avant l'assertion mathématique qu'ils quantifient.</li>
+  <li>L'emploi de quantificateurs en guise d'abréviation au milieu d'une phrase en français est exclu : ils ne doivent figurer que dans une phrase mathématique.</li>
+  <li>L'ordre d'écriture des quantificateurs est fondamental pour le sens d'une phrase formelle :
+    <ul>
+      <li>Quand deux quantificateurs existentiels se suivent, on peut les échanger sans changer le sens.</li>
+      <li>Quand deux quantificateurs universels se suivent, on peut les échanger sans changer le sens.</li>
+      <li>Quand on inverse l'ordre de deux quantificateurs différents, le sens change.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>Applications</h3>
+<p>Déterminer la valeur de vérité de chacune des propositions suivantes :</p>
+<p>Q₁ : « (∃x ∈ ℝ) ; x² + x + 1 = 0 »</p>
+<p>Q₂ : « (∃x ∈ ℝ) ; x² + x + 1 > 0 »</p>
+<p>Q₃ : « (∃x ∈ ℕ) ; √(x² + 3) = 2x − 4 »</p>
+<p>Q₄ : « (∃x ∈ ℝ) (∀y ∈ ℝ) ; x ≤ y »</p>
+<p>Q₅ : « (∃x ∈ ℝ*) (∀y ∈ ℤ*) ; xʸ = 1 »</p>
+<p>Q₆ : « (∀x ∈ ℝ) (∃y ∈ ℝ) ; x ≤ y »</p>
+<p>Q₇ : « (∀x ∈ ℝ) (∀y ∈ ℝ) ; x²y² > xy »</p>
+
+<h2>III. Opérations sur les propositions</h2>
+
+<h3>3-1. Négation d'une proposition</h3>
+
+<h4>Définition</h4>
+<p>La négation d'une proposition P est la proposition notée P̄ ou ¬P telle que la proposition P̄ est vraie si la proposition P est fausse et la proposition P̄ est fausse si la proposition P est vraie.</p>
+<p>La négation est un connecteur logique unaire défini par la table de vérité :</p>
+<table border="1" cellpadding="5" cellspacing="0">
+  <tr><th>P</th><th>P̄</th></tr>
+  <tr><td>V</td><td>F</td></tr>
+  <tr><td>F</td><td>V</td></tr>
+</table>
+
+<h4>Proposition</h4>
+<p>Soit P(x) une fonction propositionnelle d'une variable x d'un ensemble non vide E.</p>
+<p>La négation de la proposition « (∀x ∈ E) P(x) » est la proposition « (∃x ∈ E) P̄(x) ».</p>
+<p>La négation de la proposition « (∃x ∈ E) P(x) » est la proposition « (∀x ∈ E) P̄(x) ».</p>
+
+<h4>Conséquence</h4>
+<p>Pour montrer que la proposition « (∀x ∈ E) P(x) » est fausse, il suffit de montrer que sa négation « (∃x ∈ E) P̄(x) » est vraie.</p>
+<p>Ce type de raisonnement est appelé <strong>raisonnement par contre-exemple</strong>.</p>
+
+<h4>Applications</h4>
+<p>En utilisant un raisonnement par contre-exemple, montrer que les propositions suivantes sont fausses :</p>
+<table border="1" cellpadding="5" cellspacing="0">
+  <tr>
+    <td>P₁ : « (∀x ∈ ℝ*) x + √x ≥ 2 »</td>
+    <td>P₂ : « (∀x ∈ ℝ) (∀y ∈ ℝ) 2x − 4y ≠ 5 »</td>
+  </tr>
+  <tr>
+    <td>P₃ : « (∀x ∈ ℝ*) x + 1/x ≥ 2 »</td>
+    <td>P₄ : « (∀x ∈ ℝ⁺) (∀y ∈ ℝ⁺) x + y ≥ √x + √y »</td>
+  </tr>
+  <tr>
+    <td>P₅ : « (∀x ∈ ]0;1[) 2x/(x²(1−x²)) < 1 »</td>
+    <td>P₆ : « (∀α ∈ ]0;1[) (∀β ∈ ]0;1[) 1/α + 1/β < 1 − αβ »</td>
+  </tr>
+</table>
+
+<h3>3-2. Disjonction de deux propositions</h3>
+
+<h4>Définition</h4>
+<p>La disjonction de deux propositions P et Q est la proposition qu'on note (P ou Q). Elle est fausse seulement si P et Q sont toutes les deux fausses.</p>
+<p>La disjonction est un connecteur logique binaire défini par la table de vérité :</p>
+<table border="1" cellpadding="5" cellspacing="0">
+  <tr><th>P</th><th>Q</th><th>P ou Q</th></tr>
+  <tr><td>V</td><td>V</td><td>V</td></tr>
+  <tr><td>V</td><td>F</td><td>V</td></tr>
+  <tr><td>F</td><td>V</td><td>V</td></tr>
+  <tr><td>F</td><td>F</td><td>F</td></tr>
+</table>
+
+<h4>Remarques</h4>
+<p>Les propositions (P ou Q) et (Q ou P) ont le même sens. On dit que la disjonction est une opération <strong>commutative</strong>.</p>
+<p>Les propositions [(P ou Q) ou R] et [P ou (Q ou R)] ont le même sens. On dit que la disjonction est une opération <strong>associative</strong>.</p>
+
+<h4>Applications</h4>
+<p>Soit P une proposition.</p>
+<ol>
+  <li>Montrer que la proposition P̄ ou (P et P) est fausse.</li>
+</ol>
+<p>Soit a et b deux réels de l'intervalle ]4 ; +∞[, et on considère les deux équations :</p>
+<p>(E) : x² + ax + b = 0 et (F) : x² + bx + a = 0</p>
+<p>Soit Δ₁ le discriminant de (E) et Δ₂ celui de (F), et les propositions :</p>
+<p>P₁ : « Δ₁ ≥ 0 » et P₂ : « Δ₂ ≥ 0 »</p>
+<ol start="2">
+  <li>Montrer que la proposition (P₁ ou P₂) est vraie.</li>
+</ol>
+
+<h3>3-3. Conjonction de deux propositions</h3>
+
+<h4>Définition</h4>
+<p>La conjonction de deux propositions P et Q est la proposition qu'on note (P et Q). Elle est vraie seulement si P et Q sont toutes les deux vraies.</p>
+<p>La conjonction est un connecteur logique binaire défini par la table de vérité :</p>
+<table border="1" cellpadding="5" cellspacing="0">
+  <tr><th>P</th><th>Q</th><th>P et Q</th></tr>
+  <tr><td>V</td><td>V</td><td>V</td></tr>
+  <tr><td>V</td><td>F</td><td>F</td></tr>
+  <tr><td>F</td><td>V</td><td>F</td></tr>
+  <tr><td>F</td><td>F</td><td>F</td></tr>
+</table>
+
+<h4>Remarques</h4>
+<p>Les propositions (P et Q) et (Q et P) ont le même sens. On dit que la conjonction est une opération <strong>commutative</strong>.</p>
+<p>Les propositions [(P et Q) et R] et [P et (Q et R)] ont le même sens. On dit que la conjonction est une opération <strong>associative</strong>.</p>
+<p>Les propositions [P et (Q ou R)] et [(P et Q) ou (P et R)] ont le même sens. On dit que la conjonction est <strong>distributive</strong> par rapport à la disjonction.</p>
+<p>Les propositions [P ou (Q et R)] et [(P ou Q) et (P ou R)] ont le même sens. On dit que la disjonction est distributive par rapport à la conjonction.</p>
+
+<h4>Applications</h4>
+<p>Soit P une proposition.</p>
+<ol>
+  <li>Montrer que la proposition P̄ ou (P et P) est vraie.</li>
+  <li>Déterminer les réels x et y tels que : (y = 3x − 1 et x² − x = 0)</li>
+  <li>En utilisant la distributivité de la conjonction logique par rapport à la disjonction logique, résoudre dans ℝ les systèmes suivants :
+    <p>(S₁) : x² − y² = 0 et 2x² + y² = 3</p>
+    <p>(S₂) : xy − x + y = 1 et 2x² − xy − y = 0</p>
+    <p>(S₃) : 4x² − y² = 0 et (x − 2)(y − 6) = 0</p>
+  </li>
+  <li>Soit x et y deux réels tels que x ≥ 1 et y ≥ 1. Montrer que : √(x − 1) + √(y − 1) ≤ xy</li>
+  <li>Déterminer le domaine de définition de la fonction f définie par : f(x) = √(x² − 1) + x/(2x − 3)</li>
+</ol>
+
+<h3>3-4. Implication de deux propositions</h3>
+
+<h4>Définition</h4>
+<p>L'implication d'une proposition P à une proposition Q est la proposition qu'on note (P ⇒ Q). Elle est fausse seulement si P est vraie et Q est fausse.</p>
+<p>Les deux propositions (P ⇒ Q) et (P̄ ou Q) ont la même valeur de vérité.</p>
+<p>L'implication est un connecteur logique binaire défini par la table de vérité :</p>
+<table border="1" cellpadding="5" cellspacing="0">
+  <tr><th>P</th><th>Q</th><th>P ⇒ Q</th></tr>
+  <tr><td>V</td><td>V</td><td>V</td></tr>
+  <tr><td>V</td><td>F</td><td>F</td></tr>
+  <tr><td>F</td><td>V</td><td>V</td></tr>
+  <tr><td>F</td><td>F</td><td>V</td></tr>
+</table>
+
+<h4>Applications</h4>
+<ol>
+  <li>Déterminer la valeur de vérité des propositions suivantes :
+    <ul>
+      <li>P₁ : « (13 est premier) ⇒ (56 est divisible par 13) »</li>
+      <li>P₂ : « (47 est premier) ⇒ (47 est impair) »</li>
+    </ul>
+  </li>
+  <li>Soit x et y deux réels non nuls. On considère P : « 2x + 4y = 1 » et Q : « 1/(x² + y²) ≤ 20 ». Montrer que P ⇒ Q.</li>
+  <li>Soit a et b deux réels. Montrer que : (|a| < 1 et |b| < 1) ⇒ |a + b| < |1 + ab|</li>
+  <li>Soit x un nombre réel. Montrer les implications suivantes :
+    <p>√(x² + 1) − x = 2 ⇒ √(x² + 1) + x = ½</p>
+    <p>|x| + |x − 1| = x ⇒ x = 1</p>
+  </li>
+  <li>Soit x, y et z trois réels dont l'un est nul et les deux autres sont de signes contraires. On suppose que les réels x, y et z vérifient les implications suivantes : x = 0 ⇒ y = 0 ; x > 0 ⇒ y < 0 ; y ≠ 0 ⇒ z > 0. Déterminer parmi ces nombres celui qui est nul puis celui qui est strictement positif.</li>
+  <li>a- Montrer que : (∀a ∈ ]1 ; +∞[) a²/(a − 1) ≥ 4
+    <p>b- En déduire que pour tous a et b de ]1 ; +∞[ : a²/(b − 1) + b²/(a − 1) ≥ 8</p>
+  </li>
+  <li>Soit (x, y) ∈ ℝ² tel que |x| ≤ 1 et |y| ≤ 1. Montrer que : √(1 − x²) + √(1 − y²) ≤ 2√(1 − ((x + y)/2)²)</li>
+</ol>
+
+<h3>3-5. Condition suffisante – Condition nécessaire</h3>
+
+<h4>Proposition</h4>
+<p>Les deux propositions suivantes sont vraies :</p>
+<p>[(∀x ∈ E) ; A(x) ⇒ B(x)] ⇒ [((∀x ∈ E) ; A(x)) ⇒ ((∀x ∈ E) ; B(x))]</p>
+<p>[(∃x ∈ E)(∀y ∈ F) A(x ; y)] ⇒ [(∀y ∈ F)(∃x ∈ E) A(x ; y)]</p>
+
+<h3>3-6. Équivalence de deux propositions</h3>
+
+<h4>Définition</h4>
+<p>L'équivalence de deux propositions P et Q est la proposition qu'on note (P ⇔ Q). Elle est vraie seulement si P et Q ont la même valeur de vérité ; c'est-à-dire toutes les deux sont simultanément vraies ou simultanément fausses.</p>
+<p>Les deux propositions (P ⇔ Q) et [(P ⇒ Q) et (Q ⇒ P)] ont la même valeur de vérité.</p>
+<p>L'équivalence est un connecteur logique binaire défini par la table de vérité :</p>
+<table border="1" cellpadding="5" cellspacing="0">
+  <tr><th>P</th><th>Q</th><th>P ⇔ Q</th></tr>
+  <tr><td>V</td><td>V</td><td>V</td></tr>
+  <tr><td>V</td><td>F</td><td>F</td></tr>
+  <tr><td>F</td><td>V</td><td>F</td></tr>
+  <tr><td>F</td><td>F</td><td>V</td></tr>
+</table>
+
+<h4>Remarques</h4>
+<p>La notation « P ⇔ Q » se lit « P est équivalent à Q » ou « P équivaut à Q » et correspond en français à la phrase « P si et seulement si Q ».</p>
+<p>Les propositions (P ⇔ Q) et (Q ⇔ P) ont la même table de vérité. On dit que l'équivalence est une opération <strong>commutative</strong>.</p>
+<p>On s'intéresse plus souvent aux équivalences vraies qu'aux fausses. En pratique, on écrira « P ⇔ Q » uniquement lorsqu'il s'agit d'une assertion vraie.</p>
+<p>Les expressions « condition nécessaire et suffisante », « si et seulement si », « il faut et il suffit » signifient toutes « équivalent » ou encore « ⇔ ».</p>
+<p>En pratique, dans une rédaction, on n'emploiera jamais les symboles ⇔ et ⇒. Le seul endroit où le symbole ⇔ est toléré, c'est dans les résolutions d'équations ou d'inéquations.</p>
+
+<h4>Proposition</h4>
+<p>Soit P, Q et R trois propositions. Alors :</p>
+<p>[(P ⇔ Q) et (Q ⇔ R)] ⇒ (P ⇔ R)</p>
+<p>On dit que l'équivalence est une relation <strong>transitive</strong>.</p>
+
+<h4>Généralisation</h4>
+<p>Soit P, R₁, R₂, ..., Rₙ et Q des propositions. Alors :</p>
+<p>[(P ⇔ R₁) et (R₁ ⇔ R₂) et ... et (Rₙ ⇔ Q)] ⇒ (P ⇔ Q)</p>
+<p>Pratiquement : pour montrer qu'une proposition P est vraie, on montre que les équivalences successives P ⇔ R₁ et R₁ ⇔ R₂ et ... et Rₙ ⇔ Q sont vraies et que la proposition Q est vraie. Par conséquent, la proposition P. Ce type de raisonnement s'appelle « <strong>raisonnement par équivalences successives</strong> ».</p>
+
+<h4>Applications</h4>
+<p>Soient a et b deux réels positifs.</p>
+<ol>
+  <li>Montrer que : a/√(a² + 1) < b/√(b² + 1) ⇔ a < b</li>
+  <li>Montrer que : a√(1 + a²) = b√(1 + b²) ⇔ a = b</li>
+</ol>
+<p>Soit (x, y) ∈ ℝ² tel que x ≥ 1 et y ≥ 4.</p>
+<ol start="3">
+  <li>Montrer que : √(x − 1) + 2√(y − 4) = (x + y)/2 ⇔ (x = 2 et y = 8)</li>
+</ol>
+<p>Soit (x, y) ∈ ℝ².</p>
+<ol start="4">
+  <li>Établir les équivalences suivantes :
+    <p>|x + y| ≤ √(x² + 1) + √(y² + 1) ⇔ |√(x² + 1) − √(y² + 1)| ≤ |x − y|</p>
+    <p>(x + y)(x − y)² < 0 ⇔ (x + y)³ > 4(x³ + y³)</p>
+  </li>
+</ol>
+<p>Soit x, y et z trois réels strictement positifs.</p>
+<ol start="5">
+  <li>Établir les équivalences suivantes :
+    <p>xy√z < xz√y < yz√x ⇔ x < y < z</p>
+    <p>|x − y| < z < x + y ⇔ |(x² + y² − z²)/(xy)| < 2</p>
+  </li>
+</ol>
+
+<h4>Proposition</h4>
+<p>Les deux propositions suivantes sont vraies :</p>
+<p>[(∀x ∈ E) A(x) et B(x)] ⇔ [((∀x ∈ E) A(x)) et ((∀x ∈ E) B(x))]</p>
+<p>[(∃x ∈ E) A(x) ou B(x)] ⇔ [((∃x ∈ E) A(x)) ou ((∃x ∈ E) B(x))]</p>
+
+<h4>Remarques</h4>
+<p>La proposition [(∃x ∈ E) A(x) et B(x)] ⇔ [((∃x ∈ E) A(x)) et ((∃x ∈ E) B(x))] n'est pas toujours vraie.</p>
+<p>Exemple : considérons P : « ((∃x ∈ ℝ) cos x = 0) et ((∃x ∈ ℝ) sin x = 0) » et Q : « ((∃x ∈ ℝ) cos x = 0 et sin x = 0) ».</p>
+<p>P est vraie car 0 est un réel tel que sin x = 0 et π/2 est un réel tel que cos x = 0. Q est fausse car pour tout x ∈ ℝ : cos²x + sin²x = 1 ≠ 0.</p>
+
+<h4>Méthodes de démonstration d'une équivalence</h4>
+<ul>
+  <li><strong>Raisonnement par double implication :</strong> On suppose que P est vraie et on montre que Q est vraie, et réciproquement. La démonstration se fait donc en deux étapes.</li>
+  <li><strong>Raisonnement par équivalences successives :</strong> On procède en une seule étape. On passe de P à Q en utilisant à chaque fois des équivalences. Cette méthode est plus courte mais peut être plus fastidieuse puisqu'on doit vérifier que chaque enchaînement logique est bien une équivalence et pas seulement une implication. On lui préférera en général le raisonnement par double implication.</li>
+</ul>
+
+<h2>IV. Lois logiques et raisonnements</h2>
+
+<h3>4-1. Loi logique ou tautologie</h3>
+
+<h4>Définition</h4>
+<p>Soit Q₁, Q₂, ..., Qₙ des propositions. On appelle <strong>loi logique</strong> ou <strong>tautologie</strong> toute proposition P résultante de l'assemblage par des connecteurs logiques de propositions prises parmi Q₁, Q₂, ..., Qₙ qui est vraie quelle que soit la valeur de vérité des propositions en jeu.</p>
+
+<h4>Applications</h4>
+<p>Soit P et Q deux propositions.</p>
+<ol>
+  <li>Montrer que les propositions suivantes sont des lois logiques :
+    <p>P ⇒ (Q ⇒ P)</p>
+    <p>P ⇒ (P̄ ⇒ Q)</p>
+    <p>(Q̄ ou P) ou (Q ou P̄)</p>
+    <p>(P ⇔ Q) ⇔ [(P et Q) ou (P̄ et Q̄)]</p>
+  </li>
+</ol>
+
+<h3>4-2. Lois de Morgan</h3>
+
+<h4>Proposition</h4>
+<p>Soit P et Q deux propositions. Les deux propositions suivantes sont des lois logiques :</p>
+<p>(P et Q)̄ ⇔ (P̄ ou Q̄)</p>
+<p>(P ou Q)̄ ⇔ (P̄ et Q̄)</p>
+
+<h4>Applications</h4>
+<p>Déterminer la négation des propositions suivantes :</p>
+<p>P : « (∃x ∈ ℝ) 0 ≤ x < 1 »</p>
+<p>Q : « (∀x ∈ ℝ) (x² = 1 ⇒ x = 1) »</p>
+<p>R : « (∀a ∈ ℝ) (|a + 1| ≤ 2 ⇒ a ≥ −3) »</p>
+<p>S : « (∀x ∈ ℝ) (∀y ∈ ℝ⁺) (x² ≤ y² ⇔ −y ≤ x ≤ y) »</p>
+
+<h3>4-3. Raisonnement par contraposée</h3>
+
+<h4>Proposition</h4>
+<p>Soit P et Q deux propositions. L'implication Q̄ ⇒ P̄ s'appelle la <strong>contraposée</strong> de l'implication P ⇒ Q.</p>
+<p>La contraposée d'une implication est équivalente à celle-ci :</p>
+<p>(P ⇒ Q) ⇔ (Q̄ ⇒ P̄)</p>
+
+<h4>Remarques</h4>
+<p>Il faut bien distinguer entre la négation, la contraposée et la réciproque :</p>
+<ul>
+  <li>La négation de P ⇒ Q est (P et Q̄).</li>
+  <li>La réciproque de P ⇒ Q est Q ⇒ P.</li>
+  <li>La contraposée de P ⇒ Q est Q̄ ⇒ P̄.</li>
+</ul>
+<p>Le recours au raisonnement par contraposée n'est pertinent que si cette contraposée est plus facile à prouver que l'implication directe.</p>
+
+<h4>Applications</h4>
+<p>En utilisant le raisonnement par contraposée, montrer les implications suivantes :</p>
+<ol>
+  <li>(∀x ∈ [−1 ; +∞[) (x ≠ 0 ⇒ √(1 + x) ≠ 1 + x/2)</li>
+  <li>(∀x ∈ ℝ) (x² ≠ 3 ⇒ 2/√(1 + x²) ≠ 1)</li>
+  <li>(∀(x, y) ∈ ℝ²) (4y ≠ −3x ⇒ x − y ≠ 7(x + y))</li>
+  <li>(∀(x, y) ∈ ℝ²) ((xy − 1)(x − y) ≠ 0 ⇒ x(y² + y + 1) ≠ y(x² + x + 1))</li>
+  <li>(∀(x, y) ∈ [1 ; +∞[²) (x ≠ y ⇒ x² − 2x ≠ y² − 2y)</li>
+  <li>(∀x ∈ ℝ) (x ∉ [−1 ; 4] ⇒ x² − 3x − 4 > 0)</li>
+  <li>(∀x ∈ ℝ⁺) (x ≠ 0 ⇒ 1/(1 + √x) ≠ 1 − √x)</li>
+  <li>(∀(x, y) ∈ ℝ²) (x² + y² ≤ 1 ⇒ |x + y| ≤ 2)</li>
+  <li>(∀(x, y) ∈ ℝ²) (|2x² + 5xy + 3y²| ≤ 3 ⇒ (|x + y| ≤ 3 ou |2x + 3y| ≤ √3))</li>
+  <li>(∀(x, y) ∈ ℝ²) (x² + xy + y² ≤ 3 ⇒ (|x + 2y| ≤ 2√3 et |x| ≤ 2))</li>
+</ol>
+
+<h3>4-4. Raisonnement par l'absurde</h3>
+
+<h4>Proposition</h4>
+<p>Soit P et Q deux propositions. La proposition suivante est une loi logique :</p>
+<p>[(P̄ ⇒ Q) et (P̄ ⇒ Q̄)] ⇒ P</p>
+
+<h4>Applications</h4>
+<ol>
+  <li>Soit a, b et c des réels positifs tels que ab < c. Montrer que : a < √c ou b < √c</li>
+  <li>Soit f une fonction numérique définie sur ℝ telle que pour tout (x, y) ∈ (ℝ*)² : f(xy) = f(x)f(y). On suppose que f(1) ≠ 0. Montrer que : (∀x ∈ ℝ*) f(x) ≠ 0</li>
+  <li>Montrer par l'absurde que : (∀n ∈ ℕ) √(4n + 2) ∉ ℕ</li>
+</ol>
+
+<h3>4-5. Raisonnement par disjonction des cas</h3>
+
+<h4>Proposition</h4>
+<p>Soit P et Q deux propositions. La proposition suivante est une loi logique :</p>
+<p>[(P ⇒ R) et (Q ⇒ R)] ⇔ [(P ou Q) ⇒ R]</p>
+
+<h4>Applications</h4>
+<ol>
+  <li>Résoudre dans ℝ les inéquations suivantes :
+    <ul>
+      <li>(I₁) |x² − 4| − x² > 0</li>
+      <li>(I₂) |2x − 1| + |2x + 1| + |x| ≥ 4</li>
+      <li>(I₃) √(3 − x) + x < 0</li>
+    </ul>
+  </li>
+  <li>Montrer que le produit de trois entiers relatifs consécutifs est divisible par 6.</li>
+  <li>Montrer que pour tout x ∈ ℝ :
+    <ul>
+      <li>a- x + √(x² + 1) > 0</li>
+      <li>b- |x| + |x + 1| + |x − 1| ≠ 0</li>
+      <li>c- |x − 1| ≤ x² − 2x + 2</li>
+    </ul>
+  </li>
+  <li>En utilisant un raisonnement par disjonction des cas, montrer les deux implications suivantes :
+    <p>(|a| ≤ c et |b| ≤ c) ⇒ |a + b| + |a − b| ≤ 2c</p>
+    <p>|a + b| + |a − 2b| ≤ 3c ⇒ (|a| ≤ 2c et |b| ≤ c)</p>
+  </li>
+  <li>Soit n un entier naturel. Démontrer que si n est impair, alors il s'écrit sous la forme n = 4k + 1 ou n = 4k + 3 avec k ∈ ℕ.</li>
+  <li>Déduire que si l'entier n² − 1 n'est pas divisible par 8, alors l'entier n est pair.</li>
+</ol>
+
+<h3>4-6. Raisonnement par récurrence</h3>
+
+<h4>Proposition</h4>
+<p>Soit P(n) une fonction propositionnelle qui dépend d'un entier naturel n et n₀ ∈ ℕ.</p>
+<p>Si la proposition P(n₀) est vraie et si l'implication « P(n) ⇒ P(n + 1) » est vraie pour tout n ≥ n₀, alors la proposition P(n) est vraie pour tout entier n ≥ n₀.</p>
+
+<h4>Applications</h4>
+<ol>
+  <li>Montrer par récurrence que pour tout n ∈ ℕ* :
+    <p>1 + 2 + ... + n = n(n + 1)/2</p>
+    <p>1³ + 2³ + ... + n³ = n²(n + 1)²/4</p>
+    <p>1 × 2 + 2 × 3 + ... + n(n + 1) = n(n + 1)(n + 2)/3</p>
+  </li>
+  <li>Montrer par récurrence que pour tout n ∈ ℕ* : 5²ⁿ⁺¹ + 2ⁿ⁺⁴ + 2ⁿ⁺¹ est divisible par 23.</li>
+  <li>Soit a et b deux réels distincts et strictement positifs. Montrer par récurrence que : (∀n ∈ ℕ) ((a + b)/2)ⁿ ≤ (aⁿ + bⁿ)/2</li>
+</ol>
