@@ -1,2 +1,305 @@
 <!-- Suites Numériques -->
 <h1>Suites Numériques</h1>
+
+<h2>I. Généralités sur les suites numériques</h2>
+
+<h3>1-1. Définitions et notations</h3>
+
+<h4>Définition</h4>
+<p>On appelle <strong>suite numérique</strong> toute fonction u de ℕ (ou une partie I de ℕ) à valeurs dans ℝ.</p>
+<p>L'image d'un entier n de ℕ (ou de I) par la suite u est notée u<sub>n</sub>.</p>
+<p>Le nombre u<sub>n</sub> s'appelle le <strong>terme général</strong> de la suite u, c'est aussi le terme de rang n de la suite u.</p>
+
+<h4>Remarques</h4>
+<p>La notation u<sub>n</sub> se lit aussi : « u indice n ».</p>
+<p>Il ne faut pas confondre la suite (u<sub>n</sub>) et son terme général u<sub>n</sub>, terme d'indice n de la suite (u<sub>n</sub>).</p>
+<p>Les suites rencontrées en pratique sont souvent définies sur ℕ ou ℕ*. On peut toujours ramener l'étude d'une suite (u<sub>n</sub>)<sub>n≥n₀</sub> à une suite (x<sub>n</sub>)<sub>n∈ℕ</sub>, indexée par ℕ en posant : (∀n ∈ ℕ) x<sub>n</sub> = u<sub>n+n₀</sub></p>
+
+<h3>1-2. Modes usuels de génération d'une suite numérique</h3>
+
+<p>Une suite (u<sub>n</sub>) peut être définie :</p>
+<ul>
+  <li>Par une <strong>formulation explicite</strong> de son terme général u<sub>n</sub> : en particulier u<sub>n</sub> = f(n), où f est une fonction numérique donnée.</li>
+  <li>Par la donnée de son premier terme (ou de ses premiers termes) et une <strong>relation de récurrence</strong> :
+    <p>{u<sub>0</sub> ∈ ℝ ; u<sub>n+1</sub> = f(u<sub>n</sub>} ou {u<sub>0</sub>, u<sub>1</sub> ∈ ℝ ; u<sub>n+2</sub> = f(u<sub>n</sub>, u<sub>n+1</sub>)} ...etc.</p>
+  </li>
+</ul>
+
+<h4>Application</h4>
+<p>Soit (u<sub>n</sub>)<sub>n≥1</sub> la suite numérique définie par u<sub>1</sub> = 1/4 et u<sub>n+1</sub> = ((n+1)/(4n))u<sub>n</sub> pour tout n ∈ ℕ*.</p>
+<ol>
+  <li>Calculer u<sub>2</sub>, u<sub>3</sub>, u<sub>4</sub> et u<sub>5</sub>.</li>
+</ol>
+
+<h2>II. Suite majorée – Suite minorée – Suite bornée</h2>
+
+<h4>Définition</h4>
+<p>On dit que la suite (u<sub>n</sub>)<sub>n≥n₀</sub> est <strong>majorée</strong> s'il existe un réel M tel que : (∀n ∈ I) u<sub>n</sub> ≤ M</p>
+<p>On dit que la suite (u<sub>n</sub>)<sub>n≥n₀</sub> est <strong>minorée</strong> s'il existe un réel m tel que : (∀n ∈ I) u<sub>n</sub> ≥ m</p>
+<p>On dit que la suite (u<sub>n</sub>)<sub>n≥n₀</sub> est <strong>bornée</strong> si elle est à la fois majorée et minorée.</p>
+
+<h4>Remarques</h4>
+<p>Les réels M et m sont des constantes et ne dépendent pas de l'indice de la suite.</p>
+<p>Par exemple, la suite (u<sub>n</sub>) définie par u<sub>n</sub> = √n vérifie l'inégalité u<sub>n</sub> ≤ n pour tout n ∈ ℕ, mais n'est pas une suite majorée.</p>
+<p>S'il existe un réel S ∈ ℝ⁺ tel que pour tout n ∈ ℕ, on a |u<sub>n</sub>| ≤ S, alors la suite (u<sub>n</sub>) est bornée.</p>
+
+<h4>Applications</h4>
+<p>Soit (a<sub>n</sub>) la suite numérique définie par : a<sub>n</sub> = (2n + 5)/(n + 1)</p>
+<ol>
+  <li>Montrer que la suite (a<sub>n</sub>) est majorée par 5 et minorée par 2.</li>
+</ol>
+<p>Soit (u<sub>n</sub>) la suite numérique définie par u<sub>0</sub> = 1 et u<sub>n+1</sub> = (3u<sub>n</sub> + 2)/(u<sub>n</sub> + 2) pour tout n ∈ ℕ.</p>
+<ol start="2">
+  <li>Montrer que : (∀n ∈ ℕ) 1 ≤ u<sub>n</sub> < 2</li>
+</ol>
+<p>Soit (v<sub>n</sub>) la suite numérique définie par v<sub>0</sub> = 2 et v<sub>n+1</sub> = √(6 + v<sub>n</sub>) pour tout n ∈ ℕ.</p>
+<ol start="3">
+  <li>Montrer que : (∀n ∈ ℕ) 1 < v<sub>n</sub> < 3</li>
+</ol>
+<p>Soit (w<sub>n</sub>)<sub>n≥2</sub> la suite numérique définie par : w<sub>n</sub> = (5ⁿ + 3ⁿ)/(5ⁿ − 2×3ⁿ)</p>
+<ol start="4">
+  <li>Vérifier que pour tout entier n ≥ 2 : w<sub>n</sub> = 1 + 3/((5/3)ⁿ − 2), puis en déduire que la suite (w<sub>n</sub>)<sub>n≥2</sub> est bornée.</li>
+</ol>
+
+<h2>III. Monotonie d'une suite numérique</h2>
+
+<h4>Définition</h4>
+<p>On dit que la suite (u<sub>n</sub>)<sub>n≥n₀</sub> est <strong>croissante</strong> si : (∀(n ; m) ∈ I²) (m ≥ n ⇒ u<sub>m</sub> ≥ u<sub>n</sub>)</p>
+<p>On dit que la suite (u<sub>n</sub>)<sub>n≥n₀</sub> est <strong>décroissante</strong> si : (∀(n ; m) ∈ I²) (m ≥ n ⇒ u<sub>m</sub> ≤ u<sub>n</sub>)</p>
+
+<h4>Remarques</h4>
+<p>Si la suite (u<sub>n</sub>)<sub>n≥n₀</sub> est croissante alors : (∀n ∈ I) u<sub>n</sub> ≥ u<sub>n₀</sub></p>
+<p>Si la suite (u<sub>n</sub>)<sub>n≥n₀</sub> est décroissante alors : (∀n ∈ I) u<sub>n</sub> ≤ u<sub>n₀</sub></p>
+<p>On définit de même une suite strictement croissante et strictement décroissante en remplaçant les symboles ≤ et ≥ par < et >.</p>
+
+<h4>Proposition</h4>
+<p>La suite (u<sub>n</sub>)<sub>n≥n₀</sub> est croissante si et seulement si : (∀n ∈ I) u<sub>n+1</sub> − u<sub>n</sub> ≥ 0</p>
+<p>La suite (u<sub>n</sub>)<sub>n≥n₀</sub> est strictement croissante si et seulement si : (∀n ∈ I) u<sub>n+1</sub> − u<sub>n</sub> > 0</p>
+<p>La suite (u<sub>n</sub>)<sub>n≥n₀</sub> est décroissante si et seulement si : (∀n ∈ I) u<sub>n+1</sub> − u<sub>n</sub> ≤ 0</p>
+<p>La suite (u<sub>n</sub>)<sub>n≥n₀</sub> est strictement décroissante si et seulement si : (∀n ∈ I) u<sub>n+1</sub> − u<sub>n</sub> < 0</p>
+<p>La suite (u<sub>n</sub>)<sub>n≥n₀</sub> est constante si et seulement si : (∀n ∈ I) u<sub>n+1</sub> = u<sub>n</sub></p>
+<p>La suite (u<sub>n</sub>)<sub>n≥n₀</sub> est monotone si et seulement si elle est croissante ou décroissante.</p>
+
+<h4>Remarques</h4>
+<p>Soit (u<sub>n</sub>)<sub>n≥n₀</sub> une suite numérique telle que : (∀n ∈ I) u<sub>n</sub> > 0</p>
+<p>On a pour tout n ∈ I : le signe de u<sub>n+1</sub> − u<sub>n</sub> est celui de u<sub>n+1</sub>/u<sub>n</sub> − 1 car u<sub>n+1</sub> − u<sub>n</sub> = u<sub>n</sub>(u<sub>n+1</sub>/u<sub>n</sub> − 1).</p>
+<p>Ainsi, pour étudier la monotonie de la suite (u<sub>n</sub>)<sub>n≥n₀</sub>, on peut comparer u<sub>n+1</sub>/u<sub>n</sub> et 1 :</p>
+<ul>
+  <li>La suite (u<sub>n</sub>)<sub>n≥n₀</sub> est croissante si et seulement si : (∀n ∈ I) u<sub>n+1</sub>/u<sub>n</sub> ≥ 1</li>
+  <li>La suite (u<sub>n</sub>)<sub>n≥n₀</sub> est décroissante si et seulement si : (∀n ∈ I) u<sub>n+1</sub>/u<sub>n</sub> ≤ 1</li>
+</ul>
+
+<h4>Applications</h4>
+<ol>
+  <li>Étudier la monotonie des suites (u<sub>n</sub>) et (v<sub>n</sub>) définies par u<sub>n</sub> = (2n + 1)/(3n + 1) et v<sub>n</sub> = 3<sup>2n−1</sup>.</li>
+</ol>
+<p>On considère la suite numérique (w<sub>n</sub>) définie par w<sub>0</sub> = 6 et w<sub>n+1</sub> = 4 − 3/w<sub>n</sub> pour tout n ∈ ℕ.</p>
+<ol start="2">
+  <li>Montrer par récurrence que : (∀n ∈ ℕ) w<sub>n</sub> > 3</li>
+  <li>Montrer que la suite (w<sub>n</sub>) est décroissante, puis en déduire que : (∀n ∈ ℕ) 3 < w<sub>n</sub> ≤ 6</li>
+</ol>
+<p>Soient (a<sub>n</sub>) et (b<sub>n</sub>) les deux suites numériques définies par a<sub>0</sub> = 4 et b<sub>0</sub> = 1, et pour tout n ∈ ℕ : a<sub>n+1</sub> = (a<sub>n</sub> + b<sub>n</sub>)/2 et b<sub>n+1</sub> = √(a<sub>n</sub>b<sub>n</sub>).</p>
+<ol start="4">
+  <li>Montrer par récurrence que pour tout n ∈ ℕ : a<sub>n</sub> ≥ b<sub>n</sub></li>
+  <li>Montrer que la suite (b<sub>n</sub>) est croissante et que la suite (a<sub>n</sub>) est décroissante.</li>
+</ol>
+<p>Soit (t<sub>n</sub>) une suite réelle vérifiant pour tout n ∈ ℕ : 0 ≤ t<sub>n</sub> ≤ 1 et (1 − t<sub>n</sub>)t<sub>n+1</sub> > 1/4.</p>
+<ol start="6">
+  <li>Prouver que la suite (t<sub>n</sub>) est strictement croissante.</li>
+</ol>
+<p>On considère la suite (u<sub>n</sub>) définie par u<sub>0</sub> = 1 et u<sub>n+1</sub> = ½(u<sub>n</sub> + √(u<sub>n</sub>) + 2) pour tout n ∈ ℕ.</p>
+<ol start="7">
+  <li>Montrer que : (∀n ∈ ℕ) 1 ≤ u<sub>n</sub> ≤ 4</li>
+  <li>Montrer que (∀n ∈ ℕ) u<sub>n+1</sub> − u<sub>n</sub> = ½(2 − √(u<sub>n</sub>))(1 + √(u<sub>n</sub>)), puis déduire la monotonie de (u<sub>n</sub>).</li>
+  <li>Montrer que : (∀n ∈ ℕ) 4 − u<sub>n+1</sub> ≤ (3/4)(4 − u<sub>n</sub>)</li>
+  <li>En déduire par récurrence que : (∀n ∈ ℕ) 4 − u<sub>n</sub> ≤ 3(3/4)ⁿ</li>
+</ol>
+
+<h2>IV. Suite arithmétique – Suite géométrique</h2>
+
+<h3>4-1. Suite arithmétique</h3>
+
+<h4>Définition</h4>
+<p>On dit que la suite (u<sub>n</sub>)<sub>n≥n₀</sub> est <strong>arithmétique</strong> s'il existe un réel r (indépendant de n) tel que :</p>
+<p>(∀n ∈ I) u<sub>n+1</sub> − u<sub>n</sub> = r</p>
+<p>Le nombre r est appelé la <strong>raison</strong> de la suite (u<sub>n</sub>)<sub>n≥n₀</sub>.</p>
+
+<h4>Applications</h4>
+<p>Soit (w<sub>n</sub>) la suite numérique définie par : w<sub>n</sub> = −√3n + 3/2</p>
+<ol>
+  <li>Montrer que la suite (w<sub>n</sub>) est arithmétique et déterminer sa raison r.</li>
+</ol>
+<p>Soit (u<sub>n</sub>) la suite numérique définie par u<sub>0</sub> = 5 et u<sub>n+1</sub> = (2u<sub>n</sub> − 1)/u<sub>n</sub> pour tout n ∈ ℕ. On pose pour tout n ∈ ℕ : v<sub>n</sub> = 1/(u<sub>n</sub> − 1)</p>
+<ol start="2">
+  <li>Montrer que la suite (v<sub>n</sub>) est arithmétique et déterminer sa raison r.</li>
+</ol>
+<p>Soit (b<sub>n</sub>) la suite numérique définie par : (∀n ∈ ℕ) b<sub>0</sub> + b<sub>1</sub> + ... + b<sub>n</sub> = 4n² − 3n</p>
+<ol start="3">
+  <li>Montrer que la suite (b<sub>n</sub>) est arithmétique dont on déterminera la raison et le premier terme.</li>
+</ol>
+
+<h4>Proposition</h4>
+<p>Pour que la suite (u<sub>n</sub>)<sub>n≥n₀</sub> soit arithmétique, il faut et il suffit que :</p>
+<p>(∀n ≥ n₀) 2u<sub>n+1</sub> = u<sub>n</sub> + u<sub>n+2</sub></p>
+
+<h4>Remarque</h4>
+<p>Pour que trois réels x, y et z, choisis dans cet ordre, soient des termes consécutifs d'une suite arithmétique, il faut et il suffit que : x + z = 2y</p>
+
+<h4>Proposition</h4>
+<p>Si (u<sub>n</sub>)<sub>n≥n₀</sub> est une suite arithmétique de raison r, alors pour tout (n ; p) ∈ I² :</p>
+<p>u<sub>n</sub> = u<sub>p</sub> + (n − p)r</p>
+
+<h4>Remarques</h4>
+<p>Si la suite (u<sub>n</sub>) est arithmétique de raison r, alors : (∀n ∈ ℕ) u<sub>n</sub> = u<sub>0</sub> + nr</p>
+<p>Si la suite (u<sub>n</sub>)<sub>n≥1</sub> est arithmétique de raison r, alors : (∀n ∈ ℕ) u<sub>n</sub> = u<sub>1</sub> + (n − 1)r</p>
+<p>Soit (u<sub>n</sub>)<sub>n≥n₀</sub> une suite arithmétique de raison r.</p>
+<ul>
+  <li>Si r > 0, alors la suite (u<sub>n</sub>)<sub>n≥n₀</sub> est strictement croissante.</li>
+  <li>Si r < 0, alors la suite (u<sub>n</sub>)<sub>n≥n₀</sub> est strictement décroissante.</li>
+</ul>
+
+<h4>Applications</h4>
+<p>Soit (u<sub>n</sub>) une suite arithmétique de raison r telle que : {u<sub>0</sub> − u<sub>4</sub> = 6 et 2u<sub>0</sub> + u<sub>4</sub> = 3}</p>
+<ol>
+  <li>Déterminer u<sub>0</sub>, u<sub>4</sub> et r.</li>
+  <li>Déterminer l'expression de u<sub>n</sub> en fonction de n, puis en déduire u<sub>100</sub>.</li>
+</ol>
+<p>Soit (v<sub>n</sub>) une suite arithmétique de raison r telle que : {v<sub>2</sub> + v<sub>3</sub> + v<sub>4</sub> = 15 et v<sub>6</sub> = 20}</p>
+<ol start="3">
+  <li>Déterminer v<sub>0</sub> et r, puis en déduire l'expression du terme général v<sub>n</sub> en fonction de n.</li>
+</ol>
+<p>Soit (w<sub>n</sub>) la suite numérique définie par w<sub>0</sub> = 1 et w<sub>n+1</sub> = 5w<sub>n</sub>/(2w<sub>n</sub> + 5). On pose : (∀n ∈ ℕ) t<sub>n</sub> = 1/w<sub>n</sub></p>
+<ol start="4">
+  <li>Calculer w<sub>1</sub> et w<sub>2</sub>.</li>
+  <li>Vérifier que la suite (t<sub>n</sub>) est arithmétique dont on déterminera la raison et le premier terme.</li>
+  <li>Exprimer t<sub>n</sub> et w<sub>n</sub> en fonction de n.</li>
+</ol>
+
+<h3>4-2. Somme de termes consécutifs d'une suite arithmétique</h3>
+
+<h4>Proposition</h4>
+<p>Soit (u<sub>n</sub>)<sub>n≥n₀</sub> une suite arithmétique. On pose S<sub>n</sub> = u<sub>p</sub> + u<sub>p+1</sub> + ... + u<sub>n</sub> où (n ; p) ∈ ℕ² et n ≥ p ≥ n₀.</p>
+<p>Alors : S<sub>n</sub> = ((n − p + 1)/2)(u<sub>p</sub> + u<sub>n</sub>)</p>
+
+<h4>Remarques</h4>
+<p>La somme S<sub>n</sub> = u<sub>p</sub> + u<sub>p+1</sub> + ... + u<sub>n</sub> peut aussi s'écrire : S<sub>n</sub> = ∑<sub>k=p</sub><sup>n</sup> u<sub>k</sub>. Cette somme contient (n − p + 1) termes.</p>
+<p>Dans le cas où p = 0, on obtient : S<sub>n</sub> = ∑<sub>k=0</sub><sup>n</sup> u<sub>k</sub> = ((n + 1)/2)(u<sub>0</sub> + u<sub>n</sub>)</p>
+<p>Dans le cas où p = 1, on obtient : S<sub>n</sub> = ∑<sub>k=1</sub><sup>n</sup> u<sub>k</sub> = (n/2)(u<sub>1</sub> + u<sub>n</sub>)</p>
+<p>De façon générale, la somme de termes successifs d'une suite arithmétique est égale au nombre de termes multiplié par la moyenne arithmétique des termes extrêmes :</p>
+<p>u<sub>p</sub> + u<sub>p+1</sub> + ... + u<sub>n</sub> = ((n − p + 1)(u<sub>p</sub> + u<sub>n</sub>))/2 = (nombre de termes × (1er terme + dernier terme))/2</p>
+
+<h4>Applications</h4>
+<ol>
+  <li>Calculer la somme : S<sub>n</sub> = −3 + 1 + 5 + ... + (4n + 1)</li>
+</ol>
+<p>Soit (u<sub>n</sub>) une suite arithmétique de raison r telle que : u<sub>1</sub> + u<sub>2</sub> + ... + u<sub>26</sub> = 1144 et u<sub>26</sub> = 94</p>
+<ol start="2">
+  <li>Calculer u<sub>1</sub> et r, puis exprimer u<sub>n</sub> en fonction de n.</li>
+</ol>
+<p>Soit (a ; b) ∈ ℝ* × ℝ. On considère la suite numérique (u<sub>n</sub>) définie par : (∀n ∈ ℕ) u<sub>n</sub> = an + b</p>
+<ol start="3">
+  <li>Montrer que la suite (u<sub>n</sub>) est arithmétique puis exprimer en fonction de n la somme : S<sub>n</sub> = ∑<sub>k=0</sub><sup>n</sup> u<sub>k</sub></li>
+</ol>
+<p>On considère la suite (u<sub>n</sub>) définie par u<sub>0</sub> = 1 et u<sub>n+1</sub> = u<sub>n</sub> + 2n − 2 pour tout n ∈ ℕ. On pose pour tout n ∈ ℕ : v<sub>n</sub> = u<sub>n+1</sub> − u<sub>n</sub></p>
+<ol start="4">
+  <li>Vérifier que la suite (v<sub>n</sub>) est arithmétique dont on déterminera la raison et le premier terme.</li>
+  <li>Calculer la somme S<sub>n</sub> = ∑<sub>k=0</sub><sup>n</sup> v<sub>k</sub> en fonction de n.</li>
+  <li>En déduire l'expression de u<sub>n</sub> en fonction de n.</li>
+</ol>
+
+<h3>4-3. Suite géométrique</h3>
+
+<h4>Définition</h4>
+<p>On dit que la suite (u<sub>n</sub>)<sub>n≥n₀</sub> est <strong>géométrique</strong> s'il existe un réel q (indépendant de n) tel que :</p>
+<p>(∀n ∈ I) u<sub>n+1</sub> = qu<sub>n</sub></p>
+<p>Le nombre q est appelé la <strong>raison</strong> de la suite (u<sub>n</sub>)<sub>n≥n₀</sub>.</p>
+
+<h4>Applications</h4>
+<p>Soient (a<sub>n</sub>) et (b<sub>n</sub>) deux suites numériques définies par a<sub>n</sub> = (√2 − 1)ⁿ et b<sub>n</sub> = 3 × √5/2<sup>n−1</sup>.</p>
+<ol>
+  <li>Montrer que (a<sub>n</sub>) et (b<sub>n</sub>) sont géométriques.</li>
+</ol>
+<p>On considère la suite (u<sub>n</sub>) définie par u<sub>0</sub> = 1/2 et u<sub>n+1</sub> = 9u<sub>n</sub>/(4u<sub>n</sub> + 3) pour tout n ∈ ℕ.</p>
+<ol start="2">
+  <li>Montrer par récurrence que : (∀n ∈ ℕ) u<sub>n</sub> ≠ 0</li>
+</ol>
+<p>Pour tout n ∈ ℕ, on pose : v<sub>n</sub> = 2 − 3/u<sub>n</sub></p>
+<ol start="3">
+  <li>Montrer que la suite (v<sub>n</sub>) est géométrique dont on déterminera la raison et le premier terme.</li>
+</ol>
+<p>Soit (x<sub>n</sub>) la suite numérique définie par x<sub>0</sub> = 2 et x<sub>n+1</sub> = (10 + x<sub>n</sub>)/3 pour tout n ∈ ℕ. Pour tout n ∈ ℕ, on pose : y<sub>n</sub> = x<sub>n</sub> − 5</p>
+<ol start="4">
+  <li>Montrer que la suite (y<sub>n</sub>) est géométrique dont on déterminera la raison et le premier terme.</li>
+</ol>
+
+<h4>Proposition</h4>
+<p>Pour que la suite (u<sub>n</sub>)<sub>n≥n₀</sub> soit géométrique, il faut et il suffit que :</p>
+<p>(∀n ≥ n₀) u<sub>n+1</sub>² = u<sub>n</sub> × u<sub>n+2</sub></p>
+
+<h4>Remarque</h4>
+<p>Pour que trois réels x, y et z, choisis dans cet ordre, soient des termes consécutifs d'une suite géométrique, il faut et il suffit que : xz = y²</p>
+
+<h4>Proposition</h4>
+<p>Si (u<sub>n</sub>)<sub>n≥n₀</sub> est une suite géométrique de raison q, alors pour tout (n ; p) ∈ I² :</p>
+<p>u<sub>n</sub> = u<sub>p</sub> × q<sup>n−p</sup></p>
+
+<h4>Remarques</h4>
+<p>Si la suite (u<sub>n</sub>) est géométrique de raison q, alors : (∀n ∈ ℕ) u<sub>n</sub> = u<sub>0</sub> × q<sup>n</sup></p>
+<p>Si la suite (u<sub>n</sub>)<sub>n≥1</sub> est géométrique de raison q, alors : (∀n ∈ ℕ) u<sub>n</sub> = u<sub>1</sub> × q<sup>n−1</sup></p>
+<p>Soit (u<sub>n</sub>)<sub>n≥n₀</sub> une suite géométrique de raison q.</p>
+<ul>
+  <li>Si u<sub>n₀</sub> > 0 et q > 1, alors la suite (u<sub>n</sub>)<sub>n≥n₀</sub> est strictement croissante.</li>
+  <li>Si u<sub>n₀</sub> > 0 et 0 < q < 1, alors la suite (u<sub>n</sub>)<sub>n≥n₀</sub> est strictement décroissante.</li>
+</ul>
+
+<h4>Applications</h4>
+<p>Soit (u<sub>n</sub>) une suite géométrique à termes positifs tels que u<sub>4</sub> = 0,84 et u<sub>6</sub> = 5,25.</p>
+<ol>
+  <li>Calculer la raison q de cette suite et le premier terme u<sub>0</sub>.</li>
+  <li>Exprimer u<sub>n</sub> en fonction de n.</li>
+  <li>Préciser la monotonie de la suite (u<sub>n</sub>).</li>
+</ol>
+<p>On considère la suite numérique (u<sub>n</sub>) définie par u<sub>4</sub> = 1/2 et u<sub>n+1</sub> = 2u<sub>n</sub> − 3 pour tout n ∈ ℕ. On pose pour tout n ∈ ℕ : v<sub>n</sub> = u<sub>n</sub> − 3</p>
+<ol start="4">
+  <li>Montrer que la suite (v<sub>n</sub>) est géométrique dont on déterminera la raison et le premier terme.</li>
+  <li>Exprimer v<sub>n</sub> et u<sub>n</sub> en fonction de n.</li>
+</ol>
+<p>Soit a, b et c trois termes consécutifs d'une suite géométrique tels que : {a + b + c = 36,75 et abc = 343}</p>
+<ol start="6">
+  <li>Déterminer a, b et c.</li>
+</ol>
+<p>Soit (u<sub>n</sub>) la suite numérique définie par u<sub>0</sub> = 0 et u<sub>1</sub> = 1 et u<sub>n+2</sub> = (1/3)(7u<sub>n+1</sub> − 2u<sub>n</sub>) pour tout n ∈ ℕ.</p>
+<p>Pour tout n ∈ ℕ, on pose v<sub>n+1</sub> = u<sub>n+1</sub> − 2u<sub>n</sub> et w<sub>n+1</sub> = u<sub>n+1</sub> − (1/3)u<sub>n</sub>.</p>
+<ol start="7">
+  <li>Calculer v<sub>1</sub> et w<sub>1</sub>.</li>
+  <li>Montrer que les suites (v<sub>n</sub>)<sub>n≥1</sub> et (w<sub>n</sub>)<sub>n≥1</sub> sont géométriques.</li>
+  <li>Exprimer u<sub>n</sub> en fonction de n.</li>
+</ol>
+
+<h3>4-4. Somme de termes consécutifs d'une suite géométrique</h3>
+
+<h4>Proposition</h4>
+<p>Soit (u<sub>n</sub>)<sub>n≥n₀</sub> une suite géométrique de raison q ≠ 1.</p>
+<p>On pose S<sub>n</sub> = u<sub>p</sub> + u<sub>p+1</sub> + ... + u<sub>n</sub> où (n ; p) ∈ ℕ² et n ≥ p ≥ n₀.</p>
+<p>Alors : S<sub>n</sub> = u<sub>p</sub> × (1 − q<sup>n−p+1</sup>)/(1 − q)</p>
+
+<h4>Remarques</h4>
+<p>Dans le cas où p = 0, on obtient : S<sub>n</sub> = ∑<sub>k=0</sub><sup>n</sup> u<sub>k</sub> = u<sub>0</sub> × (1 − q<sup>n+1</sup>)/(1 − q)</p>
+<p>Dans le cas où p = 1, on obtient : S<sub>n</sub> = ∑<sub>k=1</sub><sup>n</sup> u<sub>k</sub> = u<sub>1</sub> × (1 − q<sup>n</sup>)/(1 − q)</p>
+<p>Si (u<sub>n</sub>)<sub>n≥n₀</sub> est une suite géométrique de raison q = 1, alors : ∑<sub>k=p</sub><sup>n</sup> u<sub>k</sub> = (n − p + 1)u<sub>p</sub></p>
+<p>De façon générale :</p>
+<p>u<sub>p</sub> + u<sub>p+1</sub> + ... + u<sub>n</sub> = u<sub>p</sub> × (1 − q<sup>nombre de termes</sup>)/(1 − q)</p>
+
+<h4>Applications</h4>
+<p>Soit (u<sub>n</sub>) la suite numérique définie par u<sub>0</sub> = 2 et u<sub>n+1</sub> = (3/5)u<sub>n</sub> + 2/5 pour tout n ∈ ℕ.</p>
+<ol>
+  <li>Montrer que la suite (v<sub>n</sub>) définie pour tout n ∈ ℕ par v<sub>n</sub> = u<sub>n+1</sub> − u<sub>n</sub> est géométrique.</li>
+  <li>Calculer en fonction de n la somme S<sub>n</sub> = ∑<sub>k=0</sub><sup>n</sup> v<sub>k</sub>, puis en déduire l'expression de u<sub>n</sub> en fonction de n.</li>
+</ol>
+<p>Soit (u<sub>n</sub>) une suite géométrique de raison q.</p>
+<ol start="3">
+  <li>Montrer que : (∀n ∈ ℕ) S<sub>n</sub>(S<sub>3n</sub> − S<sub>2n</sub>) = (S<sub>2n</sub> − S<sub>n</sub>)²</li>
+  <li>Montrer que :
+    <p>√(u<sub>1</sub>u<sub>2</sub>) + √(u<sub>3</sub>u<sub>4</sub>) + ... + √(u<sub>2n−1</sub>u<sub>2n</sub>) = √(u<sub>1</sub> + u<sub>3</sub> + ... + u<sub>2n−1</sub>) × √(u<sub>2</sub> + u<sub>4</sub> + ... + u<sub>2n</sub>)</p>
+  </li>
+</ol>

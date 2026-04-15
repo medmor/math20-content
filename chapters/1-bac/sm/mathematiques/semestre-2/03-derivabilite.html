@@ -1,2 +1,315 @@
-<!-- Dérivabilité -->
-<h1>Dérivabilité</h1>
+<!-- Dérivabilité d'une fonction numérique -->
+<h1>Dérivabilité d'une fonction numérique</h1>
+
+<h2>I. Dérivabilité d'une fonction en un point</h2>
+
+<h3>1-1. Nombre dérivé en un point</h3>
+
+<b>Définition</b>
+<p>Soit f une fonction définie sur un intervalle ouvert I et a ∈ I.</p>
+<p>On dit que la fonction f est <b>dérivable en a</b>, s'il existe un nombre réel ℓ tel que :</p>
+<p style="text-align:center;">lim<sub>h→0</sub> [f(a + h) − f(a)] / h = ℓ</p>
+<p>Le réel ℓ est appelé le <b>nombre dérivé</b> de la fonction f en a, il est noté f'(a).</p>
+<p>On écrit :</p>
+<p style="text-align:center;">f'(a) = lim<sub>h→0</sub> [f(a + h) − f(a)] / h = ℓ</p>
+<p>ou</p>
+<p style="text-align:center;">f'(a) = lim<sub>x→a</sub> [f(x) − f(a)] / (x − a) = ℓ</p>
+
+<b>Remarque</b>
+<p>Si on pose h = x − a, alors x → a ⇔ h → 0, et on peut aussi écrire :</p>
+<p style="text-align:center;">f'(a) = lim<sub>h→0</sub> [f(a + h) − f(a)] / h</p>
+
+<b>Exemple</b>
+<p>Soit f(x) = x². Montrons que f est dérivable en a = 2 et calculons f'(2).</p>
+<p>On a :</p>
+<p style="text-align:center;">[f(x) − f(2)] / (x − 2) = (x² − 4) / (x − 2) = (x − 2)(x + 2) / (x − 2) = x + 2 pour x ≠ 2</p>
+<p>Donc :</p>
+<p style="text-align:center;">lim<sub>x→2</sub> [f(x) − f(2)] / (x − 2) = lim<sub>x→2</sub> (x + 2) = 4</p>
+<p>Ainsi, f est dérivable en 2 et f'(2) = 4.</p>
+
+<b>Exemple</b>
+<p>Soit f(x) = x². Montrons que f est dérivable en tout point a ∈ ℝ et calculons f'(a).</p>
+<p>Pour tout h ≠ 0, on a :</p>
+<p style="text-align:center;">[f(a + h) − f(a)] / h = [(a + h)² − a²] / h = [a² + 2ah + h² − a²] / h = [2ah + h²] / h = 2a + h</p>
+<p>Donc :</p>
+<p style="text-align:center;">lim<sub>h→0</sub> [f(a + h) − f(a)] / h = lim<sub>h→0</sub> (2a + h) = 2a</p>
+<p>Ainsi, f est dérivable en tout réel a et f'(a) = 2a, donc f'(x) = 2x pour tout x ∈ ℝ.</p>
+
+<b>Interprétation géométrique</b>
+<p>Le nombre dérivé f'(a) représente le coefficient directeur de la tangente à la courbe représentative de f au point d'abscisse a.</p>
+<p>Si le point B se rapproche du point A (h tend vers 0), la droite (AB) se rapproche de la tangente (T) à la courbe en x = a.</p>
+<p>Le coefficient directeur de cette tangente (T) est appelé nombre dérivé, noté f'(a).</p>
+
+<b>Définition</b>
+<p>Soit f une fonction dérivable en un point a et (C<sub>f</sub>) sa courbe représentative dans un repère orthonormé (O ; <span style="text-decoration: overline;">i</span> ; <span style="text-decoration: overline;">j</span>).</p>
+<p>La droite (T) qui passe par le point A(a, f(a)) et qui a pour coefficient directeur f'(a) est appelée la tangente à la courbe (C<sub>f</sub>) au point A.</p>
+
+<b>Propriété</b>
+<p>Soit f une fonction dérivable en un point a.</p>
+<p>Une équation de la droite tangente à la courbe (C<sub>f</sub>) de la fonction f au point A(a, f(a)) est :</p>
+<p style="text-align:center;">(T) : y = f'(a)(x − a) + f(a)</p>
+
+<b>Propriété</b>
+<p>Si f est dérivable en a, alors f est continue en a.</p>
+
+<b>Preuve</b>
+<p>Supposons que f est dérivable en a. Alors :</p>
+<p style="text-align:center;">lim<sub>x→a</sub> [f(x) − f(a)] / (x − a) = f'(a)</p>
+<p>On peut écrire :</p>
+<p style="text-align:center;">f(x) − f(a) = [f(x) − f(a)] / (x − a) × (x − a)</p>
+<p>En passant à la limite quand x → a, on obtient :</p>
+<p style="text-align:center;">lim<sub>x→a</sub> [f(x) − f(a)] = f'(a) × 0 = 0</p>
+<p>Donc lim<sub>x→a</sub> f(x) = f(a), ce qui signifie que f est continue en a. □</p>
+
+<b>Remarque</b>
+<p>La réciproque est fausse : une fonction peut être continue en un point sans être dérivable en ce point. Par exemple, la fonction valeur absolue f(x) = |x| est continue en 0 mais n'est pas dérivable en 0.</p>
+
+<b>Exemple</b>
+<p>Soit f(x) = |x|. Étudions la dérivabilité de f en 0.</p>
+<p>On a :</p>
+<p style="text-align:center;">[f(x) − f(0)] / (x − 0) = |x| / x = 1 si x > 0 et −1 si x < 0</p>
+<p>Donc :</p>
+<p style="text-align:center;">lim<sub>x→0<sup>+</sup></sub> [f(x) − f(0)] / x = 1 et lim<sub>x→0<sup>−</sup></sub> [f(x) − f(0)] / x = −1</p>
+<p>Les limites à droite et à gauche sont différentes, donc la limite globale n'existe pas. Ainsi, f n'est pas dérivable en 0.</p>
+
+<h3>1-2. Approximation affine d'une fonction dérivable</h3>
+
+<b>Définition</b>
+<p>Soit f une fonction dérivable en un point a.</p>
+<p>La fonction u : x ↦ f'(a)(x − a) + f(a) est appelée la fonction affine tangente à la fonction f au point a.</p>
+<p>Le réel f'(a)(x − a) + f(a) est l'approximation affine du réel f(x) au voisinage de a, on écrit :</p>
+<p style="text-align:center;">f(x) ∼<sub>a</sub> f'(a)(x − a) + f(a)</p>
+
+<b>Proposition</b>
+<p>Soit f une fonction définie sur un intervalle I de ℝ et a ∈ I. La fonction f est dérivable en a si et seulement si il existe un réel ℓ tel que :</p>
+<p style="text-align:center;">f(a + h) = f(a) + ℓh + hε(h) avec lim<sub>h→0</sub> ε(h) = 0</p>
+<p>Dans ce cas, ℓ = f'(a).</p>
+
+<b>Remarque</b>
+<p>L'approximation affine de f en a est donnée par :</p>
+<p style="text-align:center;">f(a + h) ≈ f(a) + f'(a)h</p>
+<p>pour h voisin de 0. C'est l'approximation affine locale de f en a.</p>
+
+<h2>II. Dérivabilité à droite — Dérivabilité à gauche</h2>
+
+<h3>2-1. Définitions et notations</h3>
+
+<b>Définition</b>
+<p>Soit f une fonction définie sur un intervalle de la forme [a ; a + r[ (r > 0).</p>
+<p>On dit que f est <b>dérivable à droite en a</b> s'il existe un réel ℓ tel que :</p>
+<p style="text-align:center;">lim<sub>h→0<sup>+</sup></sub> [f(a + h) − f(a)] / h = ℓ</p>
+<p>Le réel ℓ est appelé le nombre dérivé de la fonction f à droite en a, noté f'<sub>d</sub>(a).</p>
+<p>On écrit :</p>
+<p style="text-align:center;">f'<sub>d</sub>(a) = lim<sub>h→0<sup>+</sup></sub> [f(a + h) − f(a)] / h = lim<sub>x→a<sup>+</sup></sub> [f(x) − f(a)] / (x − a)</p>
+
+<b>Définition</b>
+<p>Soit f une fonction définie sur un intervalle de la forme ]a − r ; a] (r > 0).</p>
+<p>On dit que f est <b>dérivable à gauche en a</b> s'il existe un réel ℓ tel que :</p>
+<p style="text-align:center;">lim<sub>h→0<sup>−</sup></sub> [f(a + h) − f(a)] / h = ℓ</p>
+<p>Le réel ℓ est appelé le nombre dérivé de la fonction f à gauche en a, noté f'<sub>g</sub>(a).</p>
+<p>On écrit :</p>
+<p style="text-align:center;">f'<sub>g</sub>(a) = lim<sub>h→0<sup>−</sup></sub> [f(a + h) − f(a)] / h = lim<sub>x→a<sup>−</sup></sub> [f(x) − f(a)] / (x − a)</p>
+
+<b>Propriété</b>
+<p>Soit f une fonction définie sur un intervalle ouvert I et a ∈ I.</p>
+<p>f est dérivable en a si et seulement si f est dérivable à droite en a et f est dérivable à gauche en a et f'<sub>d</sub>(a) = f'<sub>g</sub>(a).</p>
+<p>Dans ce cas, f'(a) = f'<sub>d</sub>(a) = f'<sub>g</sub>(a).</p>
+
+<h3>2-2. Interprétation géométrique (demi-tangente en un point d'une courbe)</h3>
+
+<p>Si f est dérivable à droite en a, cela signifie graphiquement que la courbe de la fonction f admet une demi-tangente au point A(a ; f(a)) d'équation :</p>
+<p style="text-align:center;">(T<sub>d</sub>) : y = f'<sub>d</sub>(a)(x − a) + f(a) et x ≥ a</p>
+
+<p>Si f est dérivable à gauche en a, cela signifie graphiquement que la courbe de la fonction f admet une demi-tangente au point A(a ; f(a)) d'équation :</p>
+<p style="text-align:center;">(T<sub>g</sub>) : y = f'<sub>g</sub>(a)(x − a) + f(a) et x ≤ a</p>
+
+<b>Résumé — La dérivabilité en un point et interprétation géométrique du nombre dérivé</b>
+<table border="1" cellpadding="5" cellspacing="0">
+<tr><th>La limite</th><th>La dérivabilité</th><th>Interprétation géométrique</th></tr>
+<tr><td>lim<sub>x→a</sub> [f(x) − f(a)] / (x − a) = ℓ</td><td>f est dérivable en a et f'(a) = ℓ</td><td>(C<sub>f</sub>) admet une tangente d'équation y = f'(a)(x − a) + f(a) au point A(a ; f(a))</td></tr>
+<tr><td>lim<sub>x→a<sup>+</sup></sub> [f(x) − f(a)] / (x − a) = ∞</td><td>f n'est pas dérivable en a</td><td>(C<sub>f</sub>) admet une demi-tangente verticale d'équation x = a au point A(a ; f(a))</td></tr>
+<tr><td>lim<sub>x→a<sup>+</sup></sub> [f(x) − f(a)] / (x − a) = ℓ</td><td>f est dérivable à droite en a et f'<sub>d</sub>(a) = ℓ</td><td>(C<sub>f</sub>) admet une demi-tangente au point A(a ; f(a)) d'équation y = f'<sub>d</sub>(a)(x − a) + f(a) et x ≥ a</td></tr>
+<tr><td>lim<sub>x→a<sup>−</sup></sub> [f(x) − f(a)] / (x − a) = ℓ</td><td>f est dérivable à gauche en a et f'<sub>g</sub>(a) = ℓ</td><td>(C<sub>f</sub>) admet une demi-tangente au point A(a ; f(a)) d'équation y = f'<sub>g</sub>(a)(x − a) + f(a) et x ≤ a</td></tr>
+</table>
+
+<h2>III. Dérivabilité d'une fonction sur un intervalle</h2>
+
+<h3>3-1. Fonction dérivée</h3>
+
+<b>Définition</b>
+<p>On dit qu'une fonction f est <b>dérivable sur un intervalle ouvert</b> ]a ; b[ si f est dérivable en tout point de ]a ; b[.</p>
+<p>On dit qu'une fonction f est <b>dérivable sur l'intervalle fermé</b> [a ; b] si f est dérivable sur ]a ; b[ et f dérivable à droite en a et à gauche en b.</p>
+<p>Si f est dérivable sur un intervalle ouvert I, alors la fonction dérivée de f est la fonction notée f' définie de I vers ℝ :</p>
+<p style="text-align:center;">f' : I ↦ ℝ ; x ↦ f'(x)</p>
+
+<b>Remarque</b>
+<p>On peut aussi parler de dérivabilité sur ]a, b[, [a, b[, ]a, b] : il suffit d'ajouter la dérivabilité à droite ou à gauche aux bornes fermées.</p>
+
+<b>Exemple</b>
+<p>Montrons que la fonction f définie sur ℝ par f(x) = x² est dérivable sur ℝ et déterminons la fonction dérivée f'(x).</p>
+<p>Montrons que la fonction g définie sur [0 ; +∞[ par g(x) = √x est dérivable sur ]0 ; +∞[ et déterminons g'(x).</p>
+
+<h3>3-2. Opérations sur les fonctions dérivables</h3>
+
+<b>Propriété</b>
+<p>Si f et g sont deux fonctions dérivables sur un intervalle I et k ∈ ℝ, alors on a :</p>
+<ol>
+<li>La fonction f + g est dérivable sur I et : (f + g)' = f' + g'</li>
+<li>La fonction kf est dérivable sur I et : (kf)' = kf'</li>
+<li>La fonction fg est dérivable sur I et : (fg)' = f'g + fg'</li>
+<li>Si de plus (∀x ∈ I) g(x) ≠ 0, alors :
+<ul>
+<li>La fonction 1/g est dérivable sur I et : (1/g)' = −g'/g²</li>
+<li>La fonction f/g est dérivable sur I et : (f/g)' = (f'g − fg')/g²</li>
+</ul>
+</li>
+</ol>
+
+<b>Remarque</b>
+<p>Toute fonction polynôme est dérivable sur ℝ.</p>
+<p>Toute fonction rationnelle est dérivable sur chaque intervalle inclus dans son ensemble de définition.</p>
+
+<table border="1" cellpadding="5" cellspacing="0">
+<tr><td>Dérivée de la somme</td><td>(u + v)' = u' + v'</td></tr>
+<tr><td>Dérivée du produit par un scalaire</td><td>(λu)' = λu'</td></tr>
+<tr><td>Dérivée du produit</td><td>(uv)' = u'v + uv'</td></tr>
+<tr><td>Dérivée de l'inverse</td><td>(1/v)' = −v'/v²</td></tr>
+<tr><td>Dérivée du quotient</td><td>(u/v)' = (u'v − uv')/v²</td></tr>
+<tr><td>Dérivée de la puissance</td><td>(u<sup>n</sup>)' = nu'u<sup>n−1</sup></td></tr>
+<tr><td>Dérivée de la racine</td><td>(√u)' = u'/(2√u)</td></tr>
+</table>
+
+<b>Propriété</b>
+<p>Si f est une fonction dérivable et strictement positive sur un intervalle I, alors la fonction √f est dérivable sur I et :</p>
+<p style="text-align:center;">(√f)' = f'/(2√f)</p>
+
+<h2>IV. Tableau des dérivées usuelles</h2>
+
+<table border="1" cellpadding="5" cellspacing="0">
+<tr><th>La fonction f</th><th>L'ensemble de définition de f</th><th>La fonction f'</th><th>L'ensemble de définition de f'</th></tr>
+<tr><td>f : x ↦ a (a ∈ ℝ)</td><td>ℝ</td><td>f' : x ↦ 0</td><td>ℝ</td></tr>
+<tr><td>f : x ↦ x</td><td>ℝ</td><td>f' : x ↦ 1</td><td>ℝ</td></tr>
+<tr><td>f : x ↦ x<sup>n</sup> (n ∈ ℕ*)</td><td>ℝ</td><td>f' : x ↦ nx<sup>n−1</sup></td><td>ℝ</td></tr>
+<tr><td>f : x ↦ √x</td><td>[0 ; +∞[</td><td>f' : x ↦ 1/(2√x)</td><td>]0 ; +∞[</td></tr>
+<tr><td>f : x ↦ 1/x</td><td>ℝ*</td><td>f' : x ↦ −1/x²</td><td>]0 ; +∞[ ou ]−∞ ; 0[</td></tr>
+<tr><td>f : x ↦ 1/x<sup>n</sup> (n ∈ ℕ*)</td><td>ℝ*</td><td>f' : x ↦ −n/x<sup>n+1</sup></td><td>]0 ; +∞[ ou ]−∞ ; 0[</td></tr>
+<tr><td>f : x ↦ sin(x)</td><td>ℝ</td><td>f' : x ↦ cos(x)</td><td>ℝ</td></tr>
+<tr><td>f : x ↦ cos(x)</td><td>ℝ</td><td>f' : x ↦ −sin(x)</td><td>ℝ</td></tr>
+<tr><td>f : x ↦ tan(x)</td><td>ℝ \ {π/2 + kπ, k ∈ ℤ}</td><td>f' : x ↦ 1/cos²(x) = 1 + tan²(x)</td><td>ℝ \ {π/2 + kπ, k ∈ ℤ}</td></tr>
+<tr><td>f : x ↦ ax + b</td><td>ℝ</td><td>f' : x ↦ a</td><td>ℝ</td></tr>
+</table>
+
+<h2>V. Applications de la dérivation</h2>
+
+<h3>5-1. Monotonie d'une fonction numérique</h3>
+
+<b>Proposition</b>
+<p>Soit f une fonction dérivable sur un intervalle I de ℝ.</p>
+<ul>
+<li>Si la fonction f est constante sur I, alors : (∀x ∈ I) f'(x) = 0</li>
+<li>Si la fonction f est croissante sur I, alors : (∀x ∈ I) f'(x) ≥ 0</li>
+<li>Si la fonction f est décroissante sur I, alors : (∀x ∈ I) f'(x) ≤ 0</li>
+</ul>
+
+<b>Proposition</b>
+<p>Soit f une fonction dérivable sur un intervalle I de ℝ.</p>
+<ul>
+<li>Si f' est positive sur I et ne s'y annule qu'en un nombre fini de points, alors la fonction f est strictement croissante sur I.</li>
+<li>Si f' est négative sur I et ne s'y annule qu'en un nombre fini de points, alors la fonction f est strictement décroissante sur I.</li>
+<li>Si f' est nulle sur I, alors la fonction f est constante sur I.</li>
+</ul>
+
+<b>Remarque</b>
+<ul>
+<li>Les résultats de la proposition précédente ne sont valables que sur un intervalle.</li>
+<li>La fonction dérivée est un outil puissant pour étudier la monotonie d'une fonction numérique.</li>
+</ul>
+
+<p>Pour étudier la monotonie d'une fonction f dérivable sur un intervalle de ℝ, on calcule la fonction dérivée f' puis on détermine son signe et on utilise la proposition précédente.</p>
+
+<b>Applications</b>
+<p>En utilisant la fonction dérivée, étudier les variations de la fonction f dans chacun des cas suivants :</p>
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+<td>① f(x) = (x + 2)/(x − 1)<br/>② f(x) = (x² − x + 4)/(x − 1)<br/>③ f(x) = √(x² − 2x)</td>
+<td>④ f(x) = cos(2x) + 1<br/>⑤ f(x) = 1/(x + 1)²<br/>⑥ f(x) = x√(x/(x + 1))</td>
+</tr>
+</table>
+
+<h3>5-2. Extrema d'une fonction dérivable sur un intervalle</h3>
+
+<b>Proposition</b>
+<p>Soit f une fonction dérivable sur un intervalle ouvert I et a un élément de I. Si f admet un extremum local au point a, alors : f'(a) = 0</p>
+
+<b>Remarque</b>
+<p>La réciproque de la proposition précédente est fausse comme le montre l'exemple classique f(x) = x³ sur ℝ. Pour cet exemple, on a f'(0) = 0 mais f ne présente pas un extremum en 0.</p>
+<p>La condition f'(a) = 0 est donc nécessaire mais pas suffisante pour que la fonction f présente un extremum au point a d'un intervalle ouvert I.</p>
+<p>Si f admet un extremum local au point a, alors la tangente à la courbe C<sub>f</sub> au point A(a, f(a)) est horizontale.</p>
+
+<b>Proposition</b>
+<p>Soit f une fonction dérivable sur un intervalle ouvert I et a un élément de I. Si f' s'annule en a en changeant de signe, alors f admet un extremum en a.</p>
+
+<b>Applications</b>
+<p>Déterminer les extrema de chacune des fonctions suivantes :</p>
+<ol>
+<li>f(x) = 4x³ − x² − 1</li>
+<li>f(x) = √(x² + 2x − 3)</li>
+<li>f(x) = (x² − 4)/(x² + 1)</li>
+</ol>
+
+<h2>VI. Dérivées successives</h2>
+
+<b>Définition</b>
+<p>Soit f une fonction dérivable sur un intervalle I de ℝ. On dit que la fonction f est deux fois dérivable sur I si f est dérivable sur I et f' dérivable sur I.</p>
+<p>La dérivée de la fonction f' s'appelle la dérivée seconde de f et est notée f''.</p>
+<p>On a : f'' = (f')'</p>
+<p>Plus généralement, on définit par récurrence la dérivée n<sup>ième</sup> de la fonction f, notée f<sup>(n)</sup>, comme suit :</p>
+<ul>
+<li>On pose : f<sup>(0)</sup> = f</li>
+<li>Pour n ≥ 1, on dit que f est n fois dérivable sur I si elle est n − 1 fois dérivable sur I et si f<sup>(n−1)</sup> est dérivable sur I. On pose alors : f<sup>(n)</sup> = (f<sup>(n−1)</sup>)'</li>
+</ul>
+
+<b>Applications</b>
+<p>On considère la fonction f définie sur ℝ \ {1} par : f(x) = 1/(x − 1)</p>
+<ol>
+<li>a- Calculer f'(x) et f''(x) pour tout x ∈ ℝ \ {1}</li>
+<li>b- Montrer que : (∀x ∈ ℝ \ {1}) (∀n ∈ ℕ*) f<sup>(n)</sup>(x) = (−1)<sup>n</sup> × n! / (x − 1)<sup>n+1</sup></li>
+</ol>
+<p>Soit x ∈ ℝ.</p>
+<ol start="2">
+<li>Montrer par récurrence que : (∀n ∈ ℕ*) sin<sup>(n)</sup>(x) = sin(x + nπ/2)</li>
+</ol>
+
+<h2>VII. L'équation différentielle y'' + ω²y = 0</h2>
+
+<b>Définition</b>
+<p>Soit ω un nombre réel non nul.</p>
+<p>L'équation y'' + ω²y = 0 où l'inconnue est une fonction y telle que y'' est sa dérivée seconde est appelée <b>équation différentielle</b>.</p>
+<p>Toute fonction f deux fois dérivable sur ℝ et vérifiant f''(x) + ω²f(x) = 0 pour tout x ∈ ℝ est appelée solution de l'équation différentielle.</p>
+
+<b>Proposition</b>
+<p>Soit ω un nombre réel non nul.</p>
+<p>La solution générale de l'équation différentielle y'' + ω²y = 0 est l'ensemble des fonctions y définies sur ℝ par :</p>
+<p style="text-align:center;">y(x) = α cos(ωx) + β sin(ωx) où (α, β) ∈ ℝ²</p>
+
+<b>Proposition</b>
+<p>Soit ω un nombre réel non nul et (x<sub>0</sub>, y<sub>0</sub>, y<sub>1</sub>) ∈ ℝ³.</p>
+<p>Alors l'équation différentielle y'' + ω²y = 0 possède une solution unique f vérifiant les conditions : f(x<sub>0</sub>) = y<sub>0</sub> et f'(x<sub>0</sub>) = y<sub>1</sub>.</p>
+
+<b>Remarque</b>
+<ul>
+<li>Dans le cas où ω = 0, l'équation différentielle y'' + ω²y = 0 devient y'' = 0. Dans ce cas, la solution générale de l'équation y'' = 0 est donnée par y(x) = ax + b où (a, b) ∈ ℝ².</li>
+<li>La solution générale de l'équation différentielle y'' + ω²y = 0 peut encore s'écrire sous la forme y(x) = λ cos(ωx + φ) ou y(x) = λ sin(ωx + φ) avec (λ, φ) ∈ ℝ².</li>
+</ul>
+
+<b>Applications</b>
+<ol>
+<li>Résoudre les équations différentielles suivantes :
+<ol>
+<li>y'' + 3y = 0</li>
+<li>y'' + 9y = 0</li>
+<li>y'' + 5y = 0</li>
+</ol>
+</li>
+<li>Déterminer la solution G de l'équation différentielle y'' + 16y = 0 telle que G(π/4) = 0 et G'(π/4) = −1.</li>
+</ol>

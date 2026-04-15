@@ -1,2 +1,130 @@
-<!-- Rotation -->
-<h1>Rotation</h1>
+<!-- Rotation dans le plan -->
+<h1>Rotation dans le plan</h1>
+
+<h2>I. Rotation - Rotation réciproque d'une rotation</h2>
+
+<h3>1-1. Rotation</h3>
+
+<b>Définition</b>
+
+<p>Soit Ω un point du plan et α un réel. On appelle rotation de centre Ω et d'angle α, la transformation du plan qui à tout point M associe le point M′ tel que :</p>
+<ul>
+<li>ΩM′ = ΩM</li>
+<li>(<span style="text-decoration: overline;">ΩM</span>, <span style="text-decoration: overline;">ΩM′</span>) ≡ α [2π]</li>
+</ul>
+<p>On note r<sub>Ω,α</sub> cette rotation.</p>
+<p>On dit que M′ est l'image de M par la rotation r<sub>Ω,α</sub>.</p>
+
+<b>Propriété</b>
+
+<ul>
+<li>Si α ≡ 0 [2π], alors r<sub>Ω,α</sub> est l'identité du plan.</li>
+<li>Si α ≡ π [2π], alors r<sub>Ω,α</sub> est la symétrie centrale de centre Ω.</li>
+<li>Le seul point invariant par r<sub>Ω,α</sub> est le centre Ω (si α ≠ 0 mod 2π).</li>
+</ul>
+
+<b>Proposition</b>
+
+<p>Expression analytique : dans un repère orthonormé direct (O, <span style="text-decoration: overline;">i</span>, <span style="text-decoration: overline;">j</span>), soit Ω(a, b) le centre de la rotation et α son angle. L'image M′(x′, y′) d'un point M(x, y) par la rotation r<sub>Ω,α</sub> est donnée par :</p>
+<p>x′ = a + (x − a)cosα − (y − b)sinα</p>
+<p>y′ = b + (x − a)sinα + (y − b)cosα</p>
+
+<b>Remarque</b>
+
+<p>Cas particuliers :</p>
+<ul>
+<li>Rotation de centre O et d'angle α : x′ = xcosα − ysinα et y′ = xsinα + ycosα</li>
+<li>Rotation d'angle π/2 : x′ = a − (y − b) et y′ = b + (x − a)</li>
+<li>Rotation d'angle π : x′ = 2a − x et y′ = 2b − y (symétrie centrale)</li>
+</ul>
+
+<b>Proposition</b>
+
+<p>Expression complexe : soit Ω d'affixe ω et soit r<sub>Ω,α</sub> la rotation de centre Ω et d'angle α. Pour tout point M d'affixe z, son image M′ d'affixe z′ vérifie :</p>
+<p>z′ − ω = e<sup>iα</sup>(z − ω)</p>
+<p>C'est-à-dire :</p>
+<p>z′ = e<sup>iα</sup>z + ω(1 − e<sup>iα</sup>)</p>
+
+<b>Remarque</b>
+
+<p>Par définition de la rotation, |z′ − ω| = |z − ω| et arg(z′ − ω) = arg(z − ω) + α. Donc (z′ − ω)/(z − ω) = e<sup>iα</sup>, d'où z′ − ω = e<sup>iα</sup>(z − ω). □</p>
+
+<h3>1-2. Rotation réciproque d'une rotation</h3>
+
+<b>Propriété</b>
+
+<p>Toute rotation du plan est bijective et sa réciproque est la rotation de même centre et d'angle opposé :</p>
+<p>(r<sub>Ω,α</sub>)<sup>−1</sup> = r<sub>Ω,−α</sub></p>
+<p>Autrement dit : r<sub>Ω,α</sub> ∘ r<sub>Ω,−α</sub> = r<sub>Ω,−α</sub> ∘ r<sub>Ω,α</sub> = id</p>
+
+<h3>1-3. Décomposition d'une rotation</h3>
+
+<b>Proposition</b>
+
+<p>La composée de deux rotations de même centre Ω est une rotation de même centre dont l'angle est la somme des angles :</p>
+<p>r<sub>Ω,α</sub> ∘ r<sub>Ω,β</sub> = r<sub>Ω,α+β</sub></p>
+
+<p>Preuve : En notations complexes, z₁ = e<sup>iα</sup>(z − ω) + ω puis z₂ = e<sup>iβ</sup>(z₁ − ω) + ω = e<sup>i(α+β)</sup>(z − ω) + ω. □</p>
+
+<b>Remarque</b>
+
+<p>La composée de deux rotations de centres différents peut être une translation ou une rotation.</p>
+
+<h2>II. Propriétés des rotations</h2>
+
+<h3>2-1. Conservation de la distance</h3>
+
+<b>Propriété</b>
+
+<p>La rotation conserve les distances : ∀M, N, r<sub>Ω,α</sub>(M) = M′, r<sub>Ω,α</sub>(N) = N′ ⇒ M′N′ = MN.</p>
+
+<p>Preuve : Soit M′ = r<sub>Ω,α</sub>(M) et N′ = r<sub>Ω,α</sub>(N). On a ΩM′ = ΩM et ΩN′ = ΩN, et (<span style="text-decoration: overline;">ΩM</span>, <span style="text-decoration: overline;">ΩM′</span>) = α = (<span style="text-decoration: overline;">ΩN</span>, <span style="text-decoration: overline;">ΩN′</span>). Donc les triangles ΩMN et ΩM′N′ sont isométriques (deux côtés égaux et l'angle entre eux égal). D'où MN = M′N′. □</p>
+
+<h3>2-2. Conservation des mesures des angles orientés</h3>
+
+<b>Propriété</b>
+
+<p>La rotation conserve les angles orientés : si A, B, C sont trois points distincts d'images respectives A′, B′, C′ par r<sub>Ω,α</sub>, alors :</p>
+<p>(<span style="text-decoration: overline;">AB</span>, <span style="text-decoration: overline;">AC</span>) ≡ (<span style="text-decoration: overline;">A′B′</span>, <span style="text-decoration: overline;">A′C′</span>) [2π]</p>
+
+<h3>2-3. Conservation du coefficient de colinéarité de deux vecteurs</h3>
+
+<b>Propriété</b>
+
+<p>Soit r<sub>Ω,α</sub> une rotation. Pour tous vecteurs non nuls <span style="text-decoration: overline;">u</span> et <span style="text-decoration: overline;">v</span> vérifiant <span style="text-decoration: overline;">v</span> = k<span style="text-decoration: overline;">u</span> (k ∈ ℝ), si <span style="text-decoration: overline;">u′</span> et <span style="text-decoration: overline;">v′</span> sont les images respectives de <span style="text-decoration: overline;">u</span> et <span style="text-decoration: overline;">v</span> par r<sub>Ω,α</sub>, alors <span style="text-decoration: overline;">v′</span> = k<span style="text-decoration: overline;">u′</span>.</p>
+
+<h3>2-4. Conservation du barycentre</h3>
+
+<b>Propriété</b>
+
+<p>Soit r<sub>Ω,α</sub> une rotation. Si G est le barycentre du système pondéré {(A<sub>1</sub>, α<sub>1</sub>); (A<sub>2</sub>, α<sub>2</sub>); ...; (A<sub>n</sub>, α<sub>n</sub>)}, alors l'image G′ de G par r<sub>Ω,α</sub> est le barycentre du système pondéré {(A<sub>1</sub>′, α<sub>1</sub>); (A<sub>2</sub>′, α<sub>2</sub>); ...; (A<sub>n</sub>′, α<sub>n</sub>)} où A<sub>i</sub>′ = r<sub>Ω,α</sub>(A<sub>i</sub>).</p>
+
+<h2>III. Images de certaines figures par une rotation</h2>
+
+<h3>3-1. Image d'un cercle par une rotation</h3>
+
+<b>Propriété</b>
+
+<p>L'image d'un cercle C de centre O et de rayon R par une rotation r<sub>Ω,α</sub> est le cercle C′ de centre O′ = r<sub>Ω,α</sub>(O) et de même rayon R.</p>
+
+<h3>3-2. Image d'une droite, d'une demi-droite et d'un segment</h3>
+
+<b>Propriété</b>
+
+<p>L'image d'une droite (d) par une rotation r<sub>Ω,α</sub> est une droite (d′). Si (d) passe par Ω, alors (d′) est obtenue par rotation de (d) d'angle α autour de Ω.</p>
+
+<p>L'image d'une demi-droite [AB) par une rotation r<sub>Ω,α</sub> est la demi-droite [A′B′) où A′ = r<sub>Ω,α</sub>(A) et B′ = r<sub>Ω,α</sub>(B).</p>
+
+<p>L'image d'un segment [AB] par une rotation r<sub>Ω,α</sub> est le segment [A′B′] de même longueur, où A′ = r<sub>Ω,α</sub>(A) et B′ = r<sub>Ω,α</sub>(B). On a A′B′ = AB.</p>
+
+<h2>IV. Composition de deux rotations</h2>
+
+<b>Proposition</b>
+
+<p>Soient r<sub>Ω₁,α</sub> et r<sub>Ω₂,β</sub> deux rotations.</p>
+
+<p>Si Ω₁ = Ω₂, alors r<sub>Ω₂,β</sub> ∘ r<sub>Ω₁,α</sub> = r<sub>Ω₁,α+β</sub>.</p>
+
+<p>Si Ω₁ ≠ Ω₂ et α + β ≡ 0 [2π], alors r<sub>Ω₂,β</sub> ∘ r<sub>Ω₁,α</sub> est une translation.</p>
+
+<p>Si Ω₁ ≠ Ω₂ et α + β ≠ 0 [2π], alors r<sub>Ω₂,β</sub> ∘ r<sub>Ω₁,α</sub> est une rotation d'angle α + β.

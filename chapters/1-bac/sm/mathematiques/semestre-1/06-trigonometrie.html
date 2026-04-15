@@ -1,2 +1,176 @@
 <!-- Trigonométrie -->
 <h1>Trigonométrie</h1>
+
+<h2>I. Formules de transformation de base</h2>
+
+<h3>1-1. Formules d'addition</h3>
+
+<h4>Proposition</h4>
+<p>Soient a et b deux réels quelconques.</p>
+<ul>
+  <li>cos(a + b) = cos a cos b − sin a sin b</li>
+  <li>cos(a − b) = cos a cos b + sin a sin b</li>
+  <li>sin(a + b) = sin a cos b + cos a sin b</li>
+  <li>sin(a − b) = sin a cos b − cos a sin b</li>
+</ul>
+
+<h4>Proposition</h4>
+<p>Soit a et b deux nombres réels tels que a ≠ π/2 + kπ et b ≠ π/2 + kπ avec k ∈ ℤ.</p>
+<ul>
+  <li>Si a − b ≠ π/2 + kπ avec k ∈ ℤ, alors : tan(a − b) = (tan a − tan b)/(1 + tan a tan b)</li>
+  <li>Si a + b ≠ π/2 + kπ avec k ∈ ℤ, alors : tan(a + b) = (tan a + tan b)/(1 − tan a tan b)</li>
+</ul>
+
+<h4>Proposition</h4>
+<p>Soit a et b deux réels non nuls tels que a² + b² ≠ 0.</p>
+<p>Il existe un réel α tel que :</p>
+<p>a cos x + b sin x = √(a² + b²) cos(x − α)</p>
+<p>avec cos α = a/√(a² + b²) et sin α = b/√(a² + b²).</p>
+
+<h4>Applications</h4>
+<ol>
+  <li>Mettre les expressions suivantes sous forme de ρ cos(ωx + φ) :
+    <p>① cos x − √3 sin x = 2 sin(π/6 − x)</p>
+    <p>② cos x + sin x = √2 cos(x − π/4)</p>
+    <p>③ √3 cos x + sin x = 2 sin(x + π/3)</p>
+    <p>④ −√6 cos x − √2 sin x = 2√2 cos(x + 5π/6)</p>
+  </li>
+  <li>En remarquant que 5π/12 = 7π/12 − π/6, calculer tan(5π/12).</li>
+  <li>Soit x ∈ ℝ tel que x ≠ π/2 + kπ et x ≠ π/4 + kπ et x ≠ −π/4 + kπ. Simplifier tan(π/4 − x) tan(π/4 + x).</li>
+</ol>
+
+<h3>1-2. Transformation de cos(2a), sin(2a) et tan(2a) – Formules de linéarisation</h3>
+
+<h4>Proposition</h4>
+<p>Soit a et b deux nombres réels.</p>
+<ul>
+  <li>cos(2a) = cos²a − sin²a = 2cos²a − 1 = 1 − 2sin²a</li>
+  <li>sin(2a) = 2sin a cos a</li>
+  <li>cos²a = (1 + cos(2a))/2 et sin²a = (1 − cos(2a))/2 et tan²a = (1 − cos(2a))/(1 + cos(2a))</li>
+  <li>Si a ≠ π/2 + kπ et 2a ≠ π/2 + kπ pour tout k ∈ ℤ, alors : tan(2a) = 2tan a/(1 − tan²a)</li>
+</ul>
+
+<h4>Remarques</h4>
+<p>On a pour tout réel a :</p>
+<p>1 + cos a = 2cos²(a/2) ; 1 − cos a = 2sin²(a/2) ; sin a = 2cos(a/2)sin(a/2)</p>
+<p>On rappelle que pour tout réel a : sin a = cos(π/2 − a) = −cos(π/2 + a)</p>
+
+<h4>Applications</h4>
+<p>Soit x ∈ ℝ.</p>
+<ol>
+  <li>Établir les égalités suivantes :
+    <p>① 1 + sin x = (cos(x/2) + sin(x/2))²</p>
+    <p>② 1 + cos x + 2sin²(x/2) = 2</p>
+    <p>③ 2sin x + sin(2x) = 8sin(x/2)cos³(x/2)</p>
+    <p>④ 1 − cos x + sin x = 2sin(x/2)(sin(x/2) + cos(x/2))</p>
+    <p>⑤ 1 + cos x − sin x = 2√2 cos(x/2)cos(x/2 + π/4)</p>
+  </li>
+</ol>
+<p>Soit α un réel tel que sin α ≠ −1.</p>
+<ol start="2">
+  <li>Montrer que : (1 − sin α)/(1 + sin α) = tan²(π/4 − α/2)</li>
+</ol>
+<p>Soit x ∈ ℝ tel que x ≠ kπ pour tout k ∈ ℤ.</p>
+<ol start="3">
+  <li>Montrer que (1 − cos x)/sin x = tan(x/2) et sin x = (1 + cos x)tan(x/2).</li>
+</ol>
+
+<h3>1-3. Formules de cos(a), sin(a) et tan(a) en fonction de tan(a/2)</h3>
+
+<h4>Proposition</h4>
+<p>Soit a un nombre réel tel que a ≠ π + 2kπ et a ≠ π/2 + kπ pour tout k ∈ ℤ.</p>
+<p>On pose : t = tan(a/2).</p>
+<p>On a : sin a = 2t/(1 + t²) et cos a = (1 − t²)/(1 + t²) et tan a = 2t/(1 − t²)</p>
+
+<h4>Applications</h4>
+<p>Soit x ∈ ℝ tel que tan x = 2.</p>
+<ol>
+  <li>Calculer cos(2x), sin(2x) et tan(2x).</li>
+</ol>
+<p>Soit x un nombre réel tel que x ≠ π + 2kπ pour tout k ∈ ℤ. On pose t = tan(x/2).</p>
+<ol start="2">
+  <li>Montrer que (1 − cos x)/(1 + cos x) = t² et sin x/(1 + cos x) = t.</li>
+</ol>
+<p>Soit a et b deux réels de l'intervalle ]0 ; π/2[.</p>
+<ol start="3">
+  <li>Prouver les inégalités suivantes :
+    <p>① 1 + 1/tan a < 1/tan(a/2)</p>
+    <p>② tan((a + b)/2) ≤ (tan a + tan b)/2</p>
+    <p>(Indication : on pourra poser x = tan(a/2) et y = tan(b/2).)</p>
+  </li>
+</ol>
+
+<h2>II. Transformation de produits en sommes</h2>
+
+<h4>Proposition</h4>
+<p>Soit a et b deux nombres réels. On a les formules suivantes :</p>
+<ul>
+  <li>cos a cos b = ½[cos(a + b) + cos(a − b)]</li>
+  <li>sin a sin b = ½[cos(a − b) − cos(a + b)]</li>
+  <li>sin a cos b = ½[sin(a + b) + sin(a − b)]</li>
+  <li>cos a sin b = ½[sin(a + b) − sin(a − b)]</li>
+</ul>
+
+<h4>Applications</h4>
+<ol>
+  <li>Écrire sous forme de sommes les produits suivants :
+    <p>A(x) = cos x cos(5x)</p>
+    <p>B(x) = sin(3x) sin(4x)</p>
+    <p>C(x) = cos(x − π/3) sin(2x + π/4)</p>
+  </li>
+</ol>
+
+<h2>III. Transformation de sommes en produits</h2>
+
+<h4>Proposition</h4>
+<p>Soit p et q deux nombres réels. On a les formules suivantes :</p>
+<ul>
+  <li>cos p + cos q = 2cos((p + q)/2)cos((p − q)/2)</li>
+  <li>cos p − cos q = −2sin((p + q)/2)sin((p − q)/2)</li>
+  <li>sin p + sin q = 2sin((p + q)/2)cos((p − q)/2)</li>
+  <li>sin p − sin q = 2cos((p + q)/2)sin((p − q)/2)</li>
+</ul>
+
+<h4>Applications</h4>
+<ol>
+  <li>Écrire sous forme d'un produit les sommes suivantes :
+    <p>A(x) = sin x + sin(2x) + sin(3x)</p>
+    <p>B(x) = 1 + cos x + cos(2x) + cos(3x)</p>
+    <p>C(x) = 1 + sin(2x) − cos(2x)</p>
+    <p>D(x) = sin x + sin(5x) + sin(7x)</p>
+  </li>
+  <li>a- Écrire sous forme de produit l'expression cos x + cos(2x) où x ∈ ℝ.
+    <p>b- En déduire les solutions dans ℝ de l'équation : cos x + cos(2x) = 0</p>
+    <p>c- Résoudre dans l'intervalle [0 ; π] l'inéquation : cos x + cos(2x) ≥ 0</p>
+  </li>
+  <li>a- Factoriser l'expression sin x + sin(2x) + sin(3x) + sin(4x) où x ∈ ℝ.
+    <p>b- Résoudre dans l'intervalle [−π ; 0] l'inéquation : sin x + sin(2x) + sin(3x) + sin(4x) < 0</p>
+  </li>
+  <li>a- Montrer que pour tout x ∈ ℝ :
+    <p>sin(x − π/3) + sin(3x) = 2sin(2x − π/6)cos(x + π/6)</p>
+    <p>b- Résoudre dans ℝ l'équation : sin x + 2sin(3x) − √3 cos x = 0</p>
+    <p>c- Résoudre dans l'intervalle [0 ; π/2[ l'inéquation : sin x + 2sin(3x) − √3 cos x ≤ 0</p>
+  </li>
+</ol>
+
+<h2>IV. Transformation de l'expression a cos(x) + b sin(x)</h2>
+
+<h4>Proposition</h4>
+<p>Soit a et b deux nombres réels tels que (a ; b) ≠ (0 ; 0).</p>
+<p>Alors il existe un réel α tel que :</p>
+<p>a cos x + b sin x = √(a² + b²) cos(x − α)</p>
+<p>avec cos α = a/√(a² + b²) et sin α = b/√(a² + b²).</p>
+
+<h4>Applications</h4>
+<ol>
+  <li>Mettre les expressions suivantes sous forme de ρ cos(ωx + φ) :
+    <p>A(x) = cos(2x) + sin(2x)</p>
+    <p>B(x) = cos x − √3 sin x</p>
+    <p>C(x) = 3cos(x/2) − √3 sin(x/2)</p>
+  </li>
+  <li>a- Montrer que : (∀x ∈ ℝ) cos(2x) − √3 sin(2x) = cos(2x + π/3)
+    <p>b- En déduire les solutions dans ℝ de l'équation : cos(2x) − √3 sin(2x) = 1</p>
+    <p>c- Résoudre dans l'intervalle ]−π/2 ; π/2] l'inéquation : cos(2x) − √3 sin(2x) ≥ 1</p>
+  </li>
+  <li>Résoudre dans l'intervalle ]−π ; 2π[ l'inéquation : cos(x/2) + sin(x/2) ≥ −1</li>
+</ol>

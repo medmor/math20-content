@@ -1,2 +1,370 @@
 <!-- Dénombrement -->
 <h1>Dénombrement</h1>
+
+<h2>I. Ensemble fini - Cardinal d'un ensemble fini</h2>
+
+<h3>1-1. Ensemble fini</h3>
+
+<h4>Définition</h4>
+
+<p>Un ensemble <em>E</em> non vide est un ensemble fini s'il existe un entier naturel <em>n</em> tel qu'il existe une bijection de {1, 2, …, <em>n</em>} dans <em>E</em>.</p>
+
+<p>Dans ce cas, on dit que le cardinal de <em>E</em> est <em>n</em>, et l'on pose : <em>Card</em>(<em>E</em>) = <em>n</em></p>
+
+<p>Le cardinal de l'ensemble vide est 0.</p>
+
+<h4>Remarques</h4>
+
+<ul>
+<li>Dénombrer un ensemble fini non vide <em>E</em>, c'est déterminer le cardinal de <em>E</em>, c'est-à-dire le nombre de ses éléments.</li>
+<li>La définition précédente n'est pas rigoureuse puisqu'elle repose sur la notion intuitive de nombre d'éléments sans définir précisément celle-ci.</li>
+<li>Dans la pratique, on dénombre un ensemble fini non vide <em>E</em> à l'aide des entiers naturels non nuls en attribuant successivement un numéro à chacun des éléments de <em>E</em>. Le dernier entier utilisé est alors le cardinal de <em>E</em>. On dit alors que l'on compte les éléments de <em>E</em>.</li>
+<li>Trois conditions doivent être remplies pour que le dénombrement de E soit correct :
+<ul>
+<li>il ne faut compter que les éléments de <em>E</em> ;</li>
+<li>il ne faut pas en oublier ;</li>
+<li>il ne faut pas compter certains éléments plusieurs fois.</li>
+</ul>
+</li>
+</ul>
+
+<h3>Applications</h3>
+
+<p>On considère l'ensemble A = {E(1/n) / n ∈ ℕ*}.</p>
+
+<ol>
+<li>Montrer que l'ensemble A est fini et déterminer son cardinal.</li>
+</ol>
+
+<p>Soit A et B deux ensembles finis, et on pose : n = Card B</p>
+
+<p>Soit f une application surjective de A sur B telle que pour tout b ∈ B : Card f⁻¹({b}) = m</p>
+
+<ol start="2">
+<li>Montrer que : Card A = mn</li>
+</ol>
+
+<h3>1-2. Propriétés du calcul sur les cardinaux</h3>
+
+<h4>Proposition</h4>
+
+<ol>
+<li>Si A et B sont deux ensembles finis, alors les ensembles A ∪ B et A ∩ B sont finis et de plus :<br/>
+Card(A ∪ B) = Card A + Card B − Card(A ∩ B)<br/>
+En particulier, si A et B sont disjoints, on a : Card(A ∪ B) = Card A + Card B</li>
+
+<li>Tout sous-ensemble A d'un ensemble fini E est un ensemble fini, et de plus :<br/>
+Card A ≤ Card E et Card(C<sub>E</sub> A) = Card E − Card A</li>
+</ol>
+
+<h4>Remarques</h4>
+
+<ul>
+<li>Si A ⊂ E et Card A = Card E, alors : A = E</li>
+<li>Si A<sub>1</sub>, A<sub>2</sub>, …, A<sub>n</sub> sont des ensembles finis et deux à deux disjoints, alors :<br/>
+Card(A<sub>1</sub> ∪ A<sub>2</sub> ∪ … ∪ A<sub>n</sub>) = ∑<sub>i=1</sub><sup>n</sup> Card(A<sub>i</sub>)</li>
+</ul>
+
+<h3>Applications</h3>
+
+<p>Dans une classe de 38 élèves, on sait que :</p>
+
+<ul>
+<li>31 étudient l'anglais, 24 l'espagnol et 17 l'allemand ;</li>
+<li>12 étudient à la fois l'anglais et l'allemand ;</li>
+<li>9 étudient l'espagnol et l'allemand ;</li>
+<li>4 étudient les trois langues simultanément.</li>
+</ul>
+
+<p>1. Quel est le nombre d'élèves :</p>
+
+<ol type="a">
+<li>étudiant l'anglais et l'espagnol ;</li>
+<li>étudiant l'anglais ou l'espagnol ;</li>
+<li>étudiant uniquement l'allemand ;</li>
+<li>étudiant l'allemand et l'anglais, mais pas l'espagnol ;</li>
+<li>étudiant l'allemand ou l'anglais, mais pas l'espagnol.</li>
+</ol>
+
+<p>On considère l'ensemble E = {a<sub>p</sub>; a<sub>p+1</sub>; …; a<sub>n</sub>} où 0 ≤ p ≤ n et a<sub>p</sub>; a<sub>p+1</sub>; …; a<sub>n</sub> sont deux à deux distincts.</p>
+
+<p>2. Calculer le cardinal de l'ensemble E.</p>
+
+<p>Soit A, B et C trois ensembles finis.</p>
+
+<p>3. Montrer que :</p>
+
+<p>Card(A ∪ B ∪ C) = Card(A) + Card(B) + Card(C) − Card(A ∩ B) − Card(B ∩ C) − Card(A ∩ C) + Card(A ∩ B ∩ C)</p>
+
+<h2>II. Principe fondamental de dénombrement - Cardinal d'un produit cartésien</h2>
+
+<h3>2-1. Principe fondamental du dénombrement</h3>
+
+<h4>Proposition</h4>
+
+<p>Si une situation de dénombrement nécessite <em>p</em> choix C<sub>1</sub>, C<sub>2</sub>, …, C<sub>p</sub> et si :</p>
+
+<ul>
+<li>le choix C<sub>1</sub> peut produire <em>n</em><sub>1</sub> résultats possibles ;</li>
+<li>le choix C<sub>2</sub> peut produire <em>n</em><sub>2</sub> résultats possibles ;</li>
+<li>et ainsi de suite ;</li>
+</ul>
+
+<p>Alors la situation de dénombrement peut se faire de <em>n</em><sub>1</sub> × <em>n</em><sub>2</sub> × … × <em>n</em><sub>p</sub> manières différentes.</p>
+
+<h4>Applications</h4>
+
+<p>On considère les chiffres suivants : 5 - 6 - 7 - 2 - 3</p>
+
+<p>On veut former des entiers naturels de trois chiffres distincts parmi ces chiffres.</p>
+
+<ol>
+<li>a- Quel est le nombre de cas possibles ?</li>
+<li>b- Combien de nombres pairs peut-on former ?</li>
+<li>c- Combien des multiples de 5 peut-on former ?</li>
+</ol>
+
+<p>Soit E un ensemble fini non vide et f une application surjective de E dans {0; 1}.</p>
+
+<ol start="2">
+<li>Montrer que si f⁻¹({1}) = f⁻¹({0}), alors le cardinal de E est pair.</li>
+</ol>
+
+<h3>2-2. Cardinal d'un produit cartésien</h3>
+
+<h4>Proposition</h4>
+
+<p>Soit E et F deux ensembles finis et non vides.</p>
+
+<p>Alors : Card(E × F) = Card E × Card F</p>
+
+<h3>Applications</h3>
+
+<ol>
+<li>Quel est le nombre de numéros des téléphones mobiles qui commence par 061 ?</li>
+</ol>
+
+<table border="1" cellpadding="5" cellspacing="0">
+<tr><td>0</td><td>6</td><td>1</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td></tr>
+</table>
+
+<p>Soit E<sub>i</sub> avec ensemble non vide (n ∈ ℕ*).</p>
+
+<ol start="2">
+<li>Montrer par récurrence que :<br/>
+Card(E<sub>1</sub> × E<sub>2</sub> × … × E<sub>n</sub>) = (Card E<sub>1</sub>) × (Card E<sub>2</sub>) × … × (Card E<sub>n</sub>)</li>
+</ol>
+
+<h3>2-3. Nombre d'applications d'un ensemble à un autre</h3>
+
+<h4>Proposition</h4>
+
+<p>Soit E et F deux ensembles finis et non vides tels que Card E = p et Card F = n.</p>
+
+<p>Le nombre d'applications de E dans F est : (Card F)<sup>Card E</sup> = n<sup>p</sup></p>
+
+<h4>Applications</h4>
+
+<p>On considère les ensembles suivants : E = {x ∈ ℕ / 5 ≤ x ≤ 16} et F = {x ∈ ℤ / |x| ≤ 5}</p>
+
+<ol>
+<li>Calculer le nombre d'applications de E dans F.</li>
+</ol>
+
+<p>On lance un dé cubique dont les faces sont numérotées de 1 à 6 trois fois de suite, on obtient un triplet (a; b; c) à l'issue des trois lancers.</p>
+
+<ol start="2">
+<li>a- Déterminer le nombre de triplets comportant uniquement des chiffres impairs.</li>
+<li>b- Déterminer le nombre de triplets comportant des chiffres deux à deux distincts.</li>
+<li>c- Déterminer le nombre de triplets comportant au moins une fois le chiffre 1.</li>
+</ol>
+
+<h3>2-4. Nombre de parties d'un ensemble</h3>
+
+<h4>Proposition</h4>
+
+<p>Soit E un ensemble fini de cardinal n et 𝒫(E) l'ensemble des parties de E.<br/>
+Alors : Card 𝒫(E) = 2<sup>n</sup></p>
+
+<h2>III. Techniques de dénombrement</h2>
+
+<h3>3-1. Arrangements avec répétition</h3>
+
+<h4>Définition</h4>
+
+<p>Soit E un ensemble fini non vide de cardinal n ≥ 1 et p ∈ ℕ*.</p>
+
+<p>Tout élément (x<sub>1</sub>; x<sub>2</sub>; …; x<sub>p</sub>) du produit cartésien E × E × … × E = E<sup>p</sup> s'appelle un arrangement avec répétition de p éléments de E (ou une p-liste de E).</p>
+
+<h4>Situation caractéristique</h4>
+
+<p>Un arrangement avec répétition de <em>p</em> éléments peut s'interpréter comme un tirage de <em>p</em> boules, une à une (successivement), avec remise, dans une urne en contenant n boules (l'ordre compte).</p>
+
+<p>Nous sommes donc dans un cas où l'ordre dans lequel les éléments sont choisis intervient et où les répétitions sont autorisées.</p>
+
+<h4>Proposition</h4>
+
+<p>Soit E un ensemble fini non vide de cardinal n ≥ 1 et p ∈ ℕ*.</p>
+
+<p>Le nombre d'arrangements avec répétition de p éléments de E est : n<sup>p</sup></p>
+
+<h3>3-2. Arrangements sans répétition</h3>
+
+<h4>Définition</h4>
+
+<p>Soit E un ensemble fini non vide de cardinal n ≥ 1 et p ∈ ℕ* tel que 1 ≤ p ≤ n.</p>
+
+<p>Tout élément (x₁; x₂; …; x<sub>p</sub>) du produit cartésien E × E × … × E = E<sup>p</sup> tel que les éléments x₁; x₂; …; x<sub>p</sub> sont deux à deux distincts s'appelle un arrangement sans répétition de p éléments dans E.</p>
+
+<h4>Situation caractéristique</h4>
+
+<p>Un arrangement sans répétition de p éléments parmi n éléments peut s'interpréter comme un tirage de p boules, une à une (successivement), sans remise, dans une urne en contenant n (l'ordre compte).</p>
+
+<p>Nous sommes donc dans un cas où l'ordre dans lequel les éléments sont choisis intervient et où les répétitions ne sont pas autorisées.</p>
+
+<h4>Proposition</h4>
+
+<p>Soit E un ensemble fini non vide de cardinal n ≥ 1 et p ∈ ℕ* tel que 1 ≤ p ≤ n.</p>
+
+<p>Le nombre d'arrangements sans répétition de p éléments de E est le nombre noté A<sub>n</sub><sup>p</sup> donné par :</p>
+
+<p>A<sub>n</sub><sup>p</sup> = n(n − 1)(n − 2)…(n − p + 1)</p>
+
+<h4>Remarques</h4>
+
+<p>Soit E et F deux ensembles finis comportant respectivement p et n éléments (1 ≤ p ≤ n).</p>
+
+<p>E = {a₁; a₂; …; a<sub>p</sub>} et F = {b₁; b₂; …; b<sub>n</sub>}</p>
+
+<p>Se donner une application injective de E dans F revient à se donner une p-liste d'éléments distincts de F formée par les images respectives de a₁; a₂; …; a<sub>p</sub>.</p>
+
+<p>Le nombre d'applications injectives d'un ensemble E à p éléments dans un ensemble F à n éléments est alors :</p>
+
+<p>A<sub>n</sub><sup>p</sup> = n! / (n−p)! = n(n − 1)(n − 2)…(n − p + 1)</p>
+
+<h4>Applications</h4>
+
+<p>Une urne contient 10 boules noires numérotées de 1 à 10, cinq boules blanches numérotées de 11 à 15, et trois boules rouges numérotées de 16 à 18.</p>
+
+<p>On tire cinq boules successivement sans remise.</p>
+
+<ol>
+<li><p>Quel est le nombre de séries de tirages possibles ?</p></li>
+<li><p>Quel est le nombre de séries de tirages commençant par une boule rouge et composées uniquement de boules "paires" ?</p></li>
+</ol>
+
+<h3>3-3. Permutations d'un ensemble fini</h3>
+
+<h4>Définition</h4>
+
+<p>Soit E un ensemble fini non vide de cardinal n ∈ ℕ*.</p>
+
+<p>On appelle permutation de E toute bijection de E dans E.</p>
+
+<p>Autrement dit, une permutation est un arrangement sans répétition de tous les éléments de E.</p>
+
+<h4>Situation caractéristique</h4>
+
+<p>Une permutation d'un ensemble à n éléments peut s'interpréter comme un tirage de n boules, une à une (successivement), sans remise, dans une urne en contenant n (l'ordre compte).</p>
+
+<p>Nous sommes donc dans un cas où l'ordre dans lequel les éléments sont choisis intervient et où les répétitions ne sont pas autorisées.</p>
+
+<h4>Proposition</h4>
+
+<p>Soit E un ensemble fini non vide de cardinal n ∈ ℕ*.</p>
+
+<p>Le nombre de permutations des éléments de E est le nombre noté n! « se lit : factorielle n », et défini par :</p>
+
+<p>n! = n × (n − 1) × (n − 2) × … × 2 × 1</p>
+
+<h4>Remarques</h4>
+
+<ul>
+<li><p>On convient que 0! = 1 et A<sub>n</sub><sup>0</sup> = 1.</p></li>
+<li><p>On a pour tout (n; p) ∈ ℕ² tel que 1 ≤ p ≤ n : A<sub>n</sub><sup>p</sup> = n! / (n − p)!</p></li>
+</ul>
+
+<p>En particulier, on a A<sub>n</sub><sup>1</sup> = n et A<sub>n</sub><sup>n</sup> = n!.</p>
+
+<h4>Applications</h4>
+
+<p>On dispose de quatre couleurs : vert, jaune, rouge et bleu pour colorier les quatre cases du motif suivant avec des couleurs distinctes :</p>
+
+<table border="1" cellpadding="5" cellspacing="0">
+<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+</table>
+
+<ol>
+<li><p>Combien de coloriages différents sont possibles ?</p></li>
+</ol>
+
+<h3>3-4. Combinaisons d'un ensemble fini</h3>
+
+<h4>Définition</h4>
+
+<p>Soit E un ensemble fini non vide de cardinal n ≥ 1 et p ∈ ℕ* tel que p ≤ n.</p>
+
+<p>Une combinaison de p éléments pris parmi les n éléments de E est une partie dont le cardinal est p.</p>
+
+<h4>Situation caractéristique</h4>
+
+<p>Une combinaison de p éléments parmi n éléments peut s'interpréter comme un tirage de p boules, de manière simultanée, dans une urne en contenant n (l'ordre ne compte pas).</p>
+
+<p>Nous sommes donc dans un cas où l'ordre dans lequel les éléments sont choisis n'a pas d'importance et où les répétitions ne sont pas autorisées.</p>
+
+<h4>Proposition</h4>
+
+<p>Le nombre de combinaisons de p éléments pris parmi n éléments distincts est le nombre noté C<sub>n</sub><sup>p</sup>, et on a :</p>
+
+<p>C<sub>n</sub><sup>p</sup> = A<sub>n</sub><sup>p</sup> / p! = n! / (p!(n − p)!)</p>
+
+<p>Soit n et p deux entiers naturels tels que : p < n</p>
+
+<p>On a les propriétés suivantes :</p>
+
+<ol>
+<li>La symétrie : C<sub>n</sub><sup>p</sup> = C<sub>n</sub><sup>n−p</sup></li>
+<li>La formule de Pascal : C<sub>n</sub><sup>p</sup> + C<sub>n</sub><sup>p+1</sup> = C<sub>n+1</sub><sup>p+1</sup></li>
+</ol>
+
+<h4>Triangle de Pascal</h4>
+
+<p>La formule de Pascal permet de calculer les valeurs des (appelées coefficients binomiaux) par récurrence, en les répartissant sous forme d'un tableau triangulaire.</p>
+
+<p>Pour obtenir un coefficient du tableau, on fait la somme de celui qui est au-dessus de lui, et de celui qui est à gauche de ce dernier.</p>
+
+<table border="1" cellpadding="5" cellspacing="0">
+<tr><td>n\p</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+<tr><td>0</td><td>1</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>1</td><td>1</td><td>1</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>2</td><td>1</td><td>2</td><td>1</td><td></td><td></td><td></td></tr>
+<tr><td>3</td><td>1</td><td>3</td><td>3</td><td>1</td><td></td><td></td></tr>
+<tr><td>4</td><td>1</td><td>4</td><td>6</td><td>4</td><td>1</td><td></td></tr>
+<tr><td>5</td><td>1</td><td>5</td><td>10</td><td>10</td><td>5</td><td>1</td></tr>
+</table>
+
+<p>Ce tableau est appelé le Triangle de Pascal.</p>
+
+<h3>3-5. Formule du binôme de Newton</h3>
+
+<h4>Proposition</h4>
+
+<p>Soit a et b deux réels et n un entier naturel non nul.</p>
+
+<p>On a alors la formule suivante dite « Formule du binôme de Newton » :</p>
+
+<p>(a + b)<sup>n</sup> = ∑<sub>k=0</sub><sup>n</sup> C<sub>n</sub><sup>k</sup> a<sup>k</sup> b<sup>n−k</sup></p>
+
+<h4>Remarques</h4>
+
+<p>Pour tous réels a et b, on a : (a − b)<sup>n</sup> = (a + (−b))<sup>n</sup> = ∑<sub>k=0</sub><sup>n</sup> C<sub>n</sub><sup>k</sup> (−1)<sup>k</sup> a<sup>n−k</sup> b<sup>k</sup></p>
+
+<h4>Applications</h4>
+
+<ol>
+<li>Développer :<br/>
+(a + b)<sup>6</sup> ; (a − b)<sup>7</sup> ; (a − 2b)<sup>5</sup> ; (1 + a − b)<sup>4</sup></li>
+<li>Calculer les sommations suivantes :<br/>
+∑<sub>k=0</sub><sup>n</sup> C<sub>n</sub><sup>k</sup> ; ∑<sub>k=0</sub><sup>n</sup> (−1)<sup>k</sup> C<sub>n</sub><sup>k</sup> ; ∑<sub>k=0</sub><sup>n</sup> k C<sub>n</sub><sup>k</sup> ; ∑<sub>k=0</sub><sup>n</sup> (k + 1) C<sub>n</sub><sup>k</sup></li>
+<li>Quel est le coefficient de a<sup>7</sup> b<sup>3</sup> dans le développement de (a − b)<sup>10</sup> ?</li>
+</ol>

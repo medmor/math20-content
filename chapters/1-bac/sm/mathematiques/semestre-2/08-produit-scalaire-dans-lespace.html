@@ -1,2 +1,405 @@
 <!-- Produit scalaire dans l'espace -->
 <h1>Produit scalaire dans l'espace</h1>
+
+<h2>I. Produit scalaire dans l'espace</h2>
+
+<h3>1-1/ Définitions et notations</h3>
+
+<h4>Définition</h4>
+
+<p>Soit <span style="text-decoration: overline;">u</span> et <span style="text-decoration: overline;">v</span> deux vecteurs de l'espace, et <em>A</em>, <em>B</em> et <em>C</em> trois points de l'espace tels que <span style="text-decoration: overline;">u</span> = <span style="text-decoration: overline;">AB</span> et <span style="text-decoration: overline;">v</span> = <span style="text-decoration: overline;">AC</span>.</p>
+
+<ul>
+<li>Si <span style="text-decoration: overline;">u</span> et <span style="text-decoration: overline;">v</span> sont non nuls, le produit scalaire des deux vecteurs <span style="text-decoration: overline;">u</span> et <span style="text-decoration: overline;">v</span> dans l'espace est le produit scalaire des deux vecteurs <span style="text-decoration: overline;">AB</span> et <span style="text-decoration: overline;">AC</span> dans le plan (ABC) si A, B et C ne sont pas alignés, ou dans tout plan comprenant A, B et C, on le note : <span style="text-decoration: overline;">u</span> . <span style="text-decoration: overline;">v</span></li>
+<li>Si <span style="text-decoration: overline;">u</span> = <span style="text-decoration: overline;">0</span> ou <span style="text-decoration: overline;">v</span> = <span style="text-decoration: overline;">0</span>, on convient que : <span style="text-decoration: overline;">u</span> . <span style="text-decoration: overline;">v</span> = 0</li>
+</ul>
+
+<h3>Remarques</h3>
+
+<p>Soit <em>H</em> le projeté orthogonal du point <em>C</em> sur la droite (AB).</p>
+
+<ul>
+<li>Si <span style="text-decoration: overline;">AB</span> et <span style="text-decoration: overline;">AH</span> ont le même sens, alors <span style="text-decoration: overline;">AB</span> . <span style="text-decoration: overline;">AC</span> = AB × AH, cela correspond au cas où l'angle géométrique BAC est aigu.</li>
+<li>Si <span style="text-decoration: overline;">AB</span> et <span style="text-decoration: overline;">AH</span> ont des sens contraires, alors <span style="text-decoration: overline;">AB</span> . <span style="text-decoration: overline;">AC</span> = −AB × AH, cela correspond au cas où l'angle géométrique BAC est obtus.</li>
+</ul>
+
+<p>Toutes les propriétés du produit scalaire dans le plan restent valables dans l'espace.</p>
+
+<h3>Applications</h3>
+
+<p>Soit ABCDEFGH un parallélépipède rectangle tel que AE = 5, AB = 8 et AD = 6.</p>
+<ol>
+<li>Calculer les produits scalaires suivants : <span style="text-decoration: overline;">AE</span> . <span style="text-decoration: overline;">BG</span> ; <span style="text-decoration: overline;">AC</span> . <span style="text-decoration: overline;">HF</span> ; <span style="text-decoration: overline;">AE</span> . <span style="text-decoration: overline;">DG</span></li>
+</ol>
+
+<p>Soit ABCEFG un prisme droit tel que le triangle ABC est rectangle en A. On suppose que AC = 3 et AB = 4 et AE = 8.</p>
+<ol start="2">
+<li>Calculer les produits scalaires suivants : <span style="text-decoration: overline;">AE</span> . <span style="text-decoration: overline;">AF</span> ; <span style="text-decoration: overline;">CG</span> . <span style="text-decoration: overline;">AF</span> ; <span style="text-decoration: overline;">BC</span> . <span style="text-decoration: overline;">EG</span></li>
+</ol>
+
+<h3>1-2/ Orthogonalité de deux vecteurs</h3>
+
+<h4>Définition</h4>
+
+<p>Deux vecteurs <span style="text-decoration: overline;">u</span> et <span style="text-decoration: overline;">v</span> de l'espace sont orthogonaux si <span style="text-decoration: overline;">u</span> . <span style="text-decoration: overline;">v</span> = 0.</p>
+
+<p>On écrit : <span style="text-decoration: overline;">u</span> ⊥ <span style="text-decoration: overline;">v</span></p>
+
+<h3>1-3/ Symétrie et bilinéarité du produit scalaire</h3>
+
+<h4>Proposition</h4>
+
+<p>Soit <span style="text-decoration: overline;">u</span>, <span style="text-decoration: overline;">v</span> et <span style="text-decoration: overline;">w</span> trois vecteurs de l'espace et k un nombre réel. On a les propriétés suivantes :</p>
+
+<ol>
+<li><span style="text-decoration: overline;">u</span> . <span style="text-decoration: overline;">v</span> = <span style="text-decoration: overline;">v</span> . <span style="text-decoration: overline;">u</span></li>
+<li>(k<span style="text-decoration: overline;">u</span>) . <span style="text-decoration: overline;">v</span> = <span style="text-decoration: overline;">u</span> . (k<span style="text-decoration: overline;">v</span>) = k(<span style="text-decoration: overline;">u</span> . <span style="text-decoration: overline;">v</span>)</li>
+<li><span style="text-decoration: overline;">u</span> . (<span style="text-decoration: overline;">v</span> + <span style="text-decoration: overline;">w</span>) = <span style="text-decoration: overline;">u</span> . <span style="text-decoration: overline;">v</span> + <span style="text-decoration: overline;">u</span> . <span style="text-decoration: overline;">w</span></li>
+</ol>
+
+<p>On dit que le produit scalaire est une opération symétrique et bilinéaire.</p>
+
+<h3>Applications</h3>
+
+<p>Soit ABCD un tétraèdre régulier dont toutes les arêtes ont la même longueur a. Soit J et K les milieux respectifs des segments [BC] et [AD] :</p>
+
+<ol>
+<li>Calculer <span style="text-decoration: overline;">CB</span> . <span style="text-decoration: overline;">CA</span> et <span style="text-decoration: overline;">CB</span> . <span style="text-decoration: overline;">CD</span>, puis en déduire <span style="text-decoration: overline;">CB</span> . <span style="text-decoration: overline;">AD</span>.</li>
+<li>Calculer <span style="text-decoration: overline;">AC</span> . <span style="text-decoration: overline;">AD</span>, et en déduire <span style="text-decoration: overline;">AJ</span> . <span style="text-decoration: overline;">CK</span> en fonction de a.</li>
+</ol>
+
+<h3>1-4/ Norme d'un vecteur de l'espace</h3>
+
+<h4>Définition</h4>
+
+<p>Soit <span style="text-decoration: overline;">u</span> un vecteur de l'espace.</p>
+
+<p>Le produit scalaire <span style="text-decoration: overline;">u</span> . <span style="text-decoration: overline;">u</span> s'appelle le carré scalaire du vecteur <span style="text-decoration: overline;">u</span>, et se note <span style="text-decoration: overline;">u</span><sup>2</sup>.</p>
+
+<p>Le nombre réel positif √(<span style="text-decoration: overline;">u</span><sup>2</sup>) est appelé la norme du vecteur <span style="text-decoration: overline;">u</span>, et on écrit : |<span style="text-decoration: overline;">u</span>| = √(<span style="text-decoration: overline;">u</span><sup>2</sup>)</p>
+
+<h4>Remarque</h4>
+
+<p>En posant <span style="text-decoration: overline;">u</span> = <span style="text-decoration: overline;">AB</span>, on a : <span style="text-decoration: overline;">u</span><sup>2</sup> = AB<sup>2</sup> = |<span style="text-decoration: overline;">AB</span>|<sup>2</sup></p>
+
+<h4>Proposition</h4>
+
+<p>Soit <span style="text-decoration: overline;">u</span> et <span style="text-decoration: overline;">v</span> deux vecteurs de l'espace et k un nombre réel. On a :</p>
+
+<ol>
+<li>|<span style="text-decoration: overline;">u</span>| = 0 ⇔ <span style="text-decoration: overline;">u</span> = <span style="text-decoration: overline;">0</span></li>
+<li>|k . <span style="text-decoration: overline;">u</span>| = |k| . |<span style="text-decoration: overline;">u</span>|</li>
+<li><span style="text-decoration: overline;">u</span> . <span style="text-decoration: overline;">v</span> = |<span style="text-decoration: overline;">u</span>| . |<span style="text-decoration: overline;">v</span>| . cos(<span style="text-decoration: overline;">u</span> ; <span style="text-decoration: overline;">v</span>)</li>
+<li>Inégalité triangulaire : |<span style="text-decoration: overline;">u</span> + <span style="text-decoration: overline;">v</span>| ≤ |<span style="text-decoration: overline;">u</span>| + |<span style="text-decoration: overline;">v</span>|</li>
+<li>Inégalité de Cauchy-Schwarz : |<span style="text-decoration: overline;">u</span> . <span style="text-decoration: overline;">v</span>| ≤ |<span style="text-decoration: overline;">u</span>| . |<span style="text-decoration: overline;">v</span>|</li>
+<li>Identités remarquables :
+<ul>
+<li>|<span style="text-decoration: overline;">u</span> + <span style="text-decoration: overline;">v</span>|<sup>2</sup> = |<span style="text-decoration: overline;">u</span>|<sup>2</sup> + 2<span style="text-decoration: overline;">u</span> . <span style="text-decoration: overline;">v</span> + |<span style="text-decoration: overline;">v</span>|<sup>2</sup></li>
+<li>|<span style="text-decoration: overline;">u</span> − <span style="text-decoration: overline;">v</span>|<sup>2</sup> = |<span style="text-decoration: overline;">u</span>|<sup>2</sup> − 2<span style="text-decoration: overline;">u</span> . <span style="text-decoration: overline;">v</span> + |<span style="text-decoration: overline;">v</span>|<sup>2</sup></li>
+<li>|<span style="text-decoration: overline;">u</span>|<sup>2</sup> − |<span style="text-decoration: overline;">v</span>|<sup>2</sup> = (<span style="text-decoration: overline;">u</span> + <span style="text-decoration: overline;">v</span>) . (<span style="text-decoration: overline;">u</span> − <span style="text-decoration: overline;">v</span>)</li>
+</ul>
+</li>
+</ol>
+
+<h2>II. Étude analytique du produit scalaire</h2>
+
+<h3>2-1/ Base orthonormale - Repère orthonormal</h3>
+
+<h4>Définition</h4>
+
+<p>Soit (O; <span style="text-decoration: overline;">i</span>; <span style="text-decoration: overline;">j</span>; <span style="text-decoration: overline;">k</span>) un repère de l'espace.</p>
+
+<ul>
+<li>On dit que la base (<span style="text-decoration: overline;">i</span>; <span style="text-decoration: overline;">j</span>; <span style="text-decoration: overline;">k</span>) est orthonormale (ou orthonormée) lorsque : <span style="text-decoration: overline;">i</span> . <span style="text-decoration: overline;">j</span> = <span style="text-decoration: overline;">j</span> . <span style="text-decoration: overline;">k</span> = <span style="text-decoration: overline;">i</span> . <span style="text-decoration: overline;">k</span> = 0 et |<span style="text-decoration: overline;">i</span>| = |<span style="text-decoration: overline;">j</span>| = |<span style="text-decoration: overline;">k</span>| = 1</li>
+<li>On dit que le repère (O; <span style="text-decoration: overline;">i</span>; <span style="text-decoration: overline;">j</span>; <span style="text-decoration: overline;">k</span>) est orthonormal (ou orthonormé) lorsque la base (<span style="text-decoration: overline;">i</span>; <span style="text-decoration: overline;">j</span>; <span style="text-decoration: overline;">k</span>) est orthonormale.</li>
+</ul>
+
+<h3>2-2/ Expression analytique du produit scalaire</h3>
+
+<h4>Proposition</h4>
+
+<p>Soit <span style="text-decoration: overline;">u</span> et <span style="text-decoration: overline;">v</span> deux vecteurs de l'espace. Si <span style="text-decoration: overline;">u</span>(x; y; z) et <span style="text-decoration: overline;">v</span>(x'; y'; z'), alors : <span style="text-decoration: overline;">u</span> . <span style="text-decoration: overline;">v</span> = xx' + yy' + zz' et |<span style="text-decoration: overline;">u</span>| = √(x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>)</p>
+
+<p>Soit A(x<sub>A</sub>; y<sub>A</sub>; z<sub>A</sub>) et B(x<sub>B</sub>; y<sub>B</sub>; z<sub>B</sub>) deux points de l'espace. Alors : AB = √((x<sub>B</sub> − x<sub>A</sub>)<sup>2</sup> + (y<sub>B</sub> − y<sub>A</sub>)<sup>2</sup> + (z<sub>B</sub> − z<sub>A</sub>)<sup>2</sup>)</p>
+
+<h3>Applications</h3>
+
+<p>On considère les vecteurs <span style="text-decoration: overline;">u</span> = 2<span style="text-decoration: overline;">i</span> + 3<span style="text-decoration: overline;">j</span> + <span style="text-decoration: overline;">k</span>, <span style="text-decoration: overline;">v</span> = <span style="text-decoration: overline;">i</span> − 2<span style="text-decoration: overline;">j</span> + 3<span style="text-decoration: overline;">k</span> et <span style="text-decoration: overline;">w</span> = (4 − 3m)<span style="text-decoration: overline;">i</span> + 5<span style="text-decoration: overline;">j</span> + (1 − m)<span style="text-decoration: overline;">k</span> (m ∈ ℝ).</p>
+
+<p>1. a- Calculer : <span style="text-decoration: overline;">u</span> . <span style="text-decoration: overline;">v</span> ; <span style="text-decoration: overline;">u</span> . <span style="text-decoration: overline;">w</span> ; <span style="text-decoration: overline;">v</span> . <span style="text-decoration: overline;">w</span> ; |<span style="text-decoration: overline;">u</span>| ; |<span style="text-decoration: overline;">v</span>|<br/>
+1. b- Déterminer la valeur de réel m pour laquelle <span style="text-decoration: overline;">u</span> et <span style="text-decoration: overline;">w</span> sont orthogonaux.<br/>
+1. c- Calculer cos(<span style="text-decoration: overline;">u</span> ; <span style="text-decoration: overline;">v</span>).</p>
+
+<p>Soit ABCDEFGH un parallélépipède rectangle tel que AB = AE = 2 et AD = 4. Soit I le centre du carré ABFE et J le milieu du segment [EH].</p>
+
+<p>2. a- Vérifier que le repère (A; ½<span style="text-decoration: overline;">AB</span>; ¼<span style="text-decoration: overline;">AD</span>; ½<span style="text-decoration: overline;">AE</span>) est orthonormé.<br/>
+2. b- Déterminer, dans ce repère, les coordonnées des points I, J et G.<br/>
+2. c- Calculer le produit scalaire <span style="text-decoration: overline;">JI</span> . <span style="text-decoration: overline;">JG</span> et les distances JI et JG.</p>
+
+<h3>2-3/ Ensemble des points M de l'espace tels que <span style="text-decoration: overline;">u</span> . <span style="text-decoration: overline;">AM</span> = k</h3>
+
+<h4>Proposition</h4>
+
+<p>Soit <span style="text-decoration: overline;">u</span>(a; b; c) un vecteur non nul de l'espace, A un point et k un nombre réel. L'ensemble des points M de l'espace tels que <span style="text-decoration: overline;">u</span> . <span style="text-decoration: overline;">AM</span> = k est un plan dont une équation cartésienne est de la forme :</p>
+
+<p>ax + by + cz + d = 0</p>
+
+<h2>III. Plan défini par un point et un vecteur normal</h2>
+
+<h3>3-1/ Vecteur normal à un plan</h3>
+
+<h4>Définition</h4>
+
+<p>Un vecteur <span style="text-decoration: overline;">n</span> non nul de l'espace est normal à un plan 𝒫 lorsque toute droite de vecteur directeur <span style="text-decoration: overline;">n</span> est perpendiculaire à 𝒫.</p>
+
+<h3>3-2/ Équation cartésienne d'un plan défini par un point et un vecteur normal</h3>
+
+<h4>Proposition</h4>
+
+<p>Soit a, b, c et d des nombres réels tels que (a; b; c) ≠ (0; 0; 0).</p>
+
+<ul>
+<li>Un plan de vecteur normal <span style="text-decoration: overline;">n</span>(a; b; c) a une équation cartésienne de la forme : ax + by + cz + d = 0</li>
+<li>Réciproquement, l'ensemble des points M(x; y; z) de l'espace tels que ax + by + cz + d = 0 est un plan dont un vecteur normal est <span style="text-decoration: overline;">n</span>(a; b; c).</li>
+</ul>
+
+<h4>Applications</h4>
+
+<ol>
+<li>Déterminer un vecteur normal au plan 𝒫 dans chacun des cas suivants :
+<ol type="1">
+<li>𝒫 : 2x − y + 8z − 1 = 0</li>
+<li>𝒫 : 3x − 2z + 10 = 0</li>
+<li>𝒫 : 2y + 3 = 0</li>
+</ol>
+</li>
+<li>Déterminer une équation cartésienne du plan 𝒬 passant par B(−1; 0; 3) et de vecteur normal <span style="text-decoration: overline;">n</span>(2; −3; 4).</li>
+</ol>
+
+<p>On considère les points A(1; −1; 1), B(0; 2; −1) et C(−1; 1; 0).</p>
+
+<ol start="3">
+<li>a- Vérifier que les points A, B et C ne sont pas alignés.</li>
+<li>b- Montrer que le vecteur <span style="text-decoration: overline;">n</span>(1; 3; 4) est normal au plan (ABC).</li>
+</ol>
+
+<h3>3-3/ Parallélisme et orthogonalité</h3>
+
+<h4>Proposition</h4>
+
+<p>Soit 𝒫 et 𝒫' deux plans et 𝒟 une droite dans l'espace. Soit <span style="text-decoration: overline;">n</span> et <span style="text-decoration: overline;">n'</span> deux vecteurs normaux respectivement à 𝒫 et 𝒫', et <span style="text-decoration: overline;">u</span> un vecteur directeur de 𝒟. Alors :</p>
+
+<ol>
+<li>Les plans 𝒫 et 𝒫' sont parallèles si, et seulement si, les vecteurs <span style="text-decoration: overline;">n</span> et <span style="text-decoration: overline;">n'</span> sont colinéaires.</li>
+<li>Les plans 𝒫 et 𝒫' sont orthogonaux si, et seulement si, les vecteurs <span style="text-decoration: overline;">n</span> et <span style="text-decoration: overline;">n'</span> sont orthogonaux.</li>
+<li>La droite 𝒟 est parallèle au plan 𝒫 si, et seulement si, les vecteurs <span style="text-decoration: overline;">n</span> et <span style="text-decoration: overline;">u</span> sont orthogonaux.</li>
+<li>La droite 𝒟 est perpendiculaire au plan 𝒫 si, et seulement si, les vecteurs <span style="text-decoration: overline;">n</span> et <span style="text-decoration: overline;">u</span> sont colinéaires.</li>
+</ol>
+
+<h3>Applications</h3>
+
+<p>On considère les deux plans 𝒫 et 𝒬 définis par les équations cartésiennes :</p>
+
+<p>𝒫 : 2x − 3y + z + 1 = 0</p>
+<p>𝒬 : (m − 1)x + 2y + (2m − 3)z + 7 = 0</p>
+
+<ol>
+<li>Déterminer la valeur de m pour laquelle les plans 𝒫 et 𝒬 sont orthogonaux.</li>
+<li>Déterminer une équation cartésienne du plan 𝒫' passant par A(−1; −1; 0) et parallèle au plan 𝒫.</li>
+</ol>
+
+<h3>3-4/ Distance d'un point à un plan de l'espace</h3>
+
+<h4>Définition</h4>
+
+<p>Soit 𝒫 un plan et A un point de l'espace. La distance du point A au plan 𝒫, notée d(A; 𝒫), est la distance AH où H est le projeté orthogonal de A sur 𝒫 : d(A; 𝒫) = AH</p>
+
+<p>La distance du point A(x<sub>A</sub>; y<sub>A</sub>; z<sub>A</sub>) au plan 𝒫 d'équation cartésienne ax + by + cz + d = 0 est donnée par la formule suivante :</p>
+
+<p>d(A; 𝒫) = |ax<sub>A</sub> + by<sub>A</sub> + cz<sub>A</sub> + d| / √(a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup>)</p>
+
+<h3>Applications</h3>
+
+<p>On considère les plans 𝒫 : x + y − z + 1 = 0 et 𝒬 : 2x + y + 2z − 3 = 0.</p>
+
+<ol>
+<li>a- Calculer d(A; 𝒫) et d(A; 𝒬) sachant que A(2; 1; −1).</li>
+<li>b- Déterminer l'ensemble des points M de l'espace tels que d(M; 𝒫) = d(M; 𝒬).</li>
+</ol>
+
+<p>On considère les points A(1; −1; 2) et B(2; 0; 1), et les plans 𝒫 et 𝒬 donnés par les équations :</p>
+
+<p>𝒫 : x + y − z − 1 = 0 et 𝒬 : 2x + y − z + 1 = 0</p>
+
+<ol start="2">
+<li>a- Calculer la distance du point A au plan 𝒫.</li>
+<li>b- Montrer que le point H(2; 0; 1) est le projeté orthogonal du point A sur le plan 𝒫.</li>
+<li>c- Calculer d(A; 𝒬). Que peut-on en déduire ?</li>
+</ol>
+
+<p>On considère dans l'espace le point A(−1; 1; 1) et le plan 𝒫 d'équation cartésienne : 2x − y + z − 2 = 0</p>
+
+<ol start="3">
+<li>a- Déterminer les coordonnées du point H projeté orthogonal du point A sur le plan 𝒫.</li>
+</ol>
+
+<p>Pour tout réel m, on pose : 𝒫<sub>m</sub> = {M ∈ ℰ / <span style="text-decoration: overline;">AM</span> . <span style="text-decoration: overline;">AH</span> = m}</p>
+
+<ol start="3">
+<li>b- Déterminer analytiquement l'ensemble 𝒫<sub>m</sub>.</li>
+<li>c- Déterminer m tel que d(A; 𝒫<sub>m</sub>) = d(A; 𝒫).</li>
+</ol>
+
+<h2>IV. La sphère dans l'espace</h2>
+
+<h3>4-1/ Définition</h3>
+
+<h4>Définition</h4>
+
+<p>Soit Ω un point de l'espace et R un réel positif. La sphère 𝒮 de centre Ω et de rayon R est l'ensemble des points M de l'espace tels que : ΩM = R</p>
+
+<p>On la note : S(Ω; R)</p>
+
+<p>Soit A et B deux points de la sphère 𝒮. Le segment [AB] est appelé diamètre de la sphère 𝒮 lorsque le centre Ω de la sphère 𝒮 est le milieu du segment [AB].</p>
+
+<h3>4-2/ Équation cartésienne d'une sphère</h3>
+
+<h4>Proposition</h4>
+
+<p>Soit R un réel positif et Ω(a; b; c) un point de l'espace. Une équation cartésienne de la sphère 𝒮 de centre Ω et de rayon R est donnée par :</p>
+
+<p>(x − a)<sup>2</sup> + (y − b)<sup>2</sup> + (z − c)<sup>2</sup> = R<sup>2</sup></p>
+
+<h4>Applications</h4>
+
+<ol>
+<li>Déterminer une équation cartésienne de la sphère 𝒮 de centre Ω et de rayon R dans les cas suivants :
+<ul>
+<li>① Ω(2; 0; −1) et R = √2</li>
+<li>② Ω(−3; 1; −2) et R = ³⁄₂</li>
+</ul>
+</li>
+</ol>
+
+<h3>4-3/ Représentation paramétrique d'une sphère</h3>
+
+<h4>Proposition</h4>
+
+<p>Soit 𝒮 la sphère de centre Ω(a; b; c) et de rayon R. Le point M(x; y; z) appartient à la sphère 𝒮 si, et seulement si :</p>
+
+<p>{ x = a + R sin φ . cos θ<br/>
+y = b + R sin φ . sin θ &nbsp;&nbsp; (φ; θ) ∈ ℝ²<br/>
+z = c + R cos φ }</p>
+
+<p>Ce système est appelé une représentation paramétrique de la sphère 𝒮.</p>
+
+<h4>Applications</h4>
+
+<ol>
+<li>Déterminer une représentation paramétrique de la sphère 𝒮 de centre Ω(³⁄₂; −1; ½) et de rayon R = √3.</li>
+</ol>
+
+<h3>4-4/ Ensemble des points M(x; y; z) de l'espace tels que x² + y² + z² − 2ax − 2by − 2cz + d = 0</h3>
+
+<h4>Proposition</h4>
+
+<p>Soit 𝒮 l'ensemble des points M(x; y; z) de l'espace tels que :</p>
+
+<p>x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> − 2ax − 2by − 2cz + d = 0</p>
+
+<p>où a, b, c et d des nombres réels.</p>
+
+<ol>
+<li>Si a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> − d > 0, alors 𝒮 est la sphère de centre Ω(a; b; c) et de rayon R = √(a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> − d).</li>
+<li>Si a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> − d = 0, alors : 𝒮 = {Ω(a; b; c)}</li>
+<li>Si a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> − d < 0, alors : 𝒮 = ∅</li>
+</ol>
+
+<h4>Applications</h4>
+
+<ol>
+<li>Déterminer l'ensemble des points M(x; y; z) de l'espace dans chacun des cas suivants :
+<ul>
+<li>𝒮<sub>1</sub> : x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> − 4x + 6y = 0</li>
+<li>𝒮<sub>2</sub> : x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> + x − 3y + 4z + ¹³⁄₂ = 0</li>
+<li>𝒮<sub>3</sub> : x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> − x − 3y + 2z − ⁷⁄₂ = 0</li>
+<li>𝒮<sub>4</sub> : x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> + x − 3y − 2z + 9 = 0</li>
+</ul>
+</li>
+</ol>
+
+<h3>4-5/ Ensemble des points M de l'espace tels que <span style="text-decoration: overline;">MA</span> . <span style="text-decoration: overline;">MB</span> = 0</h3>
+
+<h4>Proposition</h4>
+
+<p>Soit A et B deux points distincts de l'espace.</p>
+
+<ol>
+<li>L'ensemble des points M de l'espace tels que <span style="text-decoration: overline;">MA</span> . <span style="text-decoration: overline;">MB</span> = 0 est la sphère de diamètre [AB].</li>
+<li>Une équation cartésienne de la sphère est donnée par : (x − x<sub>A</sub>)(x − x<sub>B</sub>) + (y − y<sub>A</sub>)(y − y<sub>B</sub>) + (z − z<sub>A</sub>)(z − z<sub>B</sub>) = 0</li>
+</ol>
+
+<h4>Applications</h4>
+
+<p>On considère dans l'espace les points suivants : A(2; 0; 1) ; B(1; −1; 1) ; C(0; 0; −1)</p>
+
+<ol>
+<li>a- Déterminer une équation cartésienne de la sphère de diamètre [AB].</li>
+<li>b- Calculer le produit scalaire <span style="text-decoration: overline;">CA</span> . <span style="text-decoration: overline;">CB</span>. Que peut-on en déduire ?</li>
+<li>a- Déterminer une équation cartésienne de la sphère 𝒮 de diamètre [AC].</li>
+<li>b- En déduire le centre et le rayon de la sphère 𝒮.</li>
+</ol>
+
+<h3>4-6/ Intersection d'une sphère et d'une droite</h3>
+
+<h4>Proposition</h4>
+
+<p>Soit 𝒮(Ω; R) une sphère et 𝒟 une droite de l'espace. On désigne par d la distance du point Ω à la droite 𝒟, et H le projeté orthogonal de Ω sur 𝒟.</p>
+
+<p>On a les propriétés suivantes :</p>
+
+<ol>
+<li>Si d > R, alors 𝒟 ∩ 𝒮 = ∅. On dit que la droite 𝒟 est à l'extérieur de la sphère 𝒮.</li>
+<li>Si d = R, alors 𝒟 ∩ 𝒮 = {H}. On dit que la droite 𝒟 est tangente à la sphère 𝒮 au point H.</li>
+<li>Si d < R, alors 𝒟 ∩ 𝒮 = {A, B}. On dit que la droite 𝒟 perce la sphère 𝒮 aux points A et B.</li>
+</ol>
+
+<h3>4-7/ Intersection d'une sphère et d'un plan</h3>
+
+<h4>Proposition</h4>
+
+<p>Soit 𝒮(Ω; R) une sphère et 𝒫 un plan de l'espace. On désigne par d la distance du point Ω au plan 𝒫, et H le projeté orthogonal de Ω sur 𝒫.</p>
+
+<p>On a les propriétés suivantes :</p>
+
+<ol>
+<li>Si d > R, alors 𝒫 ∩ 𝒮 = ∅. On dit que le plan 𝒫 est à l'extérieur de la sphère 𝒮.</li>
+<li>Si d = R, alors 𝒫 ∩ 𝒮 = {H}. On dit que le plan 𝒫 est tangent à la sphère 𝒮 au point H.</li>
+<li>Si d < R, alors 𝒫 ∩ 𝒮 = 𝒞 où 𝒞 est le cercle de centre H et de rayon r = √(R² − d²). On dit que le plan 𝒫 coupe la sphère 𝒮 selon le cercle 𝒞(H; √(R² − d²)).</li>
+</ol>
+
+<h4>Proposition (Plan tangent)</h4>
+
+<p>Soit 𝒮 une sphère de centre Ω et soit A ∈ 𝒮. Il existe un seul plan 𝒫 tangent à la sphère 𝒮 en A, il est défini par : M ∈ 𝒫 ⇔ <span style="text-decoration: overline;">AM</span> . <span style="text-decoration: overline;">AΩ</span> = 0</p>
+
+<p>Une équation cartésienne du plan 𝒫 est donnée par :</p>
+
+<p>M(x; y; z) ∈ 𝒫 ⇔ (x<sub>Ω</sub> − x<sub>A</sub>)(x − x<sub>A</sub>) + (y<sub>Ω</sub> − y<sub>A</sub>)(y − y<sub>A</sub>) + (z<sub>Ω</sub> − z<sub>A</sub>)(z − z<sub>A</sub>) = 0</p>
+
+<h4>Applications</h4>
+
+<ol>
+<li>Étudier l'intersection de la sphère 𝒮 et du plan 𝒫 dans chacun des cas suivants :
+<ul>
+<li>[1] 𝒮 : x² + y² + z² − 4x + 2y − 2z − 3 = 0 et 𝒫 : x − 2y + 2z − 3 = 0</li>
+<li>[2] 𝒮 : x² + y² + z² + 6y − 4z + 9 = 0 et 𝒫 : x − 2y + 2z − 3 = 0</li>
+<li>[3] 𝒮 : x² + y² + z² + 2y − 4z − 7 = 0 et 𝒫 : x + y + z − 4 = 0</li>
+<li>[4] 𝒮 : x² + y² + z² − 2x − 4z + 1 = 0 et 𝒫 : x − 2y + 2z + 1 = 0</li>
+<li>[5] 𝒮 : x² + y² + z² − 2x − 4z + 1 = 0 et 𝒫 : 2x + y + z = 0</li>
+</ul>
+</li>
+</ol>
+
+<ol start="2">
+<li>Donner une équation de la sphère de centre Ω(−1; 2; 3) et tangente au plan 𝒫 d'équation : x − 2y + 2z + 1 = 0</li>
+</ol>

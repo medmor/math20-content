@@ -1,2 +1,396 @@
-<!-- Arithmétique -->
-<h1>Arithmétique</h1>
+<!-- Arithmétique dans Z -->
+<h1>Arithmétique dans ℤ</h1>
+
+<h2>I. Divisibilité dans l'ensemble ℤ</h2>
+
+<h3>1-1. Divisibilité dans ℤ</h3>
+
+<h4>Définition</h4>
+
+<p>Soit <em>a</em> et <em>b</em> deux entiers relatifs.</p>
+
+<p>On dit que <em>a</em> divise <em>b</em>, et on écrit <em>a</em>/<em>b</em> s'il existe <em>k</em> ∈ ℤ tel que <em>b</em> = <em>ak</em>.</p>
+
+<p>Autrement dit : <em>a</em>/<em>b</em> ⇔ [(∃<em>k</em> ∈ ℤ) : <em>b</em> = <em>ka</em>]</p>
+
+<p>On dit aussi que <em>b</em> est divisible par <em>a</em>, ou que <em>b</em> est un multiple de <em>a</em>, ou encore que <em>a</em> est un diviseur de <em>b</em>.</p>
+
+<h4>Applications</h4>
+
+<p>Soit <em>a</em> et <em>b</em> deux entiers relatifs non nuls.</p>
+<ol>
+<li>Montrer que : <em>b</em>/<em>a</em> ⇔ |<em>b</em>| ≤ |<em>a</em>|</li>
+</ol>
+
+<p>Soit <em>x</em> et <em>y</em> deux éléments de ℤ*, et <em>n</em> un entier naturel non nul.</p>
+<ol start="2">
+<li>a- Montrer l'équivalence suivante : <em>xy</em> = 1 ⇔ (<em>x</em> = <em>y</em> = 1 ou <em>x</em> = <em>y</em> = −1)</li>
+<li>b- Montrer que si <em>x</em> divise <em>y</em>, alors : <em>x</em>/<em>y<sup>n</sup></em> et <em>x<sup>n</sup></em>/<em>y<sup>n</sup></em></li>
+</ol>
+
+<h4>Proposition</h4>
+
+<p>Soit <em>a</em>, <em>b</em>, <em>c</em> et <em>d</em> des éléments de ℤ.</p>
+
+<p>Alors :</p>
+<ul>
+<li>[1] <em>a</em>/<em>a</em> et <em>a</em>/(−<em>a</em>) et <em>a</em>/<em>ab</em></li>
+<li>[2] <em>a</em>/<em>b</em> ⇔ <em>a</em>/(−<em>b</em>)</li>
+<li>[3] (<em>a</em>/<em>b</em> et <em>b</em>/<em>c</em>) ⇒ <em>a</em>/<em>c</em></li>
+<li>[4] (<em>a</em>/<em>b</em> et <em>a</em>/<em>c</em>) ⇒ (<em>a</em>/(<em>b</em> + <em>c</em>) et <em>a</em>/(<em>b</em> − <em>c</em>))</li>
+<li>[5] (<em>a</em>/<em>b</em> et <em>b</em>/<em>a</em>) ⇒ |<em>a</em>| = |<em>b</em>|</li>
+<li>[6] (<em>a</em>/<em>b</em> et <em>c</em>/<em>d</em>) ⇒ <em>ac</em>/<em>bd</em></li>
+<li>[7] (∀(α ; β) ∈ ℤ²) : (<em>a</em>/<em>b</em> et <em>a</em>/<em>c</em>) ⇒ <em>a</em>/(α<em>b</em> + β<em>c</em>)</li>
+</ul>
+
+<h4>Applications</h4>
+
+<p>Soit <em>a</em>, <em>b</em>, <em>c</em>, <em>x</em> et <em>y</em> des éléments de ℤ tels que <em>a</em>/(<em>x</em> − <em>y</em>) et <em>a</em>/(<em>b</em> − <em>c</em>).</p>
+<ol>
+<li>Montrer que : <em>a</em>/(<em>bx</em> − <em>cy</em>)</li>
+</ol>
+
+<p>Soit <em>d</em> et <em>n</em> deux entiers relatifs.</p>
+<ol start="2">
+<li>Établir l'implication : {<em>d</em>/(<em>n</em><sup>2</sup> + 3) et <em>d</em>/(2<em>n</em> − 1)} ⇒ <em>d</em>/13</li>
+<li>Déterminer toutes les valeurs de l'entier relatif <em>n</em> pour lesquelles : (<em>n</em> − 17)/(<em>n</em> − 1)</li>
+</ol>
+
+<p>Soit (<em>x</em> ; <em>y</em>) ∈ ℤ² et <em>d</em> un diviseur commun des entiers <em>x</em> et <em>y</em>.</p>
+<ol start="4">
+<li>Déterminer les valeurs possibles de <em>d</em> sachant que : 4<em>x</em> − 13<em>y</em> = 5</li>
+<li>Résoudre dans ℤ² l'équation suivante : (<em>x</em> + 1)(<em>y</em> + 2) = 2<em>xy</em></li>
+</ol>
+
+<h3>1-2. Division euclidienne dans ℕ</h3>
+
+<h4>Théorème</h4>
+
+<p>Soit <em>a</em> et <em>b</em> deux entiers naturels tels que <em>a</em> ≠ 0.</p>
+
+<p>Il existe un unique couple (<em>q</em> ; <em>r</em>) ∈ ℕ² tel que <em>b</em> = <em>aq</em> + <em>r</em> et 0 ≤ <em>r</em> &lt; <em>a</em>.</p>
+
+<p>L'opération qui permet la détermination du couple (<em>q</em> ; <em>r</em>) est appelée la division euclidienne de l'entier <em>b</em> par l'entier <em>a</em> dans ℕ.</p>
+
+<p>Les entiers <em>b</em>, <em>a</em>, <em>q</em> et <em>r</em> sont appelés respectivement le dividende, le diviseur, le quotient et le reste.</p>
+
+<h3>1-3. Division euclidienne dans ℤ</h3>
+
+<h4>Théorème</h4>
+
+<p>Soit <em>a</em> et <em>b</em> deux entiers naturels tels que <em>a</em> ≠ 0.</p>
+
+<p>Il existe un unique couple (<em>q</em> ; <em>r</em>) ∈ ℤ × ℕ tel que <em>b</em> = <em>aq</em> + <em>r</em> et 0 ≤ <em>r</em> &lt; <em>a</em>.</p>
+
+<p>L'opération qui permet la détermination du couple (<em>q</em> ; <em>r</em>) est appelée la division euclidienne de l'entier <em>b</em> par l'entier <em>a</em> dans ℤ.</p>
+
+<p>Les entiers <em>b</em>, <em>a</em>, <em>q</em> et <em>r</em> sont appelés respectivement le dividende, le diviseur, le quotient et le reste.</p>
+
+<h4>Applications</h4>
+
+<ol>
+<li>Déterminer le quotient et le reste de la division euclidienne de <em>b</em> par <em>a</em> dans chacun des cas suivants :</li>
+</ol>
+
+<table border="1" cellpadding="5" cellspacing="0">
+<tbody>
+<tr>
+<td>❶ <em>a</em> = 5 et <em>b</em> = 67<br/>❷ <em>a</em> = 5 et <em>b</em> = −67<br/>❸ <em>a</em> = −5 et <em>b</em> = 67</td>
+<td>❹ <em>a</em> = −5 et <em>b</em> = −67<br/>❺ <em>a</em> = 29 et <em>b</em> = −314<br/>❻ <em>a</em> = −13 et <em>b</em> = −76</td>
+</tr>
+</tbody>
+</table>
+
+<p>Les restes de la division euclidienne des nombres 4294 et 3512 par un entier naturel non nul <em>a</em> sont respectivement 10 et 12.</p>
+<ol start="2">
+<li>Déterminer la valeur de <em>a</em>.</li>
+</ol>
+
+<p>La division euclidienne de l'entier 1517 par un entier naturel <em>x</em> donne 75 comme quotient et <em>r</em> comme reste.</p>
+<ol start="3">
+<li>Déterminer les valeurs des nombres <em>x</em> et <em>r</em>.</li>
+</ol>
+
+<p>Soit <em>n</em> ∈ ℕ*.</p>
+<p>On désigne par <em>q</em> et <em>r</em> le quotient et le reste de la division euclidienne de 125 par <em>n</em> respectivement.</p>
+<ol start="4">
+<li>Déterminer les valeurs de <em>q</em> et <em>r</em> sachant que <em>r</em> = <em>q</em><sup>2</sup>.</li>
+</ol>
+
+<h2>II. Nombres premiers</h2>
+
+<h3>2-1. Nombres premiers</h3>
+
+<h4>Définition</h4>
+
+<p>Soit <em>p</em> ∈ ℤ</p>
+
+<p>On dit que <em>p</em> est un nombre premier si |<em>p</em>| ≠ 1 et D<sub>p</sub> = {−1 ; 1 ; −<em>p</em> ; <em>p</em>}, où D<sub>p</sub> désigne l'ensemble des diviseurs de <em>p</em>.</p>
+
+<h4>Remarque</h4>
+
+<p>Si <em>p</em> est premier dans ℕ, alors −<em>p</em> est premier dans ℤ.</p>
+
+<p>Plus précisément :</p>
+<p>(<em>p</em> est premier dans ℤ) ⇔ Card(D<sub>p</sub>) = 4 ; (<em>p</em> est premier dans ℕ) ⇔ Card(D<sub>p</sub>) = 2</p>
+
+<p>C'est pour cette raison qu'on va se contenter dans la suite du ce chapitre du traitement des nombres positifs, et l'ensemble des nombres premiers positifs sera noté ℙ.</p>
+
+<p>On a donc l'équivalence : <em>x</em> ∈ ℙ ⇔ (<em>x</em> ∈ ℕ et <em>x</em> premier)</p>
+
+<h4>Applications</h4>
+
+<ol>
+<li>Montrer que les nombres suivants ne sont pas premiers : 4825 — 7281 — 2501 — 111 — 111111 — 25008</li>
+<li>Montrer que tout nombre premier positif et distinct de 2 et 3 s'écrit sous la forme 6<em>p</em> + 1 ou 6<em>p</em> + 5.<br/>Pour tout <em>n</em> ∈ ℕ, on pose : <em>P</em>(<em>n</em>) = 10<em>n</em> + 7</li>
+<li>Déterminer les valeurs de <em>n</em> inférieur à 10 et pour lesquelles <em>P</em>(<em>n</em>) n'est pas un nombre premier.</li>
+</ol>
+
+<h3>2-2. Détermination des nombres premiers</h3>
+
+<h4>Proposition</h4>
+
+<p>Soit <em>a</em> un nombre non premier et différent de 1.<br/>Le plus petit diviseur propre de <em>a</em> (c'est-à-dire distinct de 1 et <em>a</em>) est un nombre premier.</p>
+
+<h4>Théorème</h4>
+
+<p>Soit <em>n</em> un entier non premier et supérieur ou égal à 2.<br/>Alors, il existe au moins un diviseur premier <em>p</em> du nombre <em>n</em> et vérifiant <em>p</em><sup>2</sup> ≤ <em>n</em>.<br/>En d'autres termes :<br/>(<em>n</em> est un nombre premier) ⇔ (<em>n</em> n'admet pas de diviseur premier dans [2 ; √<em>n</em>] ∩ ℕ)</p>
+
+<h3>2-3. Décomposition en produit de facteurs premiers</h3>
+
+<h4>Théorème (Théorème fondamental de l'arithmétique)</h4>
+
+<p>Tout entier naturel <em>n</em> ≥ 2 se décompose de manière unique, à l'ordre près des facteurs, en produit de nombres premiers.</p>
+
+<p>Autrement dit : ∀<em>n</em> ∈ ℕ \ {0, 1}, ∃! (<em>p</em><sub>1</sub>, <em>p</em><sub>2</sub>, …, <em>p</em><sub>k</sub>) premiers deux à deux distincts et ∃! (α<sub>1</sub>, α<sub>2</sub>, …, α<sub>k</sub>) ∈ ℕ*<sup>k</sup> tels que :</p>
+
+<p style="text-align: center;"><em>n</em> = <em>p</em><sub>1</sub><sup>α<sub>1</sub></sup> × <em>p</em><sub>2</sub><sup>α<sub>2</sub></sup> × … × <em>p</em><sub>k</sub><sup>α<sub>k</sub></sup></p>
+
+<h4>Remarques</h4>
+
+<ul>
+<li>La décomposition en produit de facteurs premiers d'un entier <em>n</em> ≥ 2 est unique à l'ordre près des facteurs.</li>
+<li>Si <em>n</em> = <em>p</em><sub>1</sub><sup>α<sub>1</sub></sup> × <em>p</em><sub>2</sub><sup>α<sub>2</sub></sup> × … × <em>p</em><sub>k</sub><sup>α<sub>k</sub></sup> est la décomposition de <em>n</em> en produit de facteurs premiers, alors :</li>
+</ul>
+
+<p style="text-align: center;">Les diviseurs positifs de <em>n</em> sont de la forme : <em>p</em><sub>1</sub><sup>β<sub>1</sub></sup> × <em>p</em><sub>2</sub><sup>β<sub>2</sub></sup> × … × <em>p</em><sub>k</sub><sup>β<sub>k</sub></sup> où 0 ≤ β<sub>i</sub> ≤ α<sub>i</sub></p>
+
+<h4>Applications</h4>
+
+<ol>
+<li>Décomposer en produit de facteurs premiers les nombres suivants : 360 ; 504 ; 1260 ; 7200</li>
+<li>Déterminer l'ensemble des diviseurs positifs de 360.</li>
+<li>Soit <em>n</em> = 2<sup>3</sup> × 3<sup>2</sup> × 5. Déterminer le nombre de diviseurs positifs de <em>n</em>.</li>
+</ol>
+
+<h2>III. Plus grand commun diviseur - Plus petit commun multiple</h2>
+
+<h3>3-1. Plus grand commun diviseur</h3>
+
+<h4>Définition</h4>
+
+<p>Soit <em>a</em> et <em>b</em> deux entiers naturels non nuls.</p>
+
+<p>L'ensemble des diviseurs communs à <em>a</em> et <em>b</em> est noté D<sub>a</sub> ∩ D<sub>b</sub> = D<sub>a,b</sub>. Cet ensemble est non vide (il contient toujours 1) et est fini. Son plus grand élément est appelé le PGCD de <em>a</em> et <em>b</em>.</p>
+
+<p>On note : PGCD(<em>a</em> ; <em>b</em>) ou <em>a</em> ∧ <em>b</em></p>
+
+<h4>Propriétés</h4>
+
+<ul>
+<li>PGCD(<em>a</em> ; <em>b</em>) = PGCD(<em>b</em> ; <em>a</em>)</li>
+<li>Si <em>b</em> divise <em>a</em>, alors PGCD(<em>a</em> ; <em>b</em>) = <em>b</em></li>
+<li>PGCD(<em>a</em> ; 0) = <em>a</em></li>
+<li>PGCD(<em>a</em> ; 1) = 1</li>
+<li>Si <em>d</em> = PGCD(<em>a</em> ; <em>b</em>), alors <em>d</em> divise <em>a</em> et <em>d</em> divise <em>b</em></li>
+<li>PGCD(<em>a</em> ; <em>b</em>) = PGCD(<em>b</em> ; <em>r</em>) où <em>r</em> est le reste de la division euclidienne de <em>a</em> par <em>b</em></li>
+</ul>
+
+<h4>Théorème de Bézout</h4>
+
+<p><em>a</em> et <em>b</em> sont premiers entre eux ⇔ il existe deux entiers relatifs <em>u</em> et <em>v</em> tels que <em>au</em> + <em>bv</em> = 1</p>
+
+<p>Autrement dit : PGCD(<em>a</em> ; <em>b</em>) = 1 ⇔ ∃(<em>u</em> ; <em>v</em>) ∈ ℤ² : <em>au</em> + <em>bv</em> = 1</p>
+
+<h3>3-2. Calcul pratique du P.G.C.D. : L'algorithme d'Euclide</h3>
+
+<h4>Algorithme d'Euclide</h4>
+
+<p>Pour déterminer le PGCD de deux entiers naturels non nuls <em>a</em> et <em>b</em> (avec <em>a</em> ≥ <em>b</em>), on applique l'algorithme suivant :</p>
+
+<p>On effectue les divisions euclidiennes successives :</p>
+<ul>
+<li><em>a</em> = <em>bq</em><sub>1</sub> + <em>r</em><sub>1</sub> (0 ≤ <em>r</em><sub>1</sub> &lt; <em>b</em>)</li>
+<li><em>b</em> = <em>r</em><sub>1</sub><em>q</em><sub>2</sub> + <em>r</em><sub>2</sub> (0 ≤ <em>r</em><sub>2</sub> &lt; <em>r</em><sub>1</sub>)</li>
+<li><em>r</em><sub>1</sub> = <em>r</em><sub>2</sub><em>q</em><sub>3</sub> + <em>r</em><sub>3</sub> (0 ≤ <em>r</em><sub>3</sub> &lt; <em>r</em><sub>2</sub>)</li>
+<li>…</li>
+<li>Le dernier reste non nul est le PGCD(<em>a</em> ; <em>b</em>).</li>
+</ul>
+
+<h4>Applications</h4>
+
+<ol>
+<li>Calculer PGCD(378 ; 270) en utilisant l'algorithme d'Euclide.</li>
+<li>Déterminer PGCD(161 ; 133) en utilisant l'algorithme d'Euclide.</li>
+<li>Montrer que pour tout <em>n</em> ∈ ℕ, les nombres 2<em>n</em> + 1 et 5<em>n</em> + 3 sont premiers entre eux.</li>
+</ol>
+
+<h3>3-3. Plus petit commun multiple</h3>
+
+<h4>Définition</h4>
+
+<p>Soit <em>a</em> et <em>b</em> deux entiers naturels non nuls.</p>
+
+<p>L'ensemble des multiples communs à <em>a</em> et <em>b</em> est noté <em>a</em>ℕ ∩ <em>b</em>ℕ. Cet ensemble est non vide (il contient <em>ab</em>). Son plus petit élément est appelé le PPCM de <em>a</em> et <em>b</em>.</p>
+
+<p>On note : PPCM(<em>a</em> ; <em>b</em>) ou <em>a</em> ∨ <em>b</em></p>
+
+<h4>Propriétés</h4>
+
+<ul>
+<li>PPCM(<em>a</em> ; <em>b</em>) = PPCM(<em>b</em> ; <em>a</em>)</li>
+<li>Si <em>a</em> divise <em>b</em>, alors PPCM(<em>a</em> ; <em>b</em>) = <em>b</em></li>
+<li>PPCM(<em>a</em> ; <em>b</em>) × PGCD(<em>a</em> ; <em>b</em>) = <em>ab</em></li>
+<li>Si <em>a</em> = <em>p</em><sub>1</sub><sup>α<sub>1</sub></sup> × <em>p</em><sub>2</sub><sup>α<sub>2</sub></sup> × … × <em>p</em><sub>k</sub><sup>α<sub>k</sub></sup> et <em>b</em> = <em>p</em><sub>1</sub><sup>β<sub>1</sub></sup> × <em>p</em><sub>2</sub><sup>β<sub>2</sub></sup> × … × <em>p</em><sub>k</sub><sup>β<sub>k</sub></sup> alors :
+<br/>PGCD(<em>a</em> ; <em>b</em>) = <em>p</em><sub>1</sub><sup>min(α<sub>1</sub>, β<sub>1</sub>)</sup> × <em>p</em><sub>2</sub><sup>min(α<sub>2</sub>, β<sub>2</sub>)</sup> × … × <em>p</em><sub>k</sub><sup>min(α<sub>k</sub>, β<sub>k</sub>)</sup>
+<br/>PPCM(<em>a</em> ; <em>b</em>) = <em>p</em><sub>1</sub><sup>max(α<sub>1</sub>, β<sub>1</sub>)</sup> × <em>p</em><sub>2</sub><sup>max(α<sub>2</sub>, β<sub>2</sub>)</sup> × … × <em>p</em><sub>k</sub><sup>max(α<sub>k</sub>, β<sub>k</sub>)</sup></li>
+</ul>
+
+<h4>Applications</h4>
+
+<ol>
+<li>Déterminer PPCM(360 ; 504).</li>
+<li>Soit <em>a</em> = 360 et <em>b</em> = 1260. Calculer PGCD(<em>a</em> ; <em>b</em>) et PPCM(<em>a</em> ; <em>b</em>).</li>
+<li>Montrer que si PGCD(<em>a</em> ; <em>b</em>) = 1, alors PPCM(<em>a</em> ; <em>b</em>) = <em>ab</em>.</li>
+</ol>
+
+<h3>3-4. Nombre de diviseurs d'un entier naturel non nul</h3>
+
+<h4>Propriété</h4>
+
+<p>Si <em>n</em> = <em>p</em><sub>1</sub><sup>α<sub>1</sub></sup> × <em>p</em><sub>2</sub><sup>α<sub>2</sub></sup> × … × <em>p</em><sub>k</sub><sup>α<sub>k</sub></sup> est la décomposition de <em>n</em> en produit de facteurs premiers, alors le nombre de diviseurs positifs de <em>n</em> est :</p>
+
+<p style="text-align: center;">τ(<em>n</em>) = (α<sub>1</sub> + 1)(α<sub>2</sub> + 1)…(α<sub>k</sub> + 1)</p>
+
+<h4>Applications</h4>
+
+<ol>
+<li>Déterminer le nombre de diviseurs positifs de 360 ; 504 ; 1260.</li>
+<li>Trouver tous les entiers naturels <em>n</em> tels que <em>n</em> admet exactement 6 diviseurs positifs.</li>
+</ol>
+
+<h2>IV. Congruence modulo <em>n</em></h2>
+
+<h3>4-1. Congruences modulo <em>n</em></h3>
+
+<h4>Définition</h4>
+
+<p>Soit <em>n</em> un entier naturel non nul et <em>a</em> et <em>b</em> deux entiers relatifs.</p>
+
+<p>On dit que <em>a</em> est congru à <em>b</em> modulo <em>n</em>, et on écrit <em>a</em> ≡ <em>b</em> (mod <em>n</em>), si <em>n</em> divise (<em>a</em> − <em>b</em>).</p>
+
+<p>Autrement dit : <em>a</em> ≡ <em>b</em> (mod <em>n</em>) ⇔ <em>n</em>/(<em>a</em> − <em>b</em>) ⇔ ∃<em>k</em> ∈ ℤ : <em>a</em> − <em>b</em> = <em>kn</em> ⇔ <em>a</em> et <em>b</em> ont même reste dans la division euclidienne par <em>n</em>.</p>
+
+<h4>Remarques</h4>
+
+<ul>
+<li><em>a</em> ≡ <em>a</em> (mod <em>n</em>)</li>
+<li><em>a</em> ≡ <em>b</em> (mod <em>n</em>) ⇒ <em>b</em> ≡ <em>a</em> (mod <em>n</em>)</li>
+<li><em>a</em> ≡ <em>b</em> (mod <em>n</em>) et <em>b</em> ≡ <em>c</em> (mod <em>n</em>) ⇒ <em>a</em> ≡ <em>c</em> (mod <em>n</em>)</li>
+<li>Tout entier est congru modulo <em>n</em> à un unique entier de l'intervalle {0, 1, 2, …, <em>n</em> − 1} (le reste de la division euclidienne par <em>n</em>).</li>
+</ul>
+
+<h3>4-2. Propriétés de la relation « congruence modulo »</h3>
+
+<h4>Propriétés</h4>
+
+<p>Soit <em>n</em> un entier naturel non nul, <em>a</em>, <em>b</em>, <em>c</em> et <em>d</em> des entiers relatifs.</p>
+
+<ul>
+<li>Si <em>a</em> ≡ <em>b</em> (mod <em>n</em>) et <em>c</em> ≡ <em>d</em> (mod <em>n</em>), alors :
+<ul>
+<li><em>a</em> + <em>c</em> ≡ <em>b</em> + <em>d</em> (mod <em>n</em>)</li>
+<li><em>a</em> − <em>c</em> ≡ <em>b</em> − <em>d</em> (mod <em>n</em>)</li>
+<li><em>ac</em> ≡ <em>bd</em> (mod <em>n</em>)</li>
+</ul>
+</li>
+<li>Si <em>a</em> ≡ <em>b</em> (mod <em>n</em>), alors :
+<ul>
+<li><em>a</em><sup>k</sup> ≡ <em>b</em><sup>k</sup> (mod <em>n</em>) pour tout <em>k</em> ∈ ℕ</li>
+<li><em>ka</em> ≡ <em>kb</em> (mod <em>n</em>) pour tout <em>k</em> ∈ ℤ</li>
+</ul>
+</li>
+<li>Si <em>ka</em> ≡ <em>kb</em> (mod <em>n</em>) et PGCD(<em>k</em> ; <em>n</em>) = 1, alors <em>a</em> ≡ <em>b</em> (mod <em>n</em>)</li>
+</ul>
+
+<h4>Applications</h4>
+
+<ol>
+<li>Déterminer le reste de la division euclidienne de 2<sup>2023</sup> par 7.</li>
+<li>Montrer que 3<sup>100</sup> + 5<sup>100</sup> est divisible par 17.</li>
+<li>Déterminer le reste de la division euclidienne de 37<sup>50</sup> par 11.</li>
+<li>Montrer que tout entier <em>n</em> vérifie : <em>n</em><sup>3</sup> − <em>n</em> ≡ 0 (mod 6).</li>
+</ol>
+
+<h2>V. L'ensemble ℤ/<em>n</em>ℤ</h2>
+
+<h3>5-1. Classes d'équivalence</h3>
+
+<h4>Définition</h4>
+
+<p>Soit <em>n</em> un entier naturel non nul. La relation de congruence modulo <em>n</em> est une relation d'équivalence sur ℤ.</p>
+
+<p>Pour tout <em>a</em> ∈ ℤ, on appelle classe d'équivalence de <em>a</em> modulo <em>n</em>, l'ensemble :</p>
+
+<p style="text-align: center;"><em>ā</em> = {<em>x</em> ∈ ℤ / <em>x</em> ≡ <em>a</em> (mod <em>n</em>)} = {<em>a</em> + <em>kn</em> / <em>k</em> ∈ ℤ}</p>
+
+<p>L'ensemble de toutes les classes d'équivalence modulo <em>n</em> est noté ℤ/<em>n</em>ℤ et contient exactement <em>n</em> éléments :</p>
+
+<p style="text-align: center;">ℤ/<em>n</em>ℤ = {<em>0̄</em>, <em>1̄</em>, <em>2̄</em>, …, (<em>n</em> − 1)<em>̄</em>}</p>
+
+<h4>Propriétés</h4>
+
+<ul>
+<li><em>ā</em> = <em>b̄</em> ⇔ <em>a</em> ≡ <em>b</em> (mod <em>n</em>)</li>
+<li>Deux classes d'équivalence sont soit égales, soit disjointes.</li>
+<li>ℤ/<em>n</em>ℤ est une partition de ℤ.</li>
+</ul>
+
+<h3>5-2. Opérations dans l'ensemble ℤ/<em>n</em>ℤ</h3>
+
+<h4>Définition</h4>
+
+<p>Soit <em>ā</em> et <em>b̄</em> deux éléments de ℤ/<em>n</em>ℤ. On définit :</p>
+
+<ul>
+<li><em>ā</em> + <em>b̄</em> = (<em>a</em> + <em>b</em>)<em>̄</em></li>
+<li><em>ā</em> × <em>b̄</em> = (<em>a</em> × <em>b</em>)<em>̄</em></li>
+</ul>
+
+<p>Ces opérations sont bien définies : elles ne dépendent pas des représentants choisis.</p>
+
+<h4>Propriétés</h4>
+
+<p>(ℤ/<em>n</em>ℤ, +) est un groupe commutatif :</p>
+<ul>
+<li>L'élément neutre est <em>0̄</em>.</li>
+<li>L'opposé de <em>ā</em> est (−<em>a</em>)<em>̄</em>.</li>
+<li>L'addition est associative et commutative.</li>
+</ul>
+
+<p>(ℤ/<em>n</em>ℤ, +, ×) est un anneau commutatif unitaire :</p>
+<ul>
+<li>L'élément unité est <em>1̄</em>.</li>
+<li>La multiplication est distributive par rapport à l'addition.</li>
+</ul>
+
+<p>Si <em>n</em> est premier, alors (ℤ/<em>n</em>ℤ, +, ×) est un corps.</p>
+
+<h4>Applications</h4>
+
+<ol>
+<li>Dans ℤ/5ℤ, calculer : <em>3̄</em> + <em>4̄</em> ; <em>2̄</em> × <em>3̄</em> ; <em>1̄</em> − <em>4̄</em>.</li>
+<li>Déterminer les éléments inversibles de ℤ/6ℤ.</li>
+<li>Résoudre dans ℤ/7ℤ l'équation : <em>2̄x̄</em> + <em>3̄</em> = <em>5̄</em>.</li>
+<li>Montrer que si <em>ā</em> est inversible dans ℤ/<em>n</em>ℤ, alors PGCD(<em>a</em> ; <em>n</em>) = 1.</li>
+</ol>

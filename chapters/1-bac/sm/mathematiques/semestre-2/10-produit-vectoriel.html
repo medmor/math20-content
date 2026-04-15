@@ -1,2 +1,150 @@
-<!-- Produit vectoriel -->
-<h1>Produit vectoriel</h1>
+<!-- Produit vectoriel dans l'espace -->
+<h1>Produit vectoriel dans l'espace</h1>
+
+<h2>I. Orientation de l'espace</h2>
+
+<h3>1-1. Trièdre</h3>
+
+<b>Définition</b>
+Trois demi-droites [Ox), [Oy), [Oz) de même origine O et non coplanaires déterminent un trièdre (Ox; Oy; Oz). Les demi-droites [Ox), [Oy), [Oz) sont appelées les arêtes du trièdre et O est son sommet.
+
+<h3>1-2. Bonhomme d'ampère - Repère orienté de l'espace</h3>
+
+<b>Définition</b>
+Un trièdre (Ox; Oy; Oz) est dit <b>direct</b> (ou positif) si le bonhomme d'Ampère, placé sur [Oz) et regardant [Ox), a la demi-droite [Oy) à sa gauche.
+Un trièdre est dit <b>indirect</b> (ou négatif) dans le cas contraire.
+
+<b>Proposition</b>
+Si (O; <span style="text-decoration: overline;">i</span>; <span style="text-decoration: overline;">j</span>; <span style="text-decoration: overline;">k</span>) est un repère orthonormal direct, alors :
+<ol>
+<li>(O; <span style="text-decoration: overline;">j</span>; <span style="text-decoration: overline;">k</span>; <span style="text-decoration: overline;">i</span>) et (O; <span style="text-decoration: overline;">k</span>; <span style="text-decoration: overline;">i</span>; <span style="text-decoration: overline;">j</span>) sont directs</li>
+<li>(O; <span style="text-decoration: overline;">j</span>; <span style="text-decoration: overline;">i</span>; <span style="text-decoration: overline;">k</span>), (O; <span style="text-decoration: overline;">k</span>; <span style="text-decoration: overline;">j</span>; <span style="text-decoration: overline;">i</span>) et (O; <span style="text-decoration: overline;">i</span>; <span style="text-decoration: overline;">k</span>; <span style="text-decoration: overline;">j</span>) sont indirects</li>
+<li>(O; −<span style="text-decoration: overline;">i</span>; <span style="text-decoration: overline;">j</span>; <span style="text-decoration: overline;">k</span>), (O; <span style="text-decoration: overline;">i</span>; −<span style="text-decoration: overline;">j</span>; <span style="text-decoration: overline;">k</span>) et (O; <span style="text-decoration: overline;">i</span>; <span style="text-decoration: overline;">j</span>; −<span style="text-decoration: overline;">k</span>) sont indirects</li>
+</ol>
+
+<b>Remarque</b>
+Repère direct ⇔ base directe
+
+<h2>II. Produit vectoriel de deux vecteurs</h2>
+
+<h3>2-1. Définition du produit vectoriel</h3>
+
+<b>Définition</b>
+Soient <span style="text-decoration: overline;">u</span> et <span style="text-decoration: overline;">v</span> deux vecteurs non colinéaires. Le produit vectoriel <span style="text-decoration: overline;">u</span> ∧ <span style="text-decoration: overline;">v</span> est le vecteur <span style="text-decoration: overline;">w</span> = <span style="text-decoration: overline;">OC</span> défini par :
+<ol>
+<li>(OC) ⊥ plan (OAB)</li>
+<li>Le trièdre ([<span style="text-decoration: overline;">OA</span>); [<span style="text-decoration: overline;">OB</span>); [<span style="text-decoration: overline;">OC</span>]) est direct</li>
+<li>||<span style="text-decoration: overline;">OC</span>|| = ||<span style="text-decoration: overline;">OA</span>|| × ||<span style="text-decoration: overline;">OB</span>|| × sin(θ) où θ = AÔB</li>
+</ol>
+
+Si <span style="text-decoration: overline;">u</span> et <span style="text-decoration: overline;">v</span> sont colinéaires, alors <span style="text-decoration: overline;">u</span> ∧ <span style="text-decoration: overline;">v</span> = <span style="text-decoration: overline;">0</span>.
+
+<b>Remarques</b>
+<ul>
+<li>Le produit vectoriel ne dépend pas du choix du point O.</li>
+<li>Le produit vectoriel est un vecteur (et non un scalaire).</li>
+<li><span style="text-decoration: overline;">w</span> ⊥ <span style="text-decoration: overline;">u</span> et <span style="text-decoration: overline;">w</span> ⊥ <span style="text-decoration: overline;">v</span>, ||<span style="text-decoration: overline;">w</span>|| = ||<span style="text-decoration: overline;">u</span>|| × ||<span style="text-decoration: overline;">v</span>|| × |sin(<span style="text-decoration: overline;">u</span>;<span style="text-decoration: overline;">v</span>)|</li>
+<li>Si <span style="text-decoration: overline;">w</span> = <span style="text-decoration: overline;">u</span> ∧ <span style="text-decoration: overline;">v</span> alors la base (<span style="text-decoration: overline;">u</span>; <span style="text-decoration: overline;">v</span>; <span style="text-decoration: overline;">w</span>) est directe. Si <span style="text-decoration: overline;">u</span> et <span style="text-decoration: overline;">v</span> sont unitaires orthogonaux, la base est orthonormée directe.</li>
+<li><span style="text-decoration: overline;">u</span> ∧ <span style="text-decoration: overline;">u</span> = <span style="text-decoration: overline;">0</span>, <span style="text-decoration: overline;">u</span> ∧ <span style="text-decoration: overline;">0</span> = <span style="text-decoration: overline;">0</span></li>
+<li>A, B, C alignés ⇔ <span style="text-decoration: overline;">AB</span> ∧ <span style="text-decoration: overline;">AC</span> = <span style="text-decoration: overline;">0</span></li>
+</ul>
+
+<b>Application</b>
+||<span style="text-decoration: overline;">u</span>|| = √2, ||<span style="text-decoration: overline;">u</span> ∧ <span style="text-decoration: overline;">v</span>|| = 4, (<span style="text-decoration: overline;">u</span>;<span style="text-decoration: overline;">v</span>) ≡ π/4 [2π]. Trouver ||<span style="text-decoration: overline;">v</span>||.
+
+<h3>2-2. Interprétation géométrique du produit vectoriel</h3>
+
+<b>Exercice</b>
+||<span style="text-decoration: overline;">a</span>|| = 4, ||<span style="text-decoration: overline;">b</span>|| = 9, <span style="text-decoration: overline;">a</span> · <span style="text-decoration: overline;">b</span> = 18√3. Trouver ||<span style="text-decoration: overline;">a</span> ∧ <span style="text-decoration: overline;">b</span>||.
+
+<b>Propriété</b>
+||<span style="text-decoration: overline;">u</span> ∧ <span style="text-decoration: overline;">v</span>|| est égale à l'aire du parallélogramme construit sur <span style="text-decoration: overline;">OA</span> et <span style="text-decoration: overline;">OB</span>.
+
+Aire = ||<span style="text-decoration: overline;">u</span>|| × ||<span style="text-decoration: overline;">v</span>|| × |sin(<span style="text-decoration: overline;">u</span>;<span style="text-decoration: overline;">v</span>)|
+
+<h2>III. Propriétés du produit vectoriel</h2>
+
+<h3>3-1. Anti-symétrie du produit vectoriel</h3>
+
+<b>Proposition</b>
+<span style="text-decoration: overline;">v</span> ∧ <span style="text-decoration: overline;">u</span> = −(<span style="text-decoration: overline;">u</span> ∧ <span style="text-decoration: overline;">v</span>)
+
+Le produit vectoriel est antisymétrique (ou anti-commutatif).
+
+<h3>3-2. Bilinéarité du produit vectoriel</h3>
+
+<b>Proposition</b>
+<ul>
+<li><span style="text-decoration: overline;">u</span> ∧ (<span style="text-decoration: overline;">v</span> + <span style="text-decoration: overline;">w</span>) = <span style="text-decoration: overline;">u</span> ∧ <span style="text-decoration: overline;">v</span> + <span style="text-decoration: overline;">u</span> ∧ <span style="text-decoration: overline;">w</span></li>
+<li>(<span style="text-decoration: overline;">u</span> + <span style="text-decoration: overline;">v</span>) ∧ <span style="text-decoration: overline;">w</span> = <span style="text-decoration: overline;">u</span> ∧ <span style="text-decoration: overline;">w</span> + <span style="text-decoration: overline;">v</span> ∧ <span style="text-decoration: overline;">w</span></li>
+<li><span style="text-decoration: overline;">u</span> ∧ (α<span style="text-decoration: overline;">v</span>) = (α<span style="text-decoration: overline;">u</span>) ∧ <span style="text-decoration: overline;">v</span> = α(<span style="text-decoration: overline;">u</span> ∧ <span style="text-decoration: overline;">v</span>)</li>
+</ul>
+
+<h3>3-3. Expression analytique du produit vectoriel</h3>
+
+Soit une base orthonormée (<span style="text-decoration: overline;">i</span>; <span style="text-decoration: overline;">j</span>; <span style="text-decoration: overline;">k</span>). Soient <span style="text-decoration: overline;">u</span>(x; y; z) et <span style="text-decoration: overline;">v</span>(x'; y'; z').
+
+<span style="text-decoration: overline;">u</span> ∧ <span style="text-decoration: overline;">v</span> =
+<table border="1" cellpadding="5" cellspacing="0" style="display: inline-table; vertical-align: middle; text-align: center;">
+<tr><td><span style="text-decoration: overline;">i</span></td><td><span style="text-decoration: overline;">j</span></td><td><span style="text-decoration: overline;">k</span></td></tr>
+<tr><td>x</td><td>y</td><td>z</td></tr>
+<tr><td>x'</td><td>y'</td><td>z'</td></tr>
+</table>
+
+= (yz' − zy')<span style="text-decoration: overline;">i</span> − (xz' − zx')<span style="text-decoration: overline;">j</span> + (xy' − yx')<span style="text-decoration: overline;">k</span>
+
+<b>Application</b>
+Soient <span style="text-decoration: overline;">u</span> = 2<span style="text-decoration: overline;">i</span> − <span style="text-decoration: overline;">j</span>, <span style="text-decoration: overline;">v</span> = <span style="text-decoration: overline;">i</span> − <span style="text-decoration: overline;">j</span> + 2<span style="text-decoration: overline;">k</span> et <span style="text-decoration: overline;">w</span> = <span style="text-decoration: overline;">j</span> + <span style="text-decoration: overline;">k</span>.
+<ol>
+<li>Trouver les coordonnées de <span style="text-decoration: overline;">u</span> ∧ <span style="text-decoration: overline;">v</span> et <span style="text-decoration: overline;">u</span> ∧ <span style="text-decoration: overline;">w</span>.</li>
+</ol>
+
+Soient A(1; 2; 3), B(0; −1; 2) et C(3; −2; 1).
+<ol start="2">
+<li>Calculer <span style="text-decoration: overline;">OA</span> ∧ <span style="text-decoration: overline;">BC</span> et <span style="text-decoration: overline;">AB</span> ∧ <span style="text-decoration: overline;">BC</span>.</li>
+</ol>
+
+<h2>IV. Applications du produit vectoriel</h2>
+
+<h3>4-1. Aire d'un triangle</h3>
+
+<b>Proposition</b>
+S<sub>ABC</sub> = ½||<span style="text-decoration: overline;">AB</span> ∧ <span style="text-decoration: overline;">AC</span>||
+
+<b>Application</b>
+<ol>
+<li>A(−1; 2; 1), B(−1; 0; 2), C(2; −1; 0). Calculer S<sub>ABC</sub>.</li>
+<li>A(2; 1; −1), B(0; 4; 1), C(3; 1; −2). Calculer S<sub>ABC</sub>.</li>
+</ol>
+
+<h3>4-2. Équation d'un plan défini par trois points non alignés</h3>
+
+<b>Proposition</b>
+M ∈ (ABC) ⇔ <span style="text-decoration: overline;">AM</span> · (<span style="text-decoration: overline;">AB</span> ∧ <span style="text-decoration: overline;">AC</span>) = 0
+
+<b>Application</b>
+E(3; −1; 1), F(1; 0; 3). Trouver l'équation du plan (OEF).
+
+<h3>4-3. Intersection de deux plans de l'espace</h3>
+
+<b>Proposition</b>
+Si P et P' se coupent suivant la droite D, et <span style="text-decoration: overline;">n</span> est un vecteur normal à P, <span style="text-decoration: overline;">n'</span> un vecteur normal à P', alors <span style="text-decoration: overline;">n</span> ∧ <span style="text-decoration: overline;">n'</span> est un vecteur directeur de D.
+
+<b>Application</b>
+<ol>
+<li>P : x − y + 2z + 3 = 0 et P' : x + 2y + 2z − 1 = 0</li>
+<li>P : 3x − 4y + 5z + 7 = 0 et P' : 2x − 3y − z − 4 = 0</li>
+</ol>
+
+<h3>4-4. Distance d'un point à une droite</h3>
+
+<b>Proposition</b>
+d(M; D) = ||<span style="text-decoration: overline;">AM</span> ∧ <span style="text-decoration: overline;">u</span>|| / ||<span style="text-decoration: overline;">u</span>||
+
+où A ∈ D et <span style="text-decoration: overline;">u</span> est un vecteur directeur de D.
+
+<b>Application</b>
+<ol>
+<li>M(3; 2; 1) et D : x = 1 − t, y = 1, z = 1</li>
+<li>M(3; −1; 1) et D : x − y = 1, y + z = 0</li>
+</ol>

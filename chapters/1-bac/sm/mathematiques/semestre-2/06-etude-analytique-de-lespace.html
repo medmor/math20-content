@@ -1,2 +1,263 @@
-<!-- Etude analytique de l'espace -->
-<h1>Etude analytique de l'espace</h1>
+<!-- Étude analytique de l'espace -->
+<h1>Étude analytique de l'espace</h1>
+
+<p>Dans tout ce chapitre, on considère un repère orthonormé direct (O; <span style="text-decoration: overline;">i</span>, <span style="text-decoration: overline;">j</span>, <span style="text-decoration: overline;">k</span>) de l'espace.</p>
+
+<h2>I. Coordonnées d'un point dans un repère - Coordonnées d'un vecteur dans une base</h2>
+
+<h3>1-1. Repère et base de l'espace</h3>
+
+<p><b>Définition</b></p>
+<p>Le triplet (<span style="text-decoration: overline;">i</span>, <span style="text-decoration: overline;">j</span>, <span style="text-decoration: overline;">k</span>) s'appelle <b>base</b> de l'espace. On dit que l'espace (E) est muni de la base (<span style="text-decoration: overline;">i</span>, <span style="text-decoration: overline;">j</span>, <span style="text-decoration: overline;">k</span>).</p>
+<p>Le quadruplet (O; <span style="text-decoration: overline;">i</span>, <span style="text-decoration: overline;">j</span>, <span style="text-decoration: overline;">k</span>) s'appelle <b>repère</b> de l'espace. On dit que l'espace (E) est muni du repère (O; <span style="text-decoration: overline;">i</span>, <span style="text-decoration: overline;">j</span>, <span style="text-decoration: overline;">k</span>).</p>
+<p>Si les vecteurs <span style="text-decoration: overline;">i</span>, <span style="text-decoration: overline;">j</span> et <span style="text-decoration: overline;">k</span> sont deux à deux orthogonaux et de norme 1, le repère est dit <b>orthonormé</b>. Si de plus la base (<span style="text-decoration: overline;">i</span>, <span style="text-decoration: overline;">j</span>, <span style="text-decoration: overline;">k</span>) est directe, le repère est orthonormé direct.</p>
+
+<h3>1-2. Coordonnées d'un point dans un repère</h3>
+
+<p><b>Définition</b></p>
+<p>Pour tout point M de l'espace (E) muni du repère (O; <span style="text-decoration: overline;">i</span>, <span style="text-decoration: overline;">j</span>, <span style="text-decoration: overline;">k</span>), il existe un et un seul triplet (x, y, z) ∈ ℝ³ tel que :</p>
+<p><span style="text-decoration: overline;">OM</span> = x<span style="text-decoration: overline;">i</span> + y<span style="text-decoration: overline;">j</span> + z<span style="text-decoration: overline;">k</span></p>
+<p>Le triplet (x, y, z) s'appelle les <b>coordonnées du point M</b> par rapport au repère (O; <span style="text-decoration: overline;">i</span>, <span style="text-decoration: overline;">j</span>, <span style="text-decoration: overline;">k</span>).</p>
+<p>On note : M(x, y, z).</p>
+<p>Le nombre réel x s'appelle l'<b>abscisse</b>, y s'appelle l'<b>ordonnée</b>, z s'appelle la <b>cote</b> du point M.</p>
+<p>Le triplet (x, y, z) s'appelle aussi les coordonnées du vecteur <span style="text-decoration: overline;">OM</span> de l'espace (E) par rapport à la base (<span style="text-decoration: overline;">i</span>, <span style="text-decoration: overline;">j</span>, <span style="text-decoration: overline;">k</span>). On note : <span style="text-decoration: overline;">OM</span>(x, y, z).</p>
+
+<p><b>Propriété</b></p>
+<p>Soient A(x<sub>A</sub>, y<sub>A</sub>, z<sub>A</sub>) et B(x<sub>B</sub>, y<sub>B</sub>, z<sub>B</sub>) deux points de l'espace.</p>
+<p>La distance entre les points A et B est :</p>
+<p>AB = √((x<sub>B</sub> − x<sub>A</sub>)² + (y<sub>B</sub> − y<sub>A</sub>)² + (z<sub>B</sub> − z<sub>A</sub>)²)</p>
+
+<p><b>Propriété</b></p>
+<p>Le milieu I du segment [AB] a pour coordonnées :</p>
+<p>I((x<sub>A</sub> + x<sub>B</sub>)/2, (y<sub>A</sub> + y<sub>B</sub>)/2, (z<sub>A</sub> + z<sub>B</sub>)/2)</p>
+
+<h3>1-3. Coordonnées d'un vecteur dans une base</h3>
+
+<p><b>Propriété</b></p>
+<p>Soient <span style="text-decoration: overline;">u</span>(x, y, z) et <span style="text-decoration: overline;">v</span>(x', y', z') deux vecteurs et A(a, b, c) et B(a', b', c') deux points de l'espace (E) rapporté au repère (O; <span style="text-decoration: overline;">i</span>, <span style="text-decoration: overline;">j</span>, <span style="text-decoration: overline;">k</span>), et I le milieu du segment [AB] et α ∈ ℝ.</p>
+<p>On a :</p>
+<ol>
+<li>(<span style="text-decoration: overline;">u</span> + <span style="text-decoration: overline;">v</span>)(x + x', y + y', z + z') et α<span style="text-decoration: overline;">u</span>(αx, αy, αz)</li>
+<li><span style="text-decoration: overline;">AB</span>(a' − a, b' − b, c' − c)</li>
+<li>I((a + a')/2, (b + b')/2, (c + c')/2)</li>
+</ol>
+
+<p><b>Propriété</b> (Norme d'un vecteur)</p>
+<p>Soit <span style="text-decoration: overline;">u</span>(x, y, z) un vecteur de l'espace. La norme de <span style="text-decoration: overline;">u</span> est :</p>
+<p>‖<span style="text-decoration: overline;">u</span>‖ = √(x² + y² + z²)</p>
+
+<p><b>Propriété</b> (Produit scalaire)</p>
+<p>Soient <span style="text-decoration: overline;">u</span>(x, y, z) et <span style="text-decoration: overline;">v</span>(x', y', z') deux vecteurs de l'espace. Le produit scalaire de <span style="text-decoration: overline;">u</span> et <span style="text-decoration: overline;">v</span> est :</p>
+<p><span style="text-decoration: overline;">u</span> · <span style="text-decoration: overline;">v</span> = xx' + yy' + zz'</p>
+<p>On a aussi : <span style="text-decoration: overline;">u</span> · <span style="text-decoration: overline;">v</span> = ‖<span style="text-decoration: overline;">u</span>‖ × ‖<span style="text-decoration: overline;">v</span>‖ × cos(θ) où θ est l'angle entre les deux vecteurs.</p>
+
+<p><b>Propriété</b> (Propriétés du produit scalaire)</p>
+<ul>
+<li><span style="text-decoration: overline;">u</span> · <span style="text-decoration: overline;">v</span> = <span style="text-decoration: overline;">v</span> · <span style="text-decoration: overline;">u</span></li>
+<li><span style="text-decoration: overline;">u</span> · (<span style="text-decoration: overline;">v</span> + <span style="text-decoration: overline;">w</span>) = <span style="text-decoration: overline;">u</span> · <span style="text-decoration: overline;">v</span> + <span style="text-decoration: overline;">u</span> · <span style="text-decoration: overline;">w</span></li>
+<li>(α<span style="text-decoration: overline;">u</span>) · <span style="text-decoration: overline;">v</span> = α(<span style="text-decoration: overline;">u</span> · <span style="text-decoration: overline;">v</span>)</li>
+<li><span style="text-decoration: overline;">u</span> · <span style="text-decoration: overline;">u</span> = ‖<span style="text-decoration: overline;">u</span>‖²</li>
+<li><span style="text-decoration: overline;">u</span> · <span style="text-decoration: overline;">v</span> = 0 ⇔ <span style="text-decoration: overline;">u</span> ⊥ <span style="text-decoration: overline;">v</span> (si <span style="text-decoration: overline;">u</span> et <span style="text-decoration: overline;">v</span> non nuls)</li>
+</ul>
+
+<h2>II. Condition de colinéarité de deux vecteurs</h2>
+
+<p><b>Propriété</b> (Rappel)</p>
+<p>Soient <span style="text-decoration: overline;">u</span>(x, y, z) et <span style="text-decoration: overline;">v</span>(x', y', z') deux vecteurs de l'espace (E).</p>
+<p><span style="text-decoration: overline;">u</span> et <span style="text-decoration: overline;">v</span> sont colinéaires ⇔ il existe α ∈ ℝ tel que <span style="text-decoration: overline;">v</span> = α<span style="text-decoration: overline;">u</span> ou <span style="text-decoration: overline;">u</span> = α<span style="text-decoration: overline;">v</span>.</p>
+
+<p><b>Définition</b> (Déterminants extraits de <span style="text-decoration: overline;">u</span> et <span style="text-decoration: overline;">v</span>)</p>
+<p>Soient <span style="text-decoration: overline;">u</span>(x, y, z) et <span style="text-decoration: overline;">v</span>(x', y', z') deux vecteurs de l'espace (E). Les déterminants suivants :</p>
+
+<table border="1" cellpadding="5" cellspacing="0">
+<tr><td>Δ<sub>x</sub></td><td>=</td>
+<td><table border="1" cellpadding="5" cellspacing="0"><tr><td>y</td><td>y'</td></tr><tr><td>z</td><td>z'</td></tr></table></td></tr>
+<tr><td>Δ<sub>y</sub></td><td>=</td>
+<td><table border="1" cellpadding="5" cellspacing="0"><tr><td>x</td><td>x'</td></tr><tr><td>z</td><td>z'</td></tr></table></td></tr>
+<tr><td>Δ<sub>z</sub></td><td>=</td>
+<td><table border="1" cellpadding="5" cellspacing="0"><tr><td>x</td><td>x'</td></tr><tr><td>y</td><td>y'</td></tr></table></td></tr>
+</table>
+
+<p>s'appellent les <b>déterminants extraits</b> de <span style="text-decoration: overline;">u</span> et <span style="text-decoration: overline;">v</span>.</p>
+
+<p><b>Proposition</b></p>
+<p><span style="text-decoration: overline;">u</span> et <span style="text-decoration: overline;">v</span> sont colinéaires ⇔ Δ<sub>x</sub> = Δ<sub>y</sub> = Δ<sub>z</sub> = 0 (les déterminants extraits sont tous nuls). □</p>
+
+<p><b>Remarque</b></p>
+<p>En particulier, le vecteur nul <span style="text-decoration: overline;">0</span>(0, 0, 0) est colinéaire à tout vecteur de l'espace.</p>
+
+<h2>III. Condition de coplanarité de trois vecteurs</h2>
+
+<p><b>Définition</b> (Déterminant de trois vecteurs de l'espace)</p>
+<p>Soient <span style="text-decoration: overline;">u</span>(x, y, z), <span style="text-decoration: overline;">v</span>(x', y', z') et <span style="text-decoration: overline;">w</span>(x'', y'', z'') trois vecteurs de l'espace (E) rapporté au repère (O; <span style="text-decoration: overline;">i</span>, <span style="text-decoration: overline;">j</span>, <span style="text-decoration: overline;">k</span>).</p>
+<p>Le nombre :</p>
+<p>det(<span style="text-decoration: overline;">u</span>, <span style="text-decoration: overline;">v</span>, <span style="text-decoration: overline;">w</span>) =</p>
+
+<table border="1" cellpadding="5" cellspacing="0">
+<tr><td>x</td><td>x'</td><td>x''</td></tr>
+<tr><td>y</td><td>y'</td><td>y''</td></tr>
+<tr><td>z</td><td>z'</td><td>z''</td></tr>
+</table>
+
+<p>= x</p>
+
+<table border="1" cellpadding="5" cellspacing="0">
+<tr><td>y'</td><td>y''</td></tr>
+<tr><td>z'</td><td>z''</td></tr>
+</table>
+
+<p>− y</p>
+
+<table border="1" cellpadding="5" cellspacing="0">
+<tr><td>x'</td><td>x''</td></tr>
+<tr><td>z'</td><td>z''</td></tr>
+</table>
+
+<p>+ z</p>
+
+<table border="1" cellpadding="5" cellspacing="0">
+<tr><td>x'</td><td>x''</td></tr>
+<tr><td>y'</td><td>y''</td></tr>
+</table>
+
+<p>est appelé <b>déterminant</b> des vecteurs <span style="text-decoration: overline;">u</span>, <span style="text-decoration: overline;">v</span> et <span style="text-decoration: overline;">w</span> dans cet ordre.</p>
+
+<p><b>Proposition</b></p>
+<p>Soient <span style="text-decoration: overline;">u</span>(x, y, z), <span style="text-decoration: overline;">v</span>(x', y', z') et <span style="text-decoration: overline;">w</span>(x'', y'', z'') trois vecteurs de l'espace (E).</p>
+<p><span style="text-decoration: overline;">u</span>, <span style="text-decoration: overline;">v</span> et <span style="text-decoration: overline;">w</span> sont coplanaires si et seulement si det(<span style="text-decoration: overline;">u</span>, <span style="text-decoration: overline;">v</span>, <span style="text-decoration: overline;">w</span>) = 0. □</p>
+
+<p><b>Remarque</b></p>
+<p>Si deux vecteurs parmi <span style="text-decoration: overline;">u</span>, <span style="text-decoration: overline;">v</span> et <span style="text-decoration: overline;">w</span> sont colinéaires, alors les trois vecteurs sont coplanaires.</p>
+
+<h2>IV. Étude analytique d'une droite de l'espace</h2>
+
+<h3>4-1. Représentation paramétrique d'une droite</h3>
+
+<p><b>Définition</b></p>
+<p>Soit 𝒟 une droite de l'espace passant par un point A(x<sub>0</sub>, y<sub>0</sub>, z<sub>0</sub>) et de vecteur directeur <span style="text-decoration: overline;">u</span>(a, b, c) ≠ <span style="text-decoration: overline;">0</span>. Un point M(x, y, z) appartient à 𝒟 si et seulement s'il existe un réel t ∈ ℝ tel que <span style="text-decoration: overline;">AM</span> = t<span style="text-decoration: overline;">u</span>.</p>
+<p>Le système :</p>
+<p>x = x<sub>0</sub> + at ; y = y<sub>0</sub> + bt ; z = z<sub>0</sub> + ct (t ∈ ℝ)</p>
+<p>s'appelle <b>représentation paramétrique</b> de la droite 𝒟(A, <span style="text-decoration: overline;">u</span>).</p>
+
+<p><b>Remarque</b></p>
+<p>Pour chaque valeur du paramètre t on obtient un point et un seul, et la réciproque est vraie. Par exemple : la valeur t = 0 donne le point A(x<sub>0</sub>, y<sub>0</sub>, z<sub>0</sub>).</p>
+<p>La représentation paramétrique de la droite 𝒟(A, <span style="text-decoration: overline;">u</span>) n'est pas unique, on peut remplacer (x<sub>0</sub>, y<sub>0</sub>, z<sub>0</sub>) par (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) coordonnées du point B à condition que B ∈ 𝒟(A, <span style="text-decoration: overline;">u</span>).</p>
+
+<h3>4-2. Équations cartésiennes d'une droite</h3>
+
+<p><b>Proposition et définition</b></p>
+<p>Dans l'espace (E), on considère la droite 𝒟(A(x<sub>0</sub>, y<sub>0</sub>, z<sub>0</sub>), <span style="text-decoration: overline;">u</span>(a, b, c)).</p>
+<p>Un point M(x, y, z) de l'espace (E) appartient à la droite 𝒟(A, <span style="text-decoration: overline;">u</span>) si et seulement si :</p>
+<ul>
+<li><b>1er cas</b> : si a, b et c sont non nuls : (x − x<sub>0</sub>)/a = (y − y<sub>0</sub>)/b = (z − z<sub>0</sub>)/c s'appelle <b>système de deux équations cartésiennes</b> de la droite 𝒟(A, <span style="text-decoration: overline;">u</span>).</li>
+<li><b>2ème cas</b> : si un seul parmi a, b, c est nul (par exemple a = 0) : x − x<sub>0</sub> = 0 et (y − y<sub>0</sub>)/b = (z − z<sub>0</sub>)/c s'appelle système de deux équations cartésiennes de la droite 𝒟(A, <span style="text-decoration: overline;">u</span>).</li>
+<li><b>3ème cas</b> : si deux parmi a, b, c sont nuls (par exemple a = 0 et c = 0) : x − x<sub>0</sub> = 0 et z − z<sub>0</sub> = 0 s'appelle système de deux équations cartésiennes de la droite 𝒟(A, <span style="text-decoration: overline;">u</span>).</li>
+</ul>
+
+<p><b>Remarque</b></p>
+<p>Une droite de l'espace peut être définie comme intersection de deux plans non parallèles. Elle admet donc un système de deux équations cartésiennes :</p>
+<p>{ a<sub>1</sub>x + b<sub>1</sub>y + c<sub>1</sub>z + d<sub>1</sub> = 0<br>
+  a<sub>2</sub>x + b<sub>2</sub>y + c<sub>2</sub>z + d<sub>2</sub> = 0</p>
+<p>Pour passer d'une représentation paramétrique aux équations cartésiennes, on élimine le paramètre t entre les trois équations pour obtenir deux équations de plans. Réciproquement, pour passer des équations cartésiennes à la représentation paramétrique, on résout le système de deux équations à trois inconnues en choisissant une variable comme paramètre.</p>
+
+<h2>V. Étude analytique d'un plan de l'espace</h2>
+
+<h3>5-1. Représentation paramétrique d'un plan</h3>
+
+<p><b>Définition</b></p>
+<p>Soit 𝒫 un plan de l'espace passant par un point A(x<sub>0</sub>, y<sub>0</sub>, z<sub>0</sub>) et dirigé par deux vecteurs non colinéaires <span style="text-decoration: overline;">u</span>(a, b, c) et <span style="text-decoration: overline;">v</span>(a', b', c'). Un point M(x, y, z) appartient à 𝒫 si et seulement s'il existe des réels α et β tels que :</p>
+<p><span style="text-decoration: overline;">AM</span> = α<span style="text-decoration: overline;">u</span> + β<span style="text-decoration: overline;">v</span></p>
+<p>Le système :</p>
+<p>x = x<sub>0</sub> + αa + βa' ; y = y<sub>0</sub> + αb + βb' ; z = z<sub>0</sub> + αc + βc' (α, β ∈ ℝ)</p>
+<p>s'appelle <b>représentation paramétrique</b> du plan 𝒫(A, <span style="text-decoration: overline;">u</span>, <span style="text-decoration: overline;">v</span>).</p>
+
+<p><b>Remarque</b></p>
+<p>Pour chaque valeur des paramètres α et β on obtient un point et un seul, et la réciproque est vraie.</p>
+<p>La représentation paramétrique du plan 𝒫(A, <span style="text-decoration: overline;">u</span>, <span style="text-decoration: overline;">v</span>) n'est pas unique, on peut remplacer (x<sub>0</sub>, y<sub>0</sub>, z<sub>0</sub>) par (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) coordonnées du point B à condition que B ∈ 𝒫(A, <span style="text-decoration: overline;">u</span>, <span style="text-decoration: overline;">v</span>).</p>
+
+<h3>5-2. Équation cartésienne d'un plan</h3>
+
+<p><b>Définition et propriété</b></p>
+<p>Soit 𝒫(A(x<sub>0</sub>, y<sub>0</sub>, z<sub>0</sub>), <span style="text-decoration: overline;">u</span>(a, b, c), <span style="text-decoration: overline;">v</span>(a', b', c')) un plan de l'espace (E).</p>
+<p>Le plan 𝒫 est l'ensemble des points M(x, y, z) de l'espace (E) qui vérifie l'équation :</p>
+<p>(x − x<sub>0</sub>)Δ<sub>x</sub> + (y − y<sub>0</sub>)Δ<sub>y</sub> + (z − z<sub>0</sub>)Δ<sub>z</sub> = 0</p>
+<p>où Δ<sub>x</sub>, Δ<sub>y</sub>, Δ<sub>z</sub> sont les déterminants extraits de <span style="text-decoration: overline;">u</span> et <span style="text-decoration: overline;">v</span>. Cette équation s'appelle <b>équation cartésienne</b> du plan 𝒫(A, <span style="text-decoration: overline;">u</span>, <span style="text-decoration: overline;">v</span>).</p>
+<p>En général, l'équation s'écrit : ax + by + cz + d = 0, avec a = Δ<sub>x</sub>, b = Δ<sub>y</sub>, c = Δ<sub>z</sub>, d = −x<sub>0</sub>Δ<sub>x</sub> − y<sub>0</sub>Δ<sub>y</sub> − z<sub>0</sub>Δ<sub>z</sub> et (a, b, c) ≠ (0, 0, 0).</p>
+
+<p><b>Propriété</b></p>
+<p>Le vecteur <span style="text-decoration: overline;">n</span>(a, b, c) est un vecteur normal au plan 𝒫.</p>
+<p>Plus précisément, un vecteur <span style="text-decoration: overline;">n</span> est normal à un plan 𝒫 si et seulement si pour tout point M(x, y, z) de 𝒫 et tout point A(x<sub>0</sub>, y<sub>0</sub>, z<sub>0</sub>) de 𝒫, on a :</p>
+<p><span style="text-decoration: overline;">n</span> · <span style="text-decoration: overline;">AM</span> = 0 □</p>
+
+<p><b>Propriété</b></p>
+<p>Si <span style="text-decoration: overline;">n</span> est un vecteur normal à un plan 𝒫, alors tout vecteur colinéaire à <span style="text-decoration: overline;">n</span> est aussi normal à 𝒫.</p>
+
+<p><b>Exemple</b></p>
+<p>Le plan passant par A(1, −2, 3) et de vecteur normal <span style="text-decoration: overline;">n</span>(2, −1, 4) a pour équation :</p>
+<p>2(x − 1) − (y + 2) + 4(z − 3) = 0, soit 2x − y + 4z − 16 = 0.</p>
+
+<p><b>Propriété</b> (Distance d'un point à un plan)</p>
+<p>Soit 𝒫 un plan d'équation ax + by + cz + d = 0 et A(x<sub>0</sub>, y<sub>0</sub>, z<sub>0</sub>) un point de l'espace. La distance de A au plan 𝒫 est :</p>
+<p>d(A, 𝒫) = |ax<sub>0</sub> + by<sub>0</sub> + cz<sub>0</sub> + d| / √(a² + b² + c²)</p>
+
+<p><b>Propriété</b> (Projeté orthogonal d'un point sur un plan)</p>
+<p>Soit 𝒫 un plan d'équation ax + by + cz + d = 0 et A(x<sub>0</sub>, y<sub>0</sub>, z<sub>0</sub>) un point de l'espace. Le projeté orthogonal H de A sur 𝒫 est le point d'intersection de la droite passant par A et de vecteur directeur <span style="text-decoration: overline;">n</span>(a, b, c) avec le plan 𝒫.</p>
+
+<h2>VI. Positions relatives de droites et plans dans l'espace</h2>
+
+<h3>6-1. Positions relatives de deux droites</h3>
+
+<p><b>Proposition</b></p>
+<p>𝒟(A, <span style="text-decoration: overline;">u</span>) et 𝒟'(B, <span style="text-decoration: overline;">v</span>) sont deux droites de l'espace (E) rapporté au repère (O; <span style="text-decoration: overline;">i</span>, <span style="text-decoration: overline;">j</span>, <span style="text-decoration: overline;">k</span>).</p>
+<ol>
+<li>𝒟 = 𝒟' ⇔ <span style="text-decoration: overline;">u</span> et <span style="text-decoration: overline;">v</span> sont colinéaires et les deux droites ont un point commun (droites confondues).</li>
+<li>𝒟 et 𝒟' sont strictement parallèles ⇔ <span style="text-decoration: overline;">u</span> et <span style="text-decoration: overline;">v</span> sont colinéaires et les deux droites n'ont pas de point commun.</li>
+<li>𝒟 ∩ 𝒟' = {I} ⇔ <span style="text-decoration: overline;">u</span> et <span style="text-decoration: overline;">v</span> ne sont pas colinéaires et le point I est commun aux deux droites (droites sécantes).</li>
+<li>𝒟 et 𝒟' sont non coplanaires ⇔ <span style="text-decoration: overline;">u</span> et <span style="text-decoration: overline;">v</span> ne sont pas colinéaires et les deux droites n'ont pas de points communs ⇔ <span style="text-decoration: overline;">u</span>, <span style="text-decoration: overline;">v</span> et <span style="text-decoration: overline;">AB</span> ne sont pas coplanaires ⇔ det(<span style="text-decoration: overline;">u</span>, <span style="text-decoration: overline;">v</span>, <span style="text-decoration: overline;">AB</span>) ≠ 0.</li>
+</ol>
+
+<p><b>Remarque</b></p>
+<p>Deux droites coplanaires sont soit sécantes, soit parallèles (strictement ou confondues). Deux droites non coplanaires (ou gauches) ne sont ni parallèles ni sécantes.</p>
+
+<h3>6-2. Positions relatives d'une droite et d'un plan</h3>
+
+<p><b>Proposition</b></p>
+<p>Soient 𝒟(B, <span style="text-decoration: overline;">w</span>) une droite et 𝒫(A, <span style="text-decoration: overline;">u</span>, <span style="text-decoration: overline;">v</span>) un plan de l'espace (E).</p>
+<ol>
+<li>La droite 𝒟 est incluse dans le plan 𝒫 ⇔ <span style="text-decoration: overline;">u</span>, <span style="text-decoration: overline;">v</span> et <span style="text-decoration: overline;">w</span> sont coplanaires et B ∈ 𝒫 ⇔ det(<span style="text-decoration: overline;">u</span>, <span style="text-decoration: overline;">v</span>, <span style="text-decoration: overline;">w</span>) = 0 et B ∈ 𝒫.</li>
+<li>La droite 𝒟 est strictement parallèle au plan 𝒫 ⇔ <span style="text-decoration: overline;">u</span>, <span style="text-decoration: overline;">v</span> et <span style="text-decoration: overline;">w</span> sont coplanaires et B ∉ 𝒫 ⇔ det(<span style="text-decoration: overline;">u</span>, <span style="text-decoration: overline;">v</span>, <span style="text-decoration: overline;">w</span>) = 0 et B ∉ 𝒫.</li>
+<li>La droite 𝒟 coupe le plan 𝒫 en un point ⇔ <span style="text-decoration: overline;">u</span>, <span style="text-decoration: overline;">v</span> et <span style="text-decoration: overline;">w</span> ne sont pas coplanaires ⇔ det(<span style="text-decoration: overline;">u</span>, <span style="text-decoration: overline;">v</span>, <span style="text-decoration: overline;">w</span>) ≠ 0.</li>
+</ol>
+
+<p><b>Remarque</b></p>
+<p>Soient 𝒟 une droite de vecteur directeur <span style="text-decoration: overline;">u</span> et 𝒫 un plan de vecteur normal <span style="text-decoration: overline;">n</span>.</p>
+<ul>
+<li>Si <span style="text-decoration: overline;">u</span> · <span style="text-decoration: overline;">n</span> = 0, alors 𝒟 est parallèle à 𝒫 (soit strictement parallèle, soit contenue dans 𝒫).</li>
+<li>Si <span style="text-decoration: overline;">u</span> · <span style="text-decoration: overline;">n</span> ≠ 0, alors 𝒟 et 𝒫 sont sécants en un unique point.</li>
+</ul>
+
+<p><b>Méthode</b> (Intersection d'une droite et d'un plan)</p>
+<p>Soit 𝒟 définie par ses équations paramétriques :</p>
+<p>{ x = x<sub>0</sub> + ta<br>
+  y = y<sub>0</sub> + tb<br>
+  z = z<sub>0</sub> + tc</p>
+<p>et 𝒫 d'équation ax + by + cz + d = 0.</p>
+<p>Pour trouver l'intersection, on substitue les expressions de x, y et z dans l'équation du plan, ce qui donne une équation en t :</p>
+<p>a(x<sub>0</sub> + ta') + b(y<sub>0</sub> + tb') + c(z<sub>0</sub> + tc') + d = 0</p>
+<p>On résout cette équation pour t :</p>
+<ul>
+<li>Si elle admet une unique solution t<sub>0</sub>, alors la droite et le plan se coupent en un seul point.</li>
+<li>Si elle est impossible, alors la droite et le plan sont strictement parallèles.</li>
+<li>Si elle est toujours vraie, alors la droite est contenue dans le plan.</li>
+</ul>
+
+<h3>6-3. Positions relatives de deux plans</h3>
+
+<p><b>Proposition</b></p>
+<p>𝒫 : ax + by + cz + d = 0 et 𝒫' : a'x + b'y + c'z + d' = 0 sont deux plans de l'espace (E).</p>
+<ol>
+<li>Les deux plans sont confondus : 𝒫 = 𝒫' ⇔ ∃k ≠ 0 tel que a' = ka, b' = kb, c' = kc, d' = kd (les équations sont proportionnelles).</li>
+<li>Les deux plans sont strictement parallèles : 𝒫 ∩ 𝒫' = ∅ ⇔ a'/a = b'/b = c'/c et d'/d ≠ a'/a.</li>
+<li>Les deux plans sont sécants suivant une droite : 𝒫 ∩ 𝒫' = 𝒟 ⇔ <span style="text-decoration: overline;">n</span>(a, b, c) et <span style="text-decoration: overline;">n'</span>(a', b', c') ne sont pas colinéaires ⇔ au moins deux des rapports a/a', b/b', c/c' ne sont pas égaux.</li>
+</ol>
+<p>𝒫(A, <span style="text-decoration: overline;">u</span>, <span style="text-decoration: overline;">v</span>) et 𝒫'(B, <span style="text-decoration: overline;">u'</span>, <span style="text-decoration: overline;">v'</span>) sont deux plans sécants ⇔ <span style="text-decoration: overline;">u</span>, <span style="text-decoration: overline;">v</span>, <span style="text-decoration: overline;">u'</span> sont coplanaires et <span style="text-decoration: overline;">u</span>, <span style="text-decoration: overline;">v</span>, <span style="text-decoration: overline;">v'</span> sont coplanaires ⇔ det(<span style="text-decoration: overline;">u</span>, <span style="text-decoration: overline;">v</span>, <span style="text-decoration: overline;">u'</span>) = 0 et det(<span style="text-decoration: overline;">u</span>, <span style="text-decoration: overline;">v</span>, <span style="text-decoration: overline;">v'</span>) = 0. □</p>
